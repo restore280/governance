@@ -70,10 +70,10 @@
    - Responsible for recruiting employees within the hiring budget approved through governance.
    - Selects candidates for all roles; hires require a majority vote from employee shareholders.
    - Manages day-to-day operations and any unfilled responsibilities of other officers.
-3. **Chief People Officer (CPO).** as-yet unassigned
+3. **Chief People Officer (CPO).**
    - Responsible for human resources, including performance improvement plans.
    - Holds sole authority to terminate employees after three repeated offenses or violations of company moral, ethical, and tolerance standards.
-4. **Chief Compliance Officer (CCO).** as-yet unassigned
+4. **Chief Compliance Officer (CCO).**
    - Ensures legal and regulatory compliance across company operations, including benefit corporation reporting.
    - Oversees budgeting, accounting, payroll, and tax compliance; maintains internal controls and financial reporting.
    - May intervene in project operations if non-compliance with legal, ethical, or financial standards is detected.
