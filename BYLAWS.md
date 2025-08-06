@@ -30,7 +30,6 @@
   * Transparency
   * Investment reserve
   * Charitable revenue sharing
-  * No profit distributions
 - Article VI: Voting Procedures
   * Voting Rights
   * Voting Platform
@@ -74,10 +73,10 @@
    - Responsible for recruiting employees within the hiring budget approved through governance.
    - Selects candidates for all roles; hires require a majority vote from employee shareholders.
    - Manages day-to-day operations and any unfilled responsibilities of other officers.
-3. **Chief People Officer (CPO).** as-yet unassigned
+3. **Chief People Officer (CPO).**
    - Responsible for human resources, including supportive separations.
    - Holds authority to terminate employees consistent with Article VII.
-4. **Chief Compliance Officer (CCO).** as-yet unassigned
+4. **Chief Compliance Officer (CCO).**
    - Ensures legal and regulatory compliance across company operations, including benefit-corporation reporting.
    - Oversees budgeting, accounting, payroll, and tax compliance; maintains internal controls and financial reporting.
    - May intervene in project operations if non-compliance with legal, ethical, or financial standards is detected.
@@ -158,8 +157,6 @@
    The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve’s realized gains will be sufficient to fund the following year’s payroll. Withdrawals occur only for payroll under a policy maintained by the CCO and approved via Article VI.
 5. **Charitable revenue sharing.**
    The corporation donates one percent of prior-year revenue to qualified charities aligned with the public-benefit purpose. This is booked as an operating expense and approved via Article VI. Recipient transparency is maintained in the governance repository.
-6. **No profit distributions.**
-   The corporation does not distribute profit to equity holders. Profit is used solely for payroll under Clause 1 and for the investment reserve under Clause 4.
 
 ---
 
