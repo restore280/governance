@@ -1,0 +1,8 @@
+# Allowed GitHub handles; case insensitive
+voters:
+  - ERLindeman
+
+# Optional behavior flags
+allow_self_approve: true        # author may approve their own PR
+exclude_author: false           # if true, the PR author never counts toward approvals
+required_approvals: 1           # fixed count; omit to default to simple majority of voters
