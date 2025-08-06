@@ -2,33 +2,30 @@ name: Enforce Custom Approval Requirements
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, edited]
+    types: [opened, synchronize, reopened, edited, review_requested, review_request_removed]
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   approval-check:
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js environment
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'  # Ensure this matches your script's Node.js version requirement
+          node-version: 20
 
-      # Step 3: Install Dependencies within .github/
       - name: Install Dependencies
         working-directory: .github
-        run: |
-          npm install
+        run: npm ci
 
-      # Step 4: Execute the Enforcement Script
       - name: Enforce Approval Requirement
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          node enforceApproval.js
         working-directory: .github
+        run: node enforceApproval.js
