@@ -3,6 +3,8 @@ name: Enforce Custom Approval Requirements
 on:
   pull_request:
     types: [opened, synchronize, reopened, edited, review_requested, review_request_removed]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
 
 permissions:
   contents: read
@@ -12,7 +14,7 @@ jobs:
   approval-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -20,11 +22,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Dependencies
+      - name: Install dependencies
         working-directory: .github
-        run: npm ci
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install --no-audit --no-fund
+          fi
 
-      - name: Enforce Approval Requirement
+      - name: Enforce approval requirement
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: .github
