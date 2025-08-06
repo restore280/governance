@@ -27,7 +27,6 @@
   * Equity allocation and quarterly rebalancing
   * Transparency
   * Investment reserve
-  * No profit distributions
 - Article VI: Voting Procedures
   * Voting Rights
   * Voting Platform
@@ -169,8 +168,6 @@
    The prior-year profit figure, the headcount used for payroll division, and the equity-rebalancing worksheet are accessible to all employees. Calculations are automated and documented; individual negotiation is not permitted.
 4. **Investment reserve.**
    The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve's realized gains will be sufficient to fund the following year's payroll. Withdrawals occur only for payroll under a policy maintained by the CCO and approved through the voting procedures in Article VI.
-5. **No profit distributions.**
-   The corporation does not distribute profit to equity holders. Profit is used solely for payroll under Clause 1 and for the investment reserve under Clause 4.
 
 ---
 
