@@ -1,0 +1,42 @@
+name: Enforce Custom Approval Requirements
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited, review_requested, review_request_removed]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  approval-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: .github
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install --no-audit --no-fund
+          fi
+
+      - name: Enforce approval requirement
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional fallbacks if voters.yml is absent
+          # VOTERS_CSV: ERLindeman
+          # ALLOW_SELF_APPROVE: "true"
+          # REQUIRED_APPROVALS: "1"
+        working-directory: .github
+        run: node enforceApproval.js
