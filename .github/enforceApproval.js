@@ -1,37 +1,48 @@
 // .github/enforceApproval.js
-
 const { Octokit } = require("@octokit/rest");
 const core = require("@actions/core");
+const fs = require("fs");
 
 (async () => {
   try {
-    // Initialize Octokit with the GitHub token
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
-    // Get repository details from environment variables
-    const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
-    const pull_number = parseInt(process.env.GITHUB_REF.split('/').pop(), 10);
+    const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
-    // Fetch organization members
-    const org = owner; // Assuming the owner is the organization
-    let members = [];
+    // Pull number from the event payload (reliable for pull_request and pull_request_target)
+    const payload = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
+    const pull_number = payload.pull_request && payload.pull_request.number;
+    if (!pull_number) {
+      core.setFailed("Could not determine pull request number from event payload.");
+      return;
+    }
+
+    // Eligible voters: repo collaborators with push permission
+    let collaborators = [];
     let page = 1;
     const per_page = 100;
     while (true) {
-      const { data } = await octokit.orgs.listMembers({
-        org,
+      const { data } = await octokit.repos.listCollaborators({
+        owner,
+        repo,
         per_page,
         page,
       });
-      members = members.concat(data);
+      collaborators = collaborators.concat(data);
       if (data.length < per_page) break;
       page++;
     }
 
-    const totalMembers = members.length;
-    const requiredApprovals = Math.ceil(totalMembers / 2);
+    const voters = collaborators.filter(c =>
+      c.type !== "Bot" &&
+      c.permissions &&
+      (c.permissions.push === true || c.permissions.maintain === true || c.permissions.admin === true)
+    ).map(c => c.login);
 
-    // Fetch pull request reviews
+    const totalVoters = voters.length;
+    const requiredApprovals = Math.ceil(totalVoters / 2);
+
+    // Fetch all reviews for this PR
     let reviews = [];
     page = 1;
     while (true) {
@@ -47,22 +58,29 @@ const core = require("@actions/core");
       page++;
     }
 
-    // Filter for 'APPROVED' reviews and ensure uniqueness by user
+    // Keep the latest review state per user
+    const latestByUser = new Map();
+    for (const r of reviews) {
+      latestByUser.set(r.user.login, { state: r.state, submitted_at: new Date(r.submitted_at || r.submittedAt || 0) });
+    }
+
+    // Count approvals by eligible voters whose latest state is APPROVED
     const approvedUsers = new Set();
-    reviews.forEach(review => {
-      if (review.state === 'APPROVED') {
-        approvedUsers.add(review.user.login);
+    for (const [login, info] of latestByUser.entries()) {
+      if (voters.includes(login) && info.state === "APPROVED") {
+        approvedUsers.add(login);
       }
-    });
+    }
 
     const approvalCount = approvedUsers.size;
 
-    console.log(`Total Organization Members: ${totalMembers}`);
-    console.log(`Required Approvals: ${requiredApprovals}`);
-    console.log(`Current Approvals: ${approvalCount}`);
+    console.log(`Total eligible voters: ${totalVoters}`);
+    console.log(`Required approvals: ${requiredApprovals}`);
+    console.log(`Current approvals: ${approvalCount}`);
+    console.log(`Approvers: ${[...approvedUsers].join(", ")}`);
 
     if (approvalCount < requiredApprovals) {
-      core.setFailed(`Pull request requires at least ${requiredApprovals} approvals, but only ${approvalCount} were provided.`);
+      core.setFailed(`Pull request requires at least ${requiredApprovals} approvals from eligible voters; found ${approvalCount}.`);
     } else {
       console.log("Approval requirement met.");
     }
