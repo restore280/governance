@@ -129,9 +129,9 @@
    - Upon becoming a team, roles may be assigned, and additional employees may be hired if necessary.
 4. **Full-Time Employees.**
    - All employees are full-time; there are no part-time positions.
-   - Required to work at least three days per week and thirty hours per week.
+   - Required to work at least three days per week and sixteen hours per week.
    - Must attend an all-hands meeting at 9 AM Pacific Time on Mondays; recordings are available; multiple communication channels exist; time zones are accommodated.
-   - Work allocation is flexible: minimum fifteen hours weekly on assigned role duties; minimum five hours on approved company projects; remaining ten hours at employee discretion and interest.
+   - Work allocation is flexible: minimum eight hours weekly on assigned role duties; minimum eight hours on approved company projects; any additional hours at employee discretion and interest.
    - Employees are encouraged to use time freed by flexible schedules for the benefit of other beneficent organizations. Time for the 501(c)(3) subsidiary follows approved service grants; outside volunteering is separate from payroll time unless approved.
 5. **Vacation and Leave.**
    - The corporation provides flexible paid time off with a required minimum. Each employee must take at least fifteen paid days off per fiscal year, in addition to company holidays and legally required sick leave.
