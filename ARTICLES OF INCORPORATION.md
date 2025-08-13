@@ -22,7 +22,7 @@ The street address of the **initial** principal executive office is:
 The board of directors may change the principal office without amending these Articles.
 
 ### Article 5: Capitalization
-(a) The corporation is authorized to issue **3,000 shares** of **common stock, no par value**.  
+(a) The corporation is authorized to issue **720,720 shares** of **common stock, no par value**.  
 (b) The corporation **may issue fractional shares** or scrip and may provide for their rights or cash in lieu of fractional shares to the extent permitted by law.  
 (c) **No preemptive rights.** No holder of shares shall have any preemptive, preferential, or subscription right to acquire shares, options, or securities of the corporation unless granted by a written agreement approved by the board.
 
