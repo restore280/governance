@@ -15,15 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        with: { fetch-depth: 0 }
 
       - name: Copy BYLAWS.md to README.md
         run: |
           test -f BYLAWS.md || { echo "BYLAWS.md not found"; exit 1; }
           cp BYLAWS.md README.md
 
-      - name: Create PR with README mirror
+      - id: cpr
+        name: Create PR with README mirror
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: "chore: mirror BYLAWS.md to README.md"
@@ -32,3 +32,10 @@ jobs:
           branch: chore/mirror-bylaws-to-readme
           delete-branch: true
           add-paths: README.md
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --squash --auto
