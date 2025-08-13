@@ -1,4 +1,4 @@
-name: Mirror BYLAWS to README (PR)
+name: Mirror BYLAWS to README (PR + merge)
 
 on:
   push:
@@ -17,6 +17,14 @@ jobs:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
 
+      # Mint an installation token from your org GitHub App
+      - id: app-token
+        name: Get GitHub App installation token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.BTL_ACTIONS_APP_ID }}
+          private_key: ${{ secrets.BTL_ACTIONS_BOT_PRIVATE_KEY }}
+
       - name: Copy BYLAWS.md to README.md
         run: |
           test -f BYLAWS.md || { echo "BYLAWS.md not found"; exit 1; }
@@ -26,6 +34,7 @@ jobs:
         name: Create PR with README mirror
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ steps.app-token.outputs.token }}
           commit-message: "chore: mirror BYLAWS.md to README.md"
           title: "Mirror BYLAWS.md to README.md"
           body: "Automated sync from BYLAWS.md."
@@ -33,9 +42,19 @@ jobs:
           delete-branch: true
           add-paths: README.md
 
-      - name: Enable auto-merge
+      # Merge immediately without --auto (auto-merge is disabled in repo settings)
+      - name: Merge PR
         if: steps.cpr.outputs.pull-request-number != ''
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --squash --auto
+          pr=${{ steps.cpr.outputs.pull-request-number }}
+          echo "Merging PR #$pr"
+          # This will succeed once branch protection requirements (if any) are satisfied.
+          gh pr merge "$pr" --squash --merge --delete-branch || {
+            echo "Merge failed. Common causes:"
+            echo " - Reviews are required by a ruleset or branch protection"
+            echo " - Required checks are failing or pending"
+            echo " - The app lacks permission on this repo"
+            exit 1
+          }
