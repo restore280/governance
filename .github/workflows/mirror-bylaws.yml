@@ -36,4 +36,4 @@ jobs:
         if: steps.cpr.outputs.pull-request-number != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --squash --merge --delete-branch
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --squash --delete-branch
