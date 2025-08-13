@@ -30,6 +30,9 @@
   * Transparency
   * Investment reserve
   * Charitable revenue sharing
+  * Pension plan
+  * Tuition reimbursement
+  * Child care support
 - Article VI: Voting Procedures
   * Voting Rights
   * Voting Platform
@@ -164,6 +167,20 @@
    The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve’s realized gains will be sufficient to fund the following year’s payroll. Withdrawals occur only for payroll under a policy maintained by the Compliance Lead and approved via Article VI.
 5. **Charitable revenue sharing.**
    The corporation donates one percent of prior-year revenue to qualified charities aligned with the public-benefit purpose. This is booked as an operating expense and approved via Article VI. Recipient transparency is maintained in the governance repository.
+6. **Pension plan.**
+   - **Eligibility.** An employee will be eligible to retire and receive a pension after accumulating twenty years of cumulative time at the company (as used in Article V.2).
+   - **Benefit amount.** The annual pension equals the highest annual salary the employee received in any of the five full fiscal years immediately preceding retirement. “Salary” means the employee’s annualized equal-pay amount published under Article V.1 for that fiscal year. The pension is paid in equal **weekly** installments.
+   - **Funding and accounting.** Pension obligations will be expensed and paid as an operating cost under GAAP. They do not change the equal-pay calculation in Clause 1 and are not profit distributions. The Compliance Lead will maintain and publish the actuarial and payment policy used for accruals and disclosures.
+   - **Interaction with equity.** Upon retirement, Article VII.2 applies; all shares of any kind are returned to the corporation and cancelled as of the retirement date. Pensioners hold no Voting Shares and receive no equity of any kind.
+7. **Tuition reimbursement.**
+   - **Eligibility.** Employees; employee spouses; employee children who are legal dependents.
+   - **Benefit.** Unlimited full reimbursement of college tuition for accredited undergraduate or graduate programs. Tuition means billed tuition charges; room, board, and non-tuition fees are excluded unless required by law or accreditation to be part of tuition.
+   - **Process.** The corporation will pay institutions directly when practical; otherwise it will reimburse the employee upon proof of enrollment and tuition billing. Pre-approval and documentation requirements will be published by the Compliance Lead.
+   - **Accounting and tax.** Costs are treated as operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes will be handled and reported according to law; the Compliance Lead will publish guidance.
+8. **Child care support.**
+   - **Benefit.** Full coverage of qualified child care costs for employees’ dependent children. Work hours are designed to minimize the need for child care; employees may opt in to coverage at their discretion.
+   - **Process.** The corporation will pay providers directly when practical; otherwise it will reimburse the employee upon proof of care and billing. Eligible provider types and documentation will be published by the Compliance Lead.
+   - **Accounting and tax.** Costs are treated as operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes will be handled and reported according to law; the Compliance Lead will publish guidance.
 
 ---
 
@@ -184,7 +201,7 @@
    - Employees may bring advocates to discussions, submit anonymous concerns, propose systemic solutions, and appeal decisions to the President.
 2. **Termination.**
    - The corporation uses a supportive separation path. Steps: clarify expectations and give specific feedback; offer supports such as mentorship, workload adjustment, or training; explore role redesign or project transfer; if misalignment persists, offer mutual separation with fair severance bands published by the Compliance Lead. Immediate separation may occur for safety, harassment, illegality, or severe policy violations. All steps are documented; retaliation is prohibited.
-   - When employment ends, all shares of any kind are returned to the corporation and cancelled as of the separation date.
+   - When employment ends, including retirement under Article V.6, all shares of any kind are returned to the corporation and cancelled as of the separation date.
 
 ---
 
