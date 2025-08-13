@@ -5,9 +5,9 @@
 - Article I: Name and Purpose
 - Article II: Structure and Governance
   * Board of Directors
-  * Chief Executive Officer (CEO)
-  * Chief People Officer (CPO)
-  * Chief Compliance Officer (CCO)
+  * President
+  * People Lead
+  * Compliance Lead
   * Decision-Making Principles
   * Core Values and Measures
   * Accessibility Requirements
@@ -26,7 +26,7 @@
   * Performance Reviews
 - Article V: Compensation and Shares
   * Equal compensation and payroll funding
-  * Equity allocation and quarterly rebalancing
+  * Voting Shares and Non-Voting Equity Units
   * Transparency
   * Investment reserve
   * Charitable revenue sharing
@@ -60,23 +60,24 @@
 1. The name of the corporation is **by The Lindemans, inc.**
 2. The purpose of this corporation is as defined in its Articles of Incorporation: **"To empower individuals through innovative technology so that they can face their challenges with resilience to create a more hopeful world for all."**
 3. **Form and jurisdiction.** The corporation is a California benefit corporation; it remains headquartered in California and will keep good standing there.
-4. **Nonprofit subsidiary.** The corporation may form and wholly control a California nonprofit public benefit corporation that will seek federal 501(c)(3) recognition. That subsidiary will maintain released free and open-source software. Employees of the corporation may donate time to the subsidiary under a written service grant approved by the CEO and overseen by the CCO.
+4. **Nonprofit subsidiary.** The corporation may form and wholly control a California nonprofit public benefit corporation that will seek federal 501(c)(3) recognition. That subsidiary will maintain released free and open-source software. Employees of the corporation may donate time to the subsidiary under a written service grant approved by the President and overseen by the Compliance Lead.
 
 ---
 
 ### Article II: Structure and Governance
 1. **Board of Directors.**
-   - The board has three members: the CEO and two additional directors elected by a majority of participating employee shareholders.
+   - The board has three members: the President and two additional directors elected by a majority of participating employee shareholders.
    - Directors serve one-year terms; they may be re-elected. Vacancies are filled by a shareholder vote.
    - The board provides oversight of strategy, benefit-corporation reporting, and fiduciary controls; it does not manage day-to-day operations.
-2. **Chief Executive Officer (CEO).**
+2. **President.**
+   - Holds the President role as a secondary obligation; the President must also work in another needed operational role as the primary duty.
    - Responsible for recruiting employees within the hiring budget approved through governance.
    - Selects candidates for all roles; hires require a majority vote from employee shareholders.
    - Manages day-to-day operations and any unfilled responsibilities of other officers.
-3. **Chief People Officer (CPO).**
+3. **People Lead.**
    - Responsible for human resources, including supportive separations.
    - Holds authority to terminate employees consistent with Article VII.
-4. **Chief Compliance Officer (CCO).**
+4. **Compliance Lead.**
    - Ensures legal and regulatory compliance across company operations, including benefit-corporation reporting.
    - Oversees budgeting, accounting, payroll, and tax compliance; maintains internal controls and financial reporting.
    - May intervene in project operations if non-compliance with legal, ethical, or financial standards is detected.
@@ -99,16 +100,16 @@
 
 ### Article III: Reporting Structure
 1. **Flat Organizational Structure.**
-   - The corporation operates under a flat organizational structure; all employees report directly to the CEO.
-   - The CEO is responsible for company-wide operations, with board oversight.
+   - The corporation operates under a flat organizational structure; all employees report directly to the President.
+   - The President is responsible for company-wide operations, with board oversight.
 2. **Oversight Officers.**
-   - The CCO and CPO do not have direct reports but gather information across the organization to fulfill their roles.
+   - The Compliance Lead and People Lead do not have direct reports but gather information across the organization to fulfill their roles.
    - These officers may interact with employees to ensure compliance, manage finances, address HR concerns, or coordinate operations; employees do not report to them in a traditional hierarchy.
 3. **Teams and Projects.**
-   - Employees assigned to company teams work collaboratively within those teams; each member still reports directly to the CEO.
+   - Employees assigned to company teams work collaboratively within those teams; each member still reports directly to the President.
    - Projects are managed by employees who opt into them. Project contributors collaborate in a peer-driven manner; decisions are managed collectively among participants.
 4. **Decision-Making and Information Flow.**
-   - Authority to make decisions on matters not specified in the bylaws remains with the CEO, who shall document criteria, provide advance notice of major decisions, create opportunities for input, and share rationale.
+   - Authority to make decisions on matters not specified in the bylaws remains with the President, who shall document criteria, provide advance notice of major decisions, create opportunities for input, and share rationale.
    - Information is transparent; employees have access to financial performance data, project metrics and status, strategic planning discussions, and meeting notes and decisions.
    - **Exceptions to Transparency:** personal employee matters and information protected by legal requirements.
    - Goals and objectives are clearly defined, measurable, aligned with company values, and created with employee input.
@@ -125,13 +126,14 @@
 3. **Project Creation and Evolution into Teams.**
    - Any employee can propose projects through a formal submission process that includes objectives, required resources, and alignment with the mission.
    - Proposals are put to a vote by employee shareholders. If approved, the project is granted formal status, and employees are authorized to contribute time.
-   - Projects showing consistent profitability or strategic importance may be elevated to team status after CEO review and a shareholder vote.
+   - Projects showing consistent profitability or strategic importance may be elevated to team status after President review and a shareholder vote.
    - Upon becoming a team, roles may be assigned, and additional employees may be hired if necessary.
 4. **Full-Time Employees.**
    - All employees are full-time; there are no part-time positions.
    - Required to work at least three days per week and sixteen hours per week.
    - Must attend an all-hands meeting at 9 AM Pacific Time on Mondays; recordings are available; multiple communication channels exist; time zones are accommodated.
    - Work allocation is flexible: minimum eight hours weekly on assigned role duties; minimum eight hours on approved company projects; any additional hours at employee discretion and interest.
+   - **Minimums and responsiveness.** These are minimums only and all employees are expected to fulfill their obligations such that no other employee is kept waiting on their work for more than 24 hours. Employees are expected to clear their work queue of all tasks due between the current workday and the next by the end of each day they work.
    - Employees are encouraged to use time freed by flexible schedules for the benefit of other beneficent organizations. Time for the 501(c)(3) subsidiary follows approved service grants; outside volunteering is separate from payroll time unless approved.
 5. **Vacation and Leave.**
    - The corporation provides flexible paid time off with a required minimum. Each employee must take at least fifteen paid days off per fiscal year, in addition to company holidays and legally required sick leave.
@@ -141,20 +143,25 @@
    - Employees may join any project based on interests and skills.
    - Team performance and management decisions are at the discretion of its members.
 7. **Performance Reviews.**
-   - Team members and the CEO conduct quarterly 360-degree reviews to help employees track self-improvement goals.
+   - Team members and the President conduct quarterly 360-degree reviews to help employees track self-improvement goals.
    - Reviews do not influence employment decisions but provide constructive feedback.
 
 ---
 
 ### Article V: Compensation and Shares
 1. **Equal compensation and payroll funding.**
-   All employees receive identical pay. Total payroll for the fiscal year equals fifty percent of prior-year profit; it is divided evenly among full-time employees and paid on a regular schedule. The CCO calculates and publishes the annual and weekly amounts.
-2. **Equity allocation and quarterly rebalancing.**
-   Outstanding equity is rebalanced each quarter in proportion to each employee’s cumulative time at the company relative to the total cumulative time of all employees. Fractional shares are allowed; rounding rules are published with each rebalance. Equity conveys voting rights only; there are no dividends.
+   All employees receive identical pay. Total payroll for the fiscal year equals fifty percent of prior-year profit; it is divided evenly among full-time employees and paid on a regular schedule. The Compliance Lead calculates and publishes the annual and weekly amounts.
+2. **Voting Shares and Non-Voting Equity Units.**
+   - **Allotted Shares.** Each quarter the corporation will calculate for every employee an **Allotted Shares** number equal to that employee’s cumulative time at the company divided by the sum of all employees’ cumulative time, applied directly as fractional share units. Total shares equal the sum of all Allotted Shares across employees.
+   - **Voting Shares.** The number of Voting Shares per employee will equal the smallest Allotted Shares number among all employees at that calculation. This keeps Voting Shares equal across employees.
+   - **Non-Voting Equity Units.** For each employee, Non-Voting Equity Units will equal that employee’s Allotted Shares minus that employee’s Voting Shares. These units carry no voting rights and receive no dividends.
+   - **Quarterly rebalance.** At the end of each fiscal quarter the corporation will recompute Allotted Shares and will update Voting Shares and Non-Voting Equity Units accordingly. Fractional units are permitted and rounded to six decimals under a published rounding rule.
+   - **Joiners.** New employees are included from their start date and will receive Allotted Shares on the next calculation date.
+   - **Leavers.** When employment ends, all shares of any kind will be returned to the corporation and cancelled effective the separation date; the former employee is removed from future calculations.
 3. **Transparency.**
-   The prior-year profit figure, the headcount used for payroll division, and the equity-rebalancing worksheet are accessible to all employees. Calculations are automated and documented; individual negotiation is not permitted.
+   The prior-year profit figure, the headcount used for payroll division, and the equity worksheets, including cumulative-time denominators and the rounding rule, are accessible to all employees. Calculations are automated and documented; individual negotiation is not permitted.
 4. **Investment reserve.**
-   The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve’s realized gains will be sufficient to fund the following year’s payroll. Withdrawals occur only for payroll under a policy maintained by the CCO and approved via Article VI.
+   The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve’s realized gains will be sufficient to fund the following year’s payroll. Withdrawals occur only for payroll under a policy maintained by the Compliance Lead and approved via Article VI.
 5. **Charitable revenue sharing.**
    The corporation donates one percent of prior-year revenue to qualified charities aligned with the public-benefit purpose. This is booked as an operating expense and approved via Article VI. Recipient transparency is maintained in the governance repository.
 
@@ -162,22 +169,22 @@
 
 ### Article VI: Voting Procedures
 1. **Voting Rights.**
-   - Major decisions require approval by at least 1500 votes of the 3000 voting shares or 50 percent of issued shares, whichever is lower, and a simple majority of participating employee shareholders.
-   - Voting periods are a minimum of five business days; they may be extended if significant concerns are raised and are scheduled to maximize participation.
-   - All votes include clear documentation of proposals, impact analysis, an implementation timeline, and a discussion period before voting.
+   - **Who votes.** Only Voting Shares vote. Each employee holds the same number of Voting Shares, set each calculation as the smallest Allotted Shares across employees.
+   - **Quorum and passage.** A proposal passes when a majority of the Voting Shares cast are in favor and at least a majority of all issued Voting Shares have been cast. Abstentions do not count as votes cast.
+   - **Indefinite voting period.** Voting has no fixed end date. A vote remains open until it meets the passage rule above, is withdrawn by the proposer, or is closed by a separate closure motion that passes under the same rule.
 2. **Voting Platform.**
-   - Voting is carried out through the corporation’s governance GitHub repository. Pull requests represent proposed changes and are subject to review and voting.
+   - Voting is carried out through the corporation’s governance GitHub repository. Pull requests represent proposed changes and are subject to review and voting. The voter roll and per-employee Voting Share counts are published in the repository metadata.
 
 ---
 
 ### Article VII: Dispute Resolution and Termination
 1. **Dispute Resolution.**
-   - The CPO handles disputes through mediated discussions, written documentation, and clear escalation paths.
+   - The People Lead handles disputes through mediated discussions, written documentation, and clear escalation paths.
    - The process protects all parties from retaliation, maintains confidentiality, considers power dynamics, and provides support resources.
-   - Employees may bring advocates to discussions, submit anonymous concerns, propose systemic solutions, and appeal decisions to the CEO.
+   - Employees may bring advocates to discussions, submit anonymous concerns, propose systemic solutions, and appeal decisions to the President.
 2. **Termination.**
-   - The corporation uses a supportive separation path. Steps: clarify expectations and give specific feedback; offer supports such as mentorship, workload adjustment, or training; explore role redesign or project transfer; if misalignment persists, offer mutual separation with fair severance bands published by the CCO. Immediate separation may occur for safety, harassment, illegality, or severe policy violations. All steps are documented; retaliation is prohibited.
-   - Terminated employees’ shares revert to an unissued state and are not available for purchase.
+   - The corporation uses a supportive separation path. Steps: clarify expectations and give specific feedback; offer supports such as mentorship, workload adjustment, or training; explore role redesign or project transfer; if misalignment persists, offer mutual separation with fair severance bands published by the Compliance Lead. Immediate separation may occur for safety, harassment, illegality, or severe policy violations. All steps are documented; retaliation is prohibited.
+   - When employment ends, all shares of any kind are returned to the corporation and cancelled as of the separation date.
 
 ---
 
@@ -187,6 +194,8 @@
    - Pull requests proposing changes are automatically checked for adherence to these standards before being moved to a vote.
 2. **Effective date trigger.**
    - These bylaws take effect on the earlier of the board-approved effective date or the start date of the second concurrent employee. For this purpose, “employee” means an individual with an employment relationship recorded on payroll; individuals serving only as directors without an employment relationship are not counted as employees. “Concurrent” means on payroll at the same time.
+3. **Baseline calculation.**
+   - On the effective date of the amendment that introduced Article V.2 in this form, the corporation will run the first Allotted Shares calculation and publish results in the governance repository.
 
 ---
 
@@ -232,9 +241,9 @@
 7. **Product Inclusion and Humane Design.**
    - Products and services are developed with accessibility standards, cultural sensitivity, language inclusion, and universal design principles in mind; user research and testing include diverse participants.
    - The corporation aims to follow Boston Consulting Group’s personalization best-practice index where consistent with user privacy, accessibility, and the public-benefit purpose.
-   - The corporation aligns design goals with the Center for Humane Technology’s standards by running a pre-launch humane-risk check (attention load, manipulation risk, dark-pattern audit) and documenting mitigations.
+   - The corporation aligns design goals with the Center for Humane Technology’s standards by running a pre-launch humane-risk check, including attention load, manipulation risk, and dark-pattern audit, and documenting mitigations.
 8. **Complaint Resolution.**
-   - The CPO maintains clear procedures for reporting DEI concerns. All complaints are investigated promptly and thoroughly. Protection from retaliation is guaranteed. Regular reporting on complaint patterns and resolutions is provided to employees.
+   - The People Lead maintains clear procedures for reporting DEI concerns. All complaints are investigated promptly and thoroughly. Protection from retaliation is guaranteed. Regular reporting on complaint patterns and resolutions is provided to employees.
 9. **Community Engagement.**
    - The corporation partners with organizations serving underrepresented communities, supports initiatives that advance equity in technology, provides mentorship and internship opportunities to underrepresented groups, and shares DEI best practices and learnings with the broader technology community.
 10. **Review and Updates.**
