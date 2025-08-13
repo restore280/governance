@@ -153,44 +153,44 @@
 
 ### Article V: Compensation and Shares
 1. **<a id="equal-compensation-and-payroll-funding"></a>Equal compensation and payroll funding.**
-   All employees receive identical pay. Total payroll for the fiscal year equals fifty percent of prior-year profit; it is divided evenly among full-time employees and paid on a regular schedule. The Compliance Lead calculates and publishes the annual and weekly amounts.
+   All employees receive identical pay. Total payroll for the fiscal year equals fifty percent of prior-year profit; it is divided evenly among full-time employees and paid on a regular schedule. The corporation calculates the annual and weekly amounts per this formula and posts them in the governance repository.
 2. **<a id="voting-shares-and-non-voting-equity-units"></a>Voting Shares and Non-Voting Equity Units.**
    - **Allotted Shares.** Each quarter the corporation will calculate for every employee an **Allotted Shares** number equal to that employee’s cumulative time at the company divided by the sum of all employees’ cumulative time, applied directly as fractional share units. Total shares equal the sum of all Allotted Shares across employees.
    - **Voting Shares.** The number of Voting Shares per employee will equal the smallest Allotted Shares number among all employees at that calculation. This keeps Voting Shares equal across employees.
    - **Non-Voting Equity Units.** For each employee, Non-Voting Equity Units will equal that employee’s Allotted Shares minus that employee’s Voting Shares. These units carry no voting rights and receive no dividends.
-   - **Quarterly rebalance.** At the end of each fiscal quarter the corporation will recompute Allotted Shares and will update Voting Shares and Non-Voting Equity Units accordingly. Fractional units are permitted and rounded to six decimals under a published rounding rule.
+   - **Quarterly rebalance.** At the end of each fiscal quarter the corporation will recompute Allotted Shares and will update Voting Shares and Non-Voting Equity Units accordingly. Fractional units are permitted and rounded to six decimals using bankers' rounding (round half to even).
    - **Joiners.** New employees are included from their start date and will receive Allotted Shares on the next calculation date.
    - **Leavers.** When employment ends, all shares of any kind will be returned to the corporation and cancelled effective the separation date; the former employee is removed from future calculations.
 3. **<a id="transparency"></a>Transparency.**
    The prior-year profit figure, the headcount used for payroll division, and the equity worksheets, including cumulative-time denominators and the rounding rule, are accessible to all employees. Calculations are automated and documented; individual negotiation is not permitted.
 4. **<a id="investment-reserve"></a>Investment reserve.**
-   The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve’s realized gains will be sufficient to fund the following year’s payroll. Withdrawals occur only for payroll under a policy maintained by the Compliance Lead and approved via Article VI.
+   The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve’s realized gains will be sufficient to fund the following year’s payroll. Withdrawals occur only for payroll under a policy maintained by the corporation and approved via Article VI.
 5. **<a id="charitable-revenue-sharing"></a>Charitable revenue sharing.**
-   The corporation donates one percent of prior-year revenue to qualified charities aligned with the public-benefit purpose. This is booked as an operating expense and approved via Article VI. Recipient transparency is maintained in the governance repository.
+   The corporation donates one percent of prior-year GAAP revenue to qualified charities aligned with the public-benefit purpose. This is booked as an operating expense and approved via Article VI. Recipient transparency is maintained in the governance repository.
 6. **<a id="pension-plan"></a>Pension plan.**
    - **Eligibility.** An employee will be eligible to retire and receive a pension after accumulating twenty years of cumulative time at the company (as used in Article V.2).
-   - **Benefit amount.** The annual pension equals the highest annual salary the employee received in any of the five full fiscal years immediately preceding retirement. "Salary" means the employee’s annualized equal-pay amount published under Article V.1 for that fiscal year. The pension is paid in equal weekly installments.
-   - **Funding and accounting.** Pension obligations will be expensed and paid as an operating cost under GAAP. They do not change the equal-pay calculation in Clause 1 and are not profit distributions. The Compliance Lead will maintain and publish the actuarial and payment policy used for accruals and disclosures.
+   - **Benefit amount.** The annual pension equals the highest annual salary the employee received in any of the five full fiscal years immediately preceding retirement. "Salary" means the employee’s annualized equal-pay amount under Article V.1 for that fiscal year. The pension is paid in equal weekly installments.
+   - **Funding and accounting.** Pension obligations are accrued and paid as an operating cost under GAAP and do not change the equal-pay calculation in Clause 1. Payments are issued weekly. The corporation posts quarterly pension disclosures in the governance repository.
    - **Interaction with equity.** Upon retirement, Article VII.2 applies; all shares of any kind are returned to the corporation and cancelled as of the retirement date. Pensioners hold no Voting Shares and receive no equity of any kind.
 7. **<a id="tuition-reimbursement"></a>Tuition reimbursement.**
    - **Eligibility.** Employees; employee spouses; employee children who are legal dependents.
    - **Benefit.** Unlimited full reimbursement of college tuition for accredited undergraduate or graduate programs. Tuition means billed tuition charges; room, board, and non-tuition fees are excluded unless required by law or accreditation to be part of tuition.
-   - **Process.** The corporation will pay institutions directly when practical; otherwise it will reimburse the employee upon proof of enrollment and tuition billing. Pre-approval and documentation requirements will be published by the Compliance Lead.
-   - **Accounting and tax.** Costs are treated as operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes will be handled and reported according to law; the Compliance Lead will publish guidance.
+   - **Process.** The corporation will pay institutions directly when practical; otherwise it will reimburse the employee upon proof of enrollment and a tuition invoice. Pre-approval is required using the standard Tuition Request form posted in the governance repository.
+   - **Accounting and tax.** Costs are operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes are handled and reported according to law.
 8. **<a id="child-care-support"></a>Child care support.**
    - **Benefit.** Full coverage of qualified child care costs for employees’ dependent children. Work hours are designed to minimize the need for child care; employees may opt in to coverage at their discretion.
-   - **Process.** The corporation will pay providers directly when practical; otherwise it will reimburse the employee upon proof of care and billing. Eligible provider types and documentation will be published by the Compliance Lead.
-   - **Accounting and tax.** Costs are treated as operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes will be handled and reported according to law; the Compliance Lead will publish guidance.
+   - **Process.** The corporation will pay providers directly when practical; otherwise it will reimburse the employee upon an itemized invoice and proof of care. Eligible providers are those licensed under applicable law in the employee’s location.
+   - **Accounting and tax.** Costs are operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes are handled and reported according to law.
 
 ---
 
 ### Article VI: Voting Procedures
 1. **<a id="voting-rights"></a>Voting Rights.**
-   - **Who votes.** Only Voting Shares vote. Each employee holds the same number of Voting Shares, set each calculation as the smallest Allotted Shares across employees.
+   - **Who votes.** Only Voting Shares vote. Each employee holds the same number of Voting Shares, set each calculation as the smallest Allotted Shares across employees. Each employee casts one vote.
    - **Quorum and passage.** A proposal passes when a majority of the Voting Shares cast are in favor and at least a majority of all issued Voting Shares have been cast. Abstentions do not count as votes cast.
    - **Indefinite voting period.** Voting has no fixed end date. A vote remains open until it meets the passage rule above, is withdrawn by the proposer, or is closed by a separate closure motion that passes under the same rule.
 2. **<a id="voting-platform"></a>Voting Platform.**
-   - Voting is carried out through the corporation’s governance GitHub repository. Pull requests represent proposed changes and are subject to review and voting. The voter roll and per-employee Voting Share counts are published in the repository metadata.
+   - Voting is carried out through the corporation’s governance GitHub repository. Pull requests represent proposed changes and are subject to review and voting. The voter roll is published in the repository metadata.
 
 ---
 
@@ -200,7 +200,7 @@
    - The process protects all parties from retaliation, maintains confidentiality, considers power dynamics, and provides support resources.
    - Employees may bring advocates to discussions, submit anonymous concerns, propose systemic solutions, and appeal decisions to the President.
 2. **<a id="termination"></a>Termination.**
-   - The corporation uses a supportive separation path. Steps: clarify expectations and give specific feedback; offer supports such as mentorship, workload adjustment, or training; explore role redesign or project transfer; if misalignment persists, offer mutual separation with fair severance bands published by the Compliance Lead. Immediate separation may occur for safety, harassment, illegality, or severe policy violations. All steps are documented; retaliation is prohibited.
+   - The corporation uses a supportive separation path. Steps: clarify expectations and give specific feedback; offer supports such as mentorship, workload adjustment, or training; explore role redesign or project transfer; if misalignment persists, offer mutual separation with fair severance bands defined in the governance repository. Immediate separation may occur for safety, harassment, illegality, or severe policy violations. All steps are documented; retaliation is prohibited.
    - When employment ends, including retirement under Article V.6, all shares of any kind are returned to the corporation and cancelled as of the separation date.
 
 ---
