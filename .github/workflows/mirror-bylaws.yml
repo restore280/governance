@@ -1,4 +1,4 @@
-name: Mirror BYLAWS to README
+name: Mirror BYLAWS to README (PR)
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   sync:
@@ -22,19 +23,12 @@ jobs:
           test -f BYLAWS.md || { echo "BYLAWS.md not found"; exit 1; }
           cp BYLAWS.md README.md
 
-      - name: Commit and push if README new or changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Make git notice a brand-new file in the diff
-          git add -N README.md || true
-
-          if git diff --quiet -- README.md; then
-            echo "No changes to README.md"
-            exit 0
-          fi
-
-          git add README.md
-          git commit -m "chore: mirror BYLAWS.md to README.md [skip ci]"
-          git push
+      - name: Create PR with README mirror
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: mirror BYLAWS.md to README.md"
+          title: "Mirror BYLAWS.md to README.md"
+          body: "Automated sync from BYLAWS.md."
+          branch: chore/mirror-bylaws-to-readme
+          delete-branch: true
+          add-paths: README.md
