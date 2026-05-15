@@ -1,8 +1,17 @@
-# Allowed GitHub handles; case insensitive
-voters:
-  - ERLindeman
+# restore280 Institute: Board Consent Voter Configuration
+#
+# INTERIM VERSION: Active during the formation period between the code
+# alignment PR (PR 2a) and the founding documents PR (PR 3). During this
+# period Enik Nadir Linden is the sole authorized approver, acting as
+# incorporator and initial director under the Certificate of Incorporation
+# pending formal constitution of the Board.
+#
+# This file will be replaced in PR 3 (founding documents) with the full
+# three-director voter list, effective simultaneously with bylaw adoption.
 
-# Optional behavior flags
-allow_self_approve: true        # author may approve their own PR
-exclude_author: false           # if true, the PR author never counts toward approvals
-required_approvals: 1           # fixed count; omit to default to simple majority of voters
+voters:
+  - ENLinden              # Enik Nadir Linden: Executive Director
+
+unanimous: true
+allow_self_approve: true
+exclude_author: false
