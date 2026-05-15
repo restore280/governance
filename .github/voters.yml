@@ -1,17 +1,14 @@
-# restore280 Institute: Board Consent Voter Configuration
-#
-# INTERIM VERSION: Active during the formation period between the code
-# alignment PR (PR 2a) and the founding documents PR (PR 3). During this
-# period Enik Nadir Linden is the sole authorized approver, acting as
-# incorporator and initial director under the Certificate of Incorporation
-# pending formal constitution of the Board.
-#
-# This file will be replaced in PR 3 (founding documents) with the full
-# three-director voter list, effective simultaneously with bylaw adoption.
+# BY THE LINDEMANS LLC -> restore280 Institute IP Transfer
+# Temporary voter configuration for PR 1 (IP Transfer) only.
+# This PR requires Emalyn Marian Lindeman's approval as LLC co-member.
+# Enoch Lindeman's authorship of the commit constitutes his signature as
+# LLC co-member and restore280 Executive Director.
+# This file will be replaced in PR 2a with the restore280 interim config.
 
 voters:
-  - ENLinden              # Enik Nadir Linden: Executive Director
+  - EMLinden              # Emalyn Marian Lindeman: LLC Member
 
 unanimous: true
 allow_self_approve: true
 exclude_author: false
+required_approvals: 1
