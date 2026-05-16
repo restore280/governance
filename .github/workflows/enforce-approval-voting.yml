@@ -1,21 +1,42 @@
-name: Enforce Custom Approval Requirements
+name: Enforce Board Consent (restore280 Institute)
 
 on:
   pull_request:
     types: [opened, synchronize, reopened, edited, review_requested, review_request_removed]
   pull_request_review:
     types: [submitted, edited, dismissed]
+  issue_comment:
+    types: [created, edited, deleted]
 
 permissions:
   contents: read
-  pull-requests: read
+  pull-requests: write
+  issues: write
+  checks: write
 
 jobs:
-  approval-check:
+  consent-check:
     runs-on: ubuntu-latest
+
+    # For issue_comment events, only run if the comment is on a pull request
+    # and contains a consent command.
+    if: |
+      github.event_name != 'issue_comment' ||
+      (
+        github.event.issue.pull_request != null &&
+        (
+          contains(github.event.comment.body, '/consent') ||
+          contains(github.event.comment.body, '/dissent')
+        )
+      )
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # For comment events, check out the PR branch so we read the correct
+          # voters.yml and enforceApproval.js from that PR, not from main.
+          ref: ${{ github.event_name == 'issue_comment' && format('refs/pull/{0}/head', github.event.issue.number) || '' }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -31,12 +52,12 @@ jobs:
             npm install --no-audit --no-fund
           fi
 
-      - name: Enforce approval requirement
+      - name: Enforce unanimous board consent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Optional fallbacks if voters.yml is absent
-          # VOTERS_CSV: ERLindeman
-          # ALLOW_SELF_APPROVE: "true"
-          # REQUIRED_APPROVALS: "1"
+          UNANIMOUS: "true"
+          # For comment events, pass the PR number explicitly since the
+          # issue_comment payload does not contain a pull_request object.
+          OVERRIDE_PR_NUMBER: ${{ github.event_name == 'issue_comment' && github.event.issue.number || '' }}
         working-directory: .github
         run: node enforceApproval.js

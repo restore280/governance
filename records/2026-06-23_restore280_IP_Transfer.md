@@ -108,7 +108,7 @@ This Agreement is executed by the parties identified below upon their approval o
 
 Enoch Lindeman, Member; GitHub: @ENLinden
 
-Emalyn Marian Lindeman, Member; GitHub: @EMLinden
+Emalyn Marian Lindeman, Member; GitHub: @EMLinden22
 
 ---
 

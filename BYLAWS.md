@@ -1,267 +1,373 @@
-# Corporate Bylaws
-## by The Lindemans, inc.
+# BYLAWS OF RESTORE280 INSTITUTE
+
+*A Delaware Nonprofit Corporation*
+
+---
 
 ## Index
-- [Article I: Name and Purpose](#article-i-name-and-purpose)
-- [Article II: Structure and Governance](#article-ii-structure-and-governance)
-  * [Board of Directors](#board-of-directors)
-  * [President](#president)
-  * [People Lead](#people-lead)
-  * [Compliance Lead](#compliance-lead)
-  * [Decision-Making Principles](#decision-making-principles)
-  * [Core Values and Measures](#core-values-and-measures)
-  * [Accessibility Requirements](#accessibility-requirements)
-- [Article III: Reporting Structure](#article-iii-reporting-structure)
-  * [Flat Organizational Structure](#flat-organizational-structure)
-  * [Oversight Officers](#oversight-officers)
-  * [Teams and Projects](#teams-and-projects)
-  * [Decision-Making and Information Flow](#decision-making-and-information-flow)
-- [Article IV: Employee Roles and Responsibilities](#article-iv-employee-roles-and-responsibilities)
-  * [Company-Assigned Roles](#company-assigned-roles)
-  * [Employee-Opted Project Roles](#employee-opted-project-roles)
-  * [Project Creation and Evolution](#project-creation-and-evolution-into-teams)
-  * [Full-Time Employees](#full-time-employees)
-  * [Vacation and Leave](#vacation-and-leave)
-  * [Job Titles and Teams](#job-titles-and-teams)
-  * [Performance Reviews](#performance-reviews)
-- [Article V: Compensation and Shares](#article-v-compensation-and-shares)
-  * [Equal compensation and payroll funding](#equal-compensation-and-payroll-funding)
-  * [Voting Shares and Non-Voting Equity Units](#voting-shares-and-non-voting-equity-units)
-  * [Transparency](#transparency)
-  * [Investment reserve](#investment-reserve)
-  * [Charitable revenue sharing](#charitable-revenue-sharing)
-  * [Pension plan](#pension-plan)
-  * [Tuition reimbursement](#tuition-reimbursement)
-  * [Child care support](#child-care-support)
-- [Article VI: Voting Procedures](#article-vi-voting-procedures)
-  * [Voting Rights](#voting-rights)
-  * [Voting Platform](#voting-platform)
-- [Article VII: Dispute Resolution and Termination](#article-vii-dispute-resolution-and-termination)
-  * [Dispute Resolution](#dispute-resolution)
-  * [Termination](#termination)
-- [Article VIII: Amendments and Effective Date](#article-viii-amendments-and-effective-date)
-- [Article IX: Intellectual Property](#article-ix-intellectual-property)
-  * [Open-Source Policy](#open-source-policy)
-  * [Exceptions](#exceptions)
-  * [Ownership](#ownership)
-  * [Licensing](#licensing)
-- [Article X: Diversity, Equity, and Inclusion](#article-x-diversity-equity-and-inclusion)
-  * [Commitment to DEI](#commitment-to-dei)
-  * [Hiring and Promotion](#hiring-and-promotion)
-  * [Workplace Inclusion](#workplace-inclusion)
-  * [Training and Development](#training-and-development)
-  * [Measurement and Accountability](#measurement-and-accountability)
-  * [Supplier Diversity](#supplier-diversity)
-  * [Product Inclusion and Humane Design](#product-inclusion-and-humane-design)
-  * [Complaint Resolution](#complaint-resolution)
-  * [Community Engagement](#community-engagement)
-  * [Review and Updates](#review-and-updates)
+
+- [Article I: Name, Purpose, and Offices](#article-i-name-purpose-and-offices)
+- [Article II: Members](#article-ii-members)
+- [Article III: Board of Directors](#article-iii-board-of-directors)
+- [Article IV: Officers](#article-iv-officers)
+- [Article V: Committees](#article-v-committees)
+- [Article VI: Advisory Board](#article-vi-advisory-board)
+- [Article VII: Board Action](#article-vii-board-action)
+- [Article VIII: Finances](#article-viii-finances)
+- [Article IX: 501(c)(3) Compliance](#article-ix-501c3-compliance)
+- [Article X: Companion Policies](#article-x-companion-policies)
+- [Article XI: Indemnification and Insurance](#article-xi-indemnification-and-insurance)
+- [Article XII: Records](#article-xii-records)
+- [Article XIII: Amendments](#article-xiii-amendments)
+- [Article XIV: Dissolution](#article-xiv-dissolution)
 
 ---
 
-### Article I: Name and Purpose
-1. The name of the corporation is **by The Lindemans, inc.**
-2. The purpose of this corporation is as defined in its Articles of Incorporation: **"To empower individuals through innovative technology so that they can face their challenges with resilience to create a more hopeful world for all."**
-3. **Form and jurisdiction.** The corporation is a California benefit corporation; it remains headquartered in California and will keep good standing there.
-4. **Nonprofit subsidiary.** The corporation may form and wholly control a California nonprofit public benefit corporation that will seek federal 501(c)(3) recognition. That subsidiary will maintain released free and open-source software. Employees of the corporation may donate time to the subsidiary under a written service grant approved by the President and overseen by the Compliance Lead.
+## Article I: Name, Purpose, and Offices
+
+### 1.1 Name
+
+The name of the corporation is **restore280 Institute** (the "Corporation").
+
+### 1.2 Purpose
+
+The Corporation is organized exclusively for charitable, scientific, and educational purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code, including research, public education, nonpartisan advocacy, and capital facilitation directed toward restoring the full range of conditions human dignity requires. The Corporation addresses interconnected institutional and market failures that simultaneously degrade atmospheric stability, housing affordability, governance accountability, and other systems upon which dignified human life depends. Atmospheric restoration is the primary but not exclusive domain of activity.
+
+No part of the net earnings of the Corporation shall inure to the benefit of, or be distributable to, any director, officer, employee, or other private person. The Corporation shall not carry on activities not permitted by a corporation exempt under Section 501(c)(3) of the Internal Revenue Code.
+
+### 1.3 Principal Office
+
+The principal office of the Corporation shall be at such address as the Board of Directors designates from time to time. The Corporation currently maintains a mailing address at 1926 Genesee St, Ste 1 #768, Utica, New York 13501.
+
+### 1.4 Registered Office and Agent
+
+The Corporation's registered office in the State of Delaware is 16192 Coastal Highway, Lewes, Delaware 19958, County of Sussex. The registered agent at that address is Harvard Business Services, Inc. The Board may change the registered agent or registered office in accordance with Delaware law by filing the required certificate.
 
 ---
 
-### Article II: Structure and Governance
-1. **<a id="board-of-directors"></a>Board of Directors.**
-   - The board has three members: the President and two additional directors elected by a majority of participating employee shareholders.
-   - Directors serve one-year terms; they may be re-elected. Vacancies are filled by a shareholder vote.
-   - The board provides oversight of strategy, benefit-corporation reporting, and fiduciary controls; it does not manage day-to-day operations.
-2. **<a id="president"></a>President.**
-   - Holds the President role as a secondary obligation; the President must also work in another needed operational role as the primary duty.
-   - Responsible for recruiting employees within the hiring budget approved through governance.
-   - Selects candidates for all roles; hires require a majority vote from employee shareholders.
-   - Manages day-to-day operations and any unfilled responsibilities of other officers.
-3. **<a id="people-lead"></a>People Lead.**
-   - Responsible for human resources, including supportive separations.
-   - Holds authority to terminate employees consistent with Article VII.
-4. **<a id="compliance-lead"></a>Compliance Lead.**
-   - Ensures legal and regulatory compliance across company operations, including benefit-corporation reporting.
-   - Oversees budgeting, accounting, payroll, and tax compliance; maintains internal controls and financial reporting.
-   - May intervene in project operations if non-compliance with legal, ethical, or financial standards is detected.
-5. **<a id="decision-making-principles"></a>Decision-Making Principles.**
-   - Officers make decisions transparently, document reasoning, and consider impact on stakeholders.
-   - Officers seek input from employees affected by major decisions.
-   - Authority is exercised in service of employee empowerment and the company mission.
-6. **<a id="core-values-and-measures"></a>Core Values and Measures.**
-   - **Supportive:** peers offer help proactively; evidence includes documented peer assists and mentorship hours.
-   - **Curiosity and Learning:** individuals log learning goals and share post-mortems; evidence includes quarterly learning notes.
-   - **Empathy, Dedication, and Advocacy:** decisions include stakeholder notes; evidence includes stakeholder-impact sections in pull requests and design docs.
-   - **Leadership, Vision, and Transformation:** teams publish simple roadmaps; evidence includes quarterly roadmap check-ins and delta notes.
-   - **Transparency and Simplicity:** proposals include a one-page summary; evidence includes presence of the summary in each vote.
-7. **<a id="accessibility-requirements"></a>Accessibility Requirements.**
-   - All company systems, tools, and processes must be accessible to employees of varying abilities.
-   - Documentation is maintained in multiple formats to ensure universal access.
-   - Accommodations are provided proactively rather than by request.
+## Article II: Members
+
+### 2.1 No Members
+
+The Corporation shall have no members within the meaning of the Delaware General Corporation Law. The Corporation shall have no membership class, and no person shall have any right to vote or title or interest in or to the Corporation, its properties, or its franchises by reason of any membership. All governance authority vests exclusively in the Board of Directors.
+
+### 2.2 Supporters
+
+The Corporation may designate donors, subscribers, supporters, or affiliates and may confer on them recognition or specified non-governance rights. No such designation creates membership rights, voting rights, or any right to participate in governance.
 
 ---
 
-### Article III: Reporting Structure
-1. **<a id="flat-organizational-structure"></a>Flat Organizational Structure.**
-   - The corporation operates under a flat organizational structure; all employees report directly to the President.
-   - The President is responsible for company-wide operations, with board oversight.
-2. **<a id="oversight-officers"></a>Oversight Officers.**
-   - The Compliance Lead and People Lead do not have direct reports but gather information across the organization to fulfill their roles.
-   - These officers may interact with employees to ensure compliance, manage finances, address HR concerns, or coordinate operations; employees do not report to them in a traditional hierarchy.
-3. **<a id="teams-and-projects"></a>Teams and Projects.**
-   - Employees assigned to company teams work collaboratively within those teams; each member still reports directly to the President.
-   - Projects are managed by employees who opt into them. Project contributors collaborate in a peer-driven manner; decisions are managed collectively among participants.
-4. **<a id="decision-making-and-information-flow"></a>Decision-Making and Information Flow.**
-   - Authority to make decisions on matters not specified in the bylaws remains with the President, who shall document criteria, provide advance notice of major decisions, create opportunities for input, and share rationale.
-   - Information is transparent; employees have access to financial performance data, project metrics and status, strategic planning discussions, and meeting notes and decisions.
-   - **Exceptions to Transparency:** personal employee matters and information protected by legal requirements.
-   - Goals and objectives are clearly defined, measurable, aligned with company values, and created with employee input.
+## Article III: Board of Directors
+
+### 3.1 Governance Authority
+
+The Board of Directors (the "Board") shall govern the Corporation and exercise all corporate powers. The Board is responsible for: setting organizational strategy; ensuring financial integrity; confirming the Corporation's activities remain consistent with its exempt purposes; evaluating and supporting the Executive Director; and overseeing compliance with applicable law and the Corporation's adopted policies.
+
+### 3.2 Number
+
+The Board shall consist of no fewer than three (3) and no more than nine (9) directors. The Board may set the exact number within this range by resolution. The initial Board shall consist of three (3) directors.
+
+### 3.3 Independence Requirement
+
+At all times, a majority of the Board shall consist of Independent Directors. A director is "Independent" if:
+
+(a) the director is not the Executive Director or any other compensated employee of the Corporation;
+
+(b) the director has no material financial relationship with the Corporation other than director service and reimbursement of expenses;
+
+(c) the director is not a member of the immediate family (spouse, parent, sibling, or child) of any other director or of the Executive Director; and
+
+(d) the director has not, within the preceding two years, received material compensation from any entity that provides more than twenty percent (20%) of the Corporation's total revenue.
+
+For this purpose, the founder of the Corporation serving as Executive Director counts as a non-independent director regardless of any other factors. The Board shall assess and document each director's independence status annually.
+
+### 3.4 Terms
+
+Directors shall serve staggered three-year terms. At the adoption of these Bylaws, the Board shall assign the initial directors to Class I (one-year initial term), Class II (two-year initial term), and Class III (three-year initial term). Thereafter all successors shall serve three-year terms. A director may serve any number of consecutive terms.
+
+### 3.5 Election
+
+Directors shall be elected by written consent or at a synchronous meeting pursuant to Article VII. At the time of election, the Board shall document that the independence requirement of Section 3.3 is satisfied after the election.
+
+### 3.6 Vacancies
+
+A vacancy arising from resignation, removal, death, or incapacity shall be filled by written consent or at a synchronous meeting pursuant to Article VII, by a majority of remaining directors. A director elected to fill a vacancy serves the unexpired remainder of the predecessor's term. No vacancy may be filled if doing so would result in a Board where Independent Directors do not constitute a majority.
+
+### 3.7 Resignation
+
+Any director may resign at any time by delivering written notice to the Board Chair or Executive Director. Resignation is effective upon receipt unless a later effective date is stated.
+
+### 3.8 Removal
+
+Any director may be removed, with or without cause, by two-thirds (2/3) of the then-serving directors pursuant to Article VII, provided written notice of the removal action has been given to all directors at least ten (10) days before the consent deadline or synchronous meeting. A director may not vote or consent on their own removal.
+
+### 3.9 Compensation
+
+Directors shall serve without compensation for their service as directors. The Board may authorize reimbursement of reasonable and documented expenses incurred in service to the Corporation. A director who also serves as an officer or employee of the Corporation may receive reasonable compensation in that capacity, subject to Article X's conflict of interest policy.
+
+### 3.10 Board Chair
+
+The Board shall elect a Chair from among its Independent Directors pursuant to Article VII. The Board Chair presides at any synchronous meetings and serves as the primary liaison between the Board and the Executive Director. The Chair shall serve a two-year term and may be re-elected. If the Chair position is vacant, the Board shall elect an acting Chair at the earliest practicable opportunity.
+
+### 3.11 Document Authentication
+
+The Executive Director maintains the official records of the Corporation as specified in Article XII and Section 7.6, and gives notice of Board actions as required by these Bylaws.
+
+Formal corporate documents, including executed contracts, government filings, board resolutions, and certifications, shall be authenticated by the signatures of at least half of the then-serving directors, including the Executive Director. Authentication signatures shall be obtained within ten (10) business days of a request by the Executive Director, and may be provided electronically. This requirement scales with board size: at three directors, two signatures are required; at four or five directors, three signatures are required; and so on.
 
 ---
 
-### Article IV: Employee Roles and Responsibilities
-1. **<a id="company-assigned-roles"></a>Company-Assigned Roles.**
-   - Role assignments consider employee preferences and career goals, skills development opportunities, and work-life balance needs.
-   - Teams are structured to maximize autonomy, enable skill sharing, support flexible working arrangements, and accommodate diverse working styles.
-2. **<a id="employee-opted-project-roles"></a>Employee-Opted Project Roles.**
-   - Projects are experimental initiatives proposed and staffed voluntarily.
-   - Employees may opt into projects beyond scheduled time as capacity allows.
-3. **<a id="project-creation-and-evolution-into-teams"></a>Project Creation and Evolution into Teams.**
-   - Any employee can propose projects through a formal submission process that includes objectives, required resources, and alignment with the mission.
-   - Proposals are put to a vote by employee shareholders. If approved, the project is granted formal status, and employees are authorized to contribute time.
-   - Projects showing consistent profitability or strategic importance may be elevated to team status after President review and a shareholder vote.
-   - Upon becoming a team, roles may be assigned, and additional employees may be hired if necessary.
-4. **<a id="full-time-employees"></a>Full-Time Employees.**
-   - All employees are full-time; there are no part-time positions.
-   - Required to work at least three days per week and sixteen hours per week.
-   - Must attend an all-hands meeting at 9 AM Pacific Time on Mondays; recordings are available; multiple communication channels exist; time zones are accommodated.
-   - Work allocation is flexible: minimum eight hours weekly on assigned role duties; minimum eight hours on approved company projects; any additional hours at employee discretion and interest.
-   - **Minimums and responsiveness.** These are minimums only and all employees are expected to fulfill their obligations such that no other employee is kept waiting on their work for more than 24 hours. Employees are expected to clear their work queue of all tasks due between the current workday and the next by the end of each day they work.
-   - Employees are encouraged to use time freed by flexible schedules for the benefit of other beneficent organizations. Time for the 501(c)(3) subsidiary follows approved service grants; outside volunteering is separate from payroll time unless approved.
-5. **<a id="vacation-and-leave"></a>Vacation and Leave.**
-   - The corporation provides flexible paid time off with a required minimum. Each employee must take at least fifteen paid days off per fiscal year, in addition to company holidays and legally required sick leave.
-   - At least five of the fifteen days must be taken consecutively once per year.
-   - Time off is self-scheduled with peer coverage noted in the planning board. Unused minimums trigger scheduling nudges each quarter. Local legal entitlements apply where greater.
-6. **<a id="job-titles-and-teams"></a>Job Titles and Teams.**
-   - Employees may join any project based on interests and skills.
-   - Team performance and management decisions are at the discretion of its members.
-7. **<a id="performance-reviews"></a>Performance Reviews.**
-   - Team members and the President conduct quarterly 360-degree reviews to help employees track self-improvement goals.
-   - Reviews do not influence employment decisions but provide constructive feedback.
+## Article IV: Officers
+
+### 4.1 Required Officers
+
+The Corporation shall have an Executive Director and a Treasurer. Both offices may be held by the same person. The Board may create additional officer positions by resolution.
+
+### 4.2 Executive Director
+
+The Executive Director is the chief executive officer of the Corporation, responsible for day-to-day management, staff supervision, program implementation, and execution of Board-approved strategy. Specific responsibilities include:
+
+(a) directing organizational operations and supervising all staff and contractors;
+
+(b) executing contracts, agreements, and other instruments as authorized by the Board, within limits set by Board resolution;
+
+(c) preparing and presenting to the Board an annual budget, operating plan, and regular performance reports;
+
+(d) maintaining the official records of the Corporation and circulating Board action items and notices as required by these Bylaws;
+
+(e) ensuring compliance with applicable law and all Board-adopted policies, and promptly reporting to the Board any material legal, financial, operational, or reputational risks;
+
+(f) managing relationships with funders, partners, and other stakeholders in furtherance of the mission.
+
+The Executive Director is appointed by the Board and serves at the Board's pleasure. The Board shall evaluate the Executive Director's performance no less than annually.
+
+### 4.3 Treasurer
+
+The Treasurer oversees the financial records of the Corporation, works with any external accountant or auditor, and reviews the quarterly financial summary as required by Section 8.4. The Treasurer shall ensure the timely preparation and review of required financial reports and tax returns.
+
+### 4.4 Appointment, Terms, and Removal
+
+Officers are appointed by the Board pursuant to Article VII and serve until their successors are appointed or until earlier resignation or removal. Any officer may be removed by majority Board action pursuant to Article VII. Any officer may resign by written notice to the Board Chair or Executive Director.
 
 ---
 
-### Article V: Compensation and Shares
-1. **<a id="equal-compensation-and-payroll-funding"></a>Equal compensation and payroll funding.**
-   All employees receive identical pay. Total payroll for the fiscal year equals fifty percent of prior-year profit; it is divided evenly among full-time employees and paid on a regular schedule. The corporation calculates the annual and weekly amounts per this formula and posts them in the governance repository.
-2. **<a id="voting-shares-and-non-voting-equity-units"></a>Voting Shares and Non-Voting Equity Units.**
-   - **Allotted Shares.** Each quarter the corporation will calculate for every employee an **Allotted Shares** number equal to that employee’s cumulative time at the company divided by the sum of all employees’ cumulative time, applied directly as fractional share units. Total shares equal the sum of all Allotted Shares across employees.
-   - **Voting Shares.** The number of Voting Shares per employee will equal the smallest Allotted Shares number among all employees at that calculation. This keeps Voting Shares equal across employees.
-   - **Non-Voting Equity Units.** For each employee, Non-Voting Equity Units will equal that employee’s Allotted Shares minus that employee’s Voting Shares. These units carry no voting rights and receive no dividends.
-   - **Quarterly rebalance.** At the end of each fiscal quarter the corporation will recompute Allotted Shares and will update Voting Shares and Non-Voting Equity Units accordingly. Fractional units are permitted and rounded to six decimals using bankers' rounding (round half to even).
-   - **Joiners.** New employees are included from their start date and will receive Allotted Shares on the next calculation date.
-   - **Leavers.** When employment ends, all shares of any kind will be returned to the corporation and cancelled effective the separation date; the former employee is removed from future calculations.
-3. **<a id="transparency"></a>Transparency.**
-   The prior-year profit figure, the headcount used for payroll division, and the equity worksheets, including cumulative-time denominators and the rounding rule, are accessible to all employees. Calculations are automated and documented; individual negotiation is not permitted.
-4. **<a id="investment-reserve"></a>Investment reserve.**
-   The remaining fifty percent of prior-year profit is transferred to a long-term investment reserve held in a segregated account. The objective is that each decade the reserve’s realized gains will be sufficient to fund the following year’s payroll. Withdrawals occur only for payroll under a policy maintained by the corporation and approved via Article VI.
-5. **<a id="charitable-revenue-sharing"></a>Charitable revenue sharing.**
-   The corporation donates one percent of prior-year GAAP revenue to qualified charities aligned with the public-benefit purpose. This is booked as an operating expense and approved via Article VI. Recipient transparency is maintained in the governance repository.
-6. **<a id="pension-plan"></a>Pension plan.**
-   - **Eligibility.** An employee will be eligible to retire and receive a pension after accumulating twenty years of cumulative time at the company (as used in Article V.2).
-   - **Benefit amount.** The annual pension equals the highest annual salary the employee received in any of the five full fiscal years immediately preceding retirement. "Salary" means the employee’s annualized equal-pay amount under Article V.1 for that fiscal year. The pension is paid in equal weekly installments.
-   - **Funding and accounting.** Pension obligations are accrued and paid as an operating cost under GAAP and do not change the equal-pay calculation in Clause 1. Payments are issued weekly. The corporation posts quarterly pension disclosures in the governance repository.
-   - **Interaction with equity.** Upon retirement, Article VII.2 applies; all shares of any kind are returned to the corporation and cancelled as of the retirement date. Pensioners hold no Voting Shares and receive no equity of any kind.
-7. **<a id="tuition-reimbursement"></a>Tuition reimbursement.**
-   - **Eligibility.** Employees; employee spouses; employee children who are legal dependents.
-   - **Benefit.** Unlimited full reimbursement of college tuition for accredited undergraduate or graduate programs. Tuition means billed tuition charges; room, board, and non-tuition fees are excluded unless required by law or accreditation to be part of tuition.
-   - **Process.** The corporation will pay institutions directly when practical; otherwise it will reimburse the employee upon proof of enrollment and a tuition invoice. Pre-approval is required using the standard Tuition Request form posted in the governance repository.
-   - **Accounting and tax.** Costs are operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes are handled and reported according to law.
-8. **<a id="child-care-support"></a>Child care support.**
-   - **Benefit.** Full coverage of qualified child care costs for employees’ dependent children. Work hours are designed to minimize the need for child care; employees may opt in to coverage at their discretion.
-   - **Process.** The corporation will pay providers directly when practical; otherwise it will reimburse the employee upon an itemized invoice and proof of care. Eligible providers are those licensed under applicable law in the employee’s location.
-   - **Accounting and tax.** Costs are operating expenses and do not change the equal-pay calculation in Clause 1. Any applicable taxes are handled and reported according to law.
+## Article V: Committees
+
+### 5.1 Authority to Establish
+
+The Board may establish standing or ad hoc committees by resolution. Each committee shall act within the scope of authority delegated by the Board. No committee may: amend these Bylaws; elect or remove directors or the Executive Director; approve any merger, dissolution, or material asset disposition; or take any action requiring a two-thirds Board vote under these Bylaws. Each committee shall include at least one director and may include non-director members with relevant expertise who participate fully but hold no Board vote.
 
 ---
 
-### Article VI: Voting Procedures
-1. **<a id="voting-rights"></a>Voting Rights.**
-   - **Who votes.** Only Voting Shares vote. Each employee holds the same number of Voting Shares, set each calculation as the smallest Allotted Shares across employees. Each employee casts one vote.
-   - **Quorum and passage.** A proposal passes when a majority of the Voting Shares cast are in favor and at least a majority of all issued Voting Shares have been cast. Abstentions do not count as votes cast.
-   - **Indefinite voting period.** Voting has no fixed end date. A vote remains open until it meets the passage rule above, is withdrawn by the proposer, or is closed by a separate closure motion that passes under the same rule.
-2. **<a id="voting-platform"></a>Voting Platform.**
-   - Voting is carried out through the corporation’s governance GitHub repository. Pull requests represent proposed changes and are subject to review and voting. The voter roll is published in the repository metadata.
+## Article VI: Advisory Board
+
+### 6.1 Purpose
+
+The Corporation may maintain an Advisory Board of domain experts, practitioners, and other individuals whose knowledge strengthens the Corporation's research, capital deployment, and mission credibility.
+
+### 6.2 Appointment and Removal
+
+Advisory Board members are appointed by the Executive Director with Board approval and serve at the pleasure of the Board.
+
+### 6.3 Authority
+
+Advisory Board members have no governance authority, no fiduciary duties to the Corporation, no voting rights, and no authority to bind the Corporation. They provide counsel, expertise, and network support.
 
 ---
 
-### Article VII: Dispute Resolution and Termination
-1. **<a id="dispute-resolution"></a>Dispute Resolution.**
-   - The People Lead handles disputes through mediated discussions, written documentation, and clear escalation paths.
-   - The process protects all parties from retaliation, maintains confidentiality, considers power dynamics, and provides support resources.
-   - Employees may bring advocates to discussions, submit anonymous concerns, propose systemic solutions, and appeal decisions to the President.
-2. **<a id="termination"></a>Termination.**
-   - The corporation uses a supportive separation path. Steps: clarify expectations and give specific feedback; offer supports such as mentorship, workload adjustment, or training; explore role redesign or project transfer; if misalignment persists, offer mutual separation with fair severance bands defined in the governance repository. Immediate separation may occur for safety, harassment, illegality, or severe policy violations. All steps are documented; retaliation is prohibited.
-   - When employment ends, including retirement under Article V.6, all shares of any kind are returned to the corporation and cancelled as of the separation date.
+## Article VII: Board Action
+
+### 7.1 Default Method: Written Consent
+
+The Board shall act primarily by written consent without a meeting. Any action required or permitted to be taken by the Board may be taken by unanimous written consent of all then-serving directors, delivered by electronic mail, electronic signature, or other electronic transmission. Written consent shall be filed with the corporate records in the same form in which it was received.
+
+### 7.2 Response Window
+
+The Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is fourteen (14) calendar days. For urgent matters, the Executive Director may specify a shorter window of not less than forty-eight (48) hours, stating the reason for urgency. A director who does not respond by the deadline has not consented; the action fails to pass and the Executive Director shall notify all directors of that outcome.
+
+### 7.3 Synchronous Meetings
+
+Any director or the Executive Director may request a synchronous meeting (by telephone or video conference) for any agenda item in lieu of or in addition to written consent. Such a request shall be honored. Synchronous meetings require notice of at least forty-eight (48) hours to all directors, specifying the agenda. At a synchronous meeting, a majority of then-serving directors constitutes a quorum, and actions require the vote thresholds specified in Section 7.4. Directors may not vote by proxy.
+
+### 7.4 Vote Thresholds
+
+Routine actions require unanimous consent under Section 7.1, or majority vote at a synchronous meeting under Section 7.3.
+
+The following actions require unanimous written consent or, at a synchronous meeting, affirmative vote of two-thirds (2/3) of all then-serving directors:
+
+(a) removal of a director;
+
+(b) amendment of these Bylaws;
+
+(c) authorization of any merger, consolidation, or dissolution;
+
+(d) approval of any transaction in which a director or officer has a material financial interest, after compliance with the conflict of interest policy;
+
+(e) adoption or material amendment of any Board-adopted companion policy referenced in Article X.
+
+### 7.5 Annual Governance Review
+
+The Board shall complete an annual governance review by written consent or synchronous meeting no later than ninety (90) days after the close of each fiscal year. The annual governance review shall include: approval of the prior year financial summary presented by the Executive Director; confirmation of each director's independence status under Section 3.3, conducted among the Independent Directors without the Executive Director present; review of the Form 990 before filing per Section 8.5; and any director elections required by expiring terms. The Executive Director shall circulate materials for the annual governance review at least fourteen (14) days before the response deadline.
+
+### 7.6 Records
+
+The Executive Director shall maintain a written record of all Board actions, whether taken by written consent or at a synchronous meeting, including the date, the matter acted upon, the vote or consent outcome, and the names of all directors who consented, voted, abstained, or did not respond.
 
 ---
 
-### Article VIII: Amendments and Effective Date
-1. **Bylaw Amendments.**
-   - Any changes to these bylaws must adhere to the corporation’s standards for tolerance, morale, sustainability, simplicity, transparency, empowerment, and alignment with the purpose statement.
-   - Pull requests proposing changes are automatically checked for adherence to these standards before being moved to a vote.
-2. **Effective date trigger.**
-   - These bylaws take effect on the earlier of the board-approved effective date or the start date of the second concurrent employee. For this purpose, "employee" means an individual with an employment relationship recorded on payroll; individuals serving only as directors without an employment relationship are not counted as employees. "Concurrent" means on payroll at the same time.
-3. **Baseline calculation.**
-   - On the effective date of the amendment that introduced Article V.2 in this form, the corporation will run the first Allotted Shares calculation and publish results in the governance repository.
+## Article VIII: Finances
+
+### 8.1 Fiscal Year
+
+The fiscal year shall begin on January 1 and end on December 31.
+
+### 8.2 Banking
+
+The Board shall authorize one or more bank accounts at federally insured institutions. Withdrawals above a threshold set by Board resolution shall require dual authorization by two of: the Board Chair, Treasurer, or Executive Director.
+
+### 8.3 Budget
+
+The Executive Director shall present a proposed annual operating budget for Board approval at or before the start of each fiscal year. Expenditures consistent with the approved budget do not require separate Board authorization. The Executive Director may approve unbudgeted expenditures below a threshold set by Board resolution; expenditures above that threshold require Board approval.
+
+### 8.4 Financial Reporting
+
+The Executive Director shall provide the Board a written financial summary no less than quarterly, including a statement of revenues and expenditures against the approved budget and a current balance. The Treasurer shall review each quarterly summary and confirm its accuracy before it is circulated to the full Board.
+
+### 8.5 Form 990 Review
+
+The Board shall review the Corporation's annual information return (Form 990 or applicable variant) before it is filed, as part of the annual governance review under Section 7.5. The Form 990 shall be made publicly available as required by law.
+
+### 8.6 Financial Review and Audit
+
+The Board shall commission an independent financial review from a qualified external accountant when annual revenue exceeds one hundred thousand dollars ($100,000), and a full independent audit when annual revenue exceeds five hundred thousand dollars ($500,000). The reviewer's or auditor's report shall be distributed to all directors.
+
+### 8.7 Compensation Review
+
+All compensation paid to the Executive Director and any other officers or key employees shall be approved in advance by the Board's Independent Directors acting without the Executive Director present, based on documented comparability data. The decision and its basis shall be recorded in the consent or meeting record. The Corporation shall disclose all compensation as required on Form 990.
 
 ---
 
-### Article IX: Intellectual Property
-1. **<a id="open-source-policy"></a>Open-Source Policy.**
-   - All work created within the company, including software, documentation, designs, and related assets, is published as open-source under the **Mozilla Public License Version 2.0 (MPLv2)** unless otherwise specified in this clause.
-   - The corporation encourages contributions to open-source projects and believes in transparency and community collaboration to improve its products and services.
-2. **<a id="exceptions"></a>Exceptions.**
-   - **Paywalled Features.** Features or services restricted behind a paywall are excluded from the open-source policy. The corporation reserves all rights to this intellectual property.
-   - **Machine Learning Source Code.** Machine learning models, algorithms, or source code developed by the corporation are not subject to the open-source policy. The corporation reserves all rights to this intellectual property.
-   - **Software Executables.** Compiled software executables, including applications, libraries, and binaries, are exempt from the open-source policy. While source code may be open-source under MPLv2, the corporation reserves rights to distributing and licensing compiled software.
-   - **Governance Documents.** Governance documents, including bylaws, policies, and processes related to corporate governance, are licensed under **CC0-1.0**.
-   - **Nonprofit maintenance.** Released open-source software may be maintained by the nonprofit subsidiary described in Article I.4. Employee time donated under an approved service grant remains subject to company policies; code remains licensed as specified in this article.
-3. **<a id="ownership"></a>Ownership.**
-   - All intellectual property, whether open-source or proprietary, created by employees or contractors as part of their role remains the exclusive property of **by The Lindemans, inc.** The corporation retains the right to use, modify, and distribute this intellectual property at its discretion.
-4. **<a id="licensing"></a>Licensing.**
-   - For intellectual property published under MPLv2, the corporation follows the terms of the MPLv2 license, allowing code modification and redistribution under the same license with proper attribution.
-   - For proprietary intellectual property, including paywalled features, machine learning source code, and software executables, the corporation may issue separate licensing agreements or contracts that govern usage, distribution, and royalties.
+## Article IX: 501(c)(3) Compliance
+
+### 9.1 Exempt Purposes
+
+The Corporation shall conduct its activities consistent with its exempt purposes and shall not engage in activities that constitute a substantial nonexempt purpose or that are otherwise impermissible for a corporation exempt under Section 501(c)(3).
+
+### 9.2 No Private Inurement
+
+No part of the Corporation's net earnings shall inure to the benefit of any director, officer, employee, or other private person. The Corporation may pay reasonable compensation for services, make payments to further its exempt purposes, and reimburse reasonable expenses.
+
+### 9.3 No Partisan Political Activity
+
+The Corporation shall not participate or intervene in any political campaign on behalf of or in opposition to any candidate for public office. This prohibition applies to all forms of campaign intervention, including contributions, public endorsements, campaign material production, and coordination with candidates or party committees.
+
+### 9.4 Lobbying
+
+The Corporation may engage in lobbying activity, including direct and grassroots lobbying, within limits permitted by Section 501(c)(3) and, if the 501(h) election is in effect, within the expenditure limits of Section 4911. The Executive Director shall maintain lobbying expenditure records and report them to the Board quarterly as part of the financial summary required by Section 8.4. The Board shall authorize the filing of IRS Form 5768 (501(h) election) and may revoke or re-file that election by majority vote.
+
+### 9.5 Organizational Test
+
+The Corporation shall not amend these Bylaws or its Certificate of Incorporation in any manner that would cause it to fail the organizational test under Section 501(c)(3) or that would permit its assets to inure to the benefit of any private person.
 
 ---
 
-### Article X: Diversity, Equity, and Inclusion
-1. **<a id="commitment-to-dei"></a>Commitment to DEI.**
-   - The corporation recognizes diversity, equity, and inclusion as fundamental to its mission.
-   - Policies, practices, and decisions are evaluated through a DEI lens to ensure alignment with these principles.
-2. **<a id="hiring-and-promotion"></a>Hiring and Promotion.**
-   - The corporation maintains equitable hiring practices that use structured interviews with standardized questions, require diverse interview panels, implement blind resume screening, post salary ranges for all positions, and evaluate candidates based on demonstrated skills and potential rather than traditional credentials.
-   - Job descriptions are reviewed to eliminate biased language and unnecessary requirements.
-   - Promotion criteria are clearly documented and applied consistently.
-   - All job application forms include a field for phonetic name pronunciation.
-3. **<a id="workplace-inclusion"></a>Workplace Inclusion.**
-   - The corporation fosters an inclusive environment by providing flexible work arrangements, ensuring accessible communications, supporting multiple modes of collaboration and participation, recognizing diverse observances, and making events and activities inclusive and accessible.
-   - Employee resource groups are supported with dedicated time and resources.
-4. **<a id="training-and-development"></a>Training and Development.**
-   - All employees receive regular DEI training covering implicit bias, inclusive communication, cultural competency, disability awareness and accommodation, and anti-harassment and discrimination.
-   - Training is ongoing and updated to reflect best practices.
-5. **<a id="measurement-and-accountability"></a>Measurement and Accountability.**
-   - The corporation tracks diversity metrics across all levels, surveys employee experience and belonging, and reports progress on DEI goals quarterly.
-   - DEI metrics are incorporated into company performance measures.
-6. **<a id="supplier-diversity"></a>Supplier Diversity.**
-   - The corporation maintains a supplier diversity program that seeks diverse suppliers and contractors, sets specific targets for diverse supplier spending, and provides mentorship and support to diverse suppliers.
-   - Supplier diversity metrics are reported annually.
-7. **<a id="product-inclusion-and-humane-design"></a>Product Inclusion and Humane Design.**
-   - Products and services are developed with accessibility standards, cultural sensitivity, language inclusion, and universal design principles in mind; user research and testing include diverse participants.
-   - The corporation aims to follow Boston Consulting Group’s personalization best-practice index where consistent with user privacy, accessibility, and the public-benefit purpose.
-   - The corporation aligns design goals with the Center for Humane Technology’s standards by running a pre-launch humane-risk check, including attention load, manipulation risk, and dark-pattern audit, and documenting mitigations.
-8. **<a id="complaint-resolution"></a>Complaint Resolution.**
-   - The People Lead maintains clear procedures for reporting DEI concerns. All complaints are investigated promptly and thoroughly. Protection from retaliation is guaranteed. Regular reporting on complaint patterns and resolutions is provided to employees.
-9. **<a id="community-engagement"></a>Community Engagement.**
-   - The corporation partners with organizations serving underrepresented communities, supports initiatives that advance equity in technology, provides mentorship and internship opportunities to underrepresented groups, and shares DEI best practices and learnings with the broader technology community.
-10. **<a id="review-and-updates"></a>Review and Updates.**
-    - DEI guidelines are reviewed annually. Updates are proposed based on employee feedback, industry best practices, effectiveness metrics, and emerging DEI research and frameworks. All updates are voted on by employee shareholders.
+## Article X: Companion Policies
+
+### 10.1 Policy Documents
+
+The Corporation's operational standards, editorial guidelines, and specific compliance procedures shall be maintained as separate Board-adopted policy documents rather than as provisions of these Bylaws. This structure permits policies to be updated as operations evolve without requiring bylaw amendments, while maintaining Board-level accountability for each policy.
+
+### 10.2 Required Policies
+
+The Board shall adopt, and shall maintain in current form, the following policy documents:
+
+**(a) Conflict of Interest Policy.** Governing the identification, disclosure, and resolution of actual and potential conflicts of interest affecting directors, officers, and key employees. This policy shall meet the standards set forth in Appendix A of the IRS Form 1023 instructions, as updated. All directors and officers shall complete the annual disclosure required by this policy.
+
+**(b) Document Retention and Destruction Policy.** Governing the retention, protection, and destruction of corporate records, with retention periods consistent with applicable legal requirements.
+
+**(c) Whistleblower Protection Policy.** Protecting directors, officers, employees, and volunteers who in good faith report suspected violations of law or organizational policy from retaliation.
+
+**(d) Editorial and Compliance Policy.** Governing the Corporation's content production standards, including: the nonpartisan editorial standard; lobbying expenditure classification and allocation procedures; prohibited content; and specific call-to-action requirements for policy intervention content. This policy shall include any periodic content restrictions the Board determines are appropriate to protect the Corporation's nonpartisan character.
+
+**(e) Capital Deployment and Partnership Policy.** Governing the identification, evaluation, approval, and documentation of capital facilitation activities and organizational partnerships, including outcome documentation standards.
+
+**(f) External Funding Acceptance Policy.** Governing the acceptance and rejection of grants and donations, including minimum standards for donor restrictions that preserve the Corporation's editorial and research independence.
+
+### 10.3 Policy Adoption and Amendment
+
+Companion policies shall be adopted and amended pursuant to Article VII, subject to the two-thirds threshold in Section 7.4(e). New policies and material amendments shall be distributed to all directors at least fourteen (14) days before the consent deadline or synchronous meeting. The Board shall review all companion policies at least every two years.
+
+### 10.4 Policy Compliance
+
+The Executive Director is responsible for implementing all Board-adopted policies and for reporting material deviations to the Board promptly.
+
+---
+
+## Article XI: Indemnification and Insurance
+
+### 11.1 Indemnification
+
+The Corporation shall indemnify each current and former director and officer against all reasonable expenses, judgments, fines, and amounts paid in settlement actually and reasonably incurred in connection with any action, suit, or proceeding arising from their service, to the fullest extent permitted by Delaware law, provided the person acted in good faith and in a manner reasonably believed to be in or not opposed to the best interests of the Corporation. No indemnification shall be made where the person is adjudged liable for gross negligence or willful misconduct.
+
+### 11.2 Advancement of Expenses
+
+The Corporation may advance expenses prior to final disposition of a proceeding upon receipt of a written undertaking by the director or officer to repay the advance if indemnification is ultimately unavailable.
+
+### 11.3 Insurance
+
+The Corporation may maintain directors and officers liability insurance and such other insurance as the Board determines appropriate.
+
+---
+
+## Article XII: Records
+
+### 12.1 Corporate Records
+
+The Corporation shall maintain at its principal office, or at such other location as the Board designates, the following permanent records:
+
+(a) Certificate of Incorporation and all amendments;
+
+(b) these Bylaws and all amendments;
+
+(c) all currently adopted companion policies;
+
+(d) records of all Board actions, whether taken by written consent or at a synchronous meeting, as maintained by the Executive Director under Section 7.6;
+
+(e) annual conflict of interest disclosures;
+
+(f) IRS determination letter and all correspondence with the IRS regarding exempt status.
+
+The Corporation shall maintain financial records and tax filings for at least seven (7) years.
+
+### 12.2 Access
+
+Directors shall have the right to inspect and copy corporate records at any reasonable time. The Corporation shall respond to written requests for public inspection within the time required by applicable law.
+
+---
+
+## Article XIII: Amendments
+
+### 13.1 Procedure
+
+These Bylaws may be amended pursuant to Article VII, subject to the two-thirds threshold in Section 7.4(b), provided the proposed amendment has been distributed to all directors in writing at least fourteen (14) days before the consent deadline or synchronous meeting.
+
+### 13.2 Limits
+
+No amendment may: (a) cause the Corporation to fail the organizational or operational test under Section 501(c)(3); (b) eliminate the independence requirement of Section 3.3; or (c) eliminate or reduce the conflict of interest policy requirement below the level expected by the IRS for organizations seeking or maintaining 501(c)(3) exemption.
+
+---
+
+## Article XIV: Dissolution
+
+### 14.1 Authorization
+
+The Corporation may be dissolved pursuant to Article VII, subject to the two-thirds threshold in Section 7.4(c), and subject to Delaware law.
+
+### 14.2 Distribution of Assets
+
+Upon dissolution, after satisfying all lawful debts and liabilities, remaining assets shall be distributed to one or more organizations organized and operated exclusively for charitable, scientific, or educational purposes under Section 501(c)(3), with preference for organizations whose missions overlap with the Corporation's stated purposes. If no qualified recipient is identified, assets shall be distributed to the federal government or to a state or local government for a public purpose.
+
+### 14.3 Winding Up
+
+The Executive Director, under Board oversight, shall manage the winding-up of affairs, including satisfying liabilities, closing accounts, and completing required government filings.
+
