@@ -31,7 +31,7 @@ The name of the corporation is **restore280 Institute** (the "Corporation").
 
 ### 1.2 Purpose
 
-The Corporation is organized exclusively for charitable, scientific, and educational purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code, including research, public education, nonpartisan advocacy, and capital facilitation directed toward restoring the full range of conditions human dignity requires. The Corporation addresses interconnected institutional and market failures that simultaneously degrade atmospheric stability, housing affordability, governance accountability, and other systems upon which dignified human life depends. Atmospheric restoration is the primary but not exclusive domain of activity.
+The Corporation is organized exclusively for charitable, scientific, and educational purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code, including research, public education, nonpartisan advocacy, and capital facilitation directed toward restoring the full range of conditions human dignity requires. The Corporation addresses interconnected institutional and market failures that degrade atmospheric stability, housing affordability, governance accountability, or other systems upon which dignified human life depends. Atmospheric restoration is the primary but not exclusive domain of activity.
 
 No part of the net earnings of the Corporation shall inure to the benefit of, or be distributable to, any director, officer, employee, or other private person. The Corporation shall not carry on activities not permitted by a corporation exempt under Section 501(c)(3) of the Internal Revenue Code.
 
