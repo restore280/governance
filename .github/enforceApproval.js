@@ -272,7 +272,9 @@ async function postCheckRun(octokit, owner, repo, headSha, conclusion, title, su
     } else if (Number.isInteger(cfg.required_approvals)) {
       requiredCount = cfg.required_approvals;
     } else {
-      requiredCount = Math.max(1, Math.ceil(effectiveVoters.size / 2));
+      // Strict majority: more than half of all then-serving directors,
+      // per Section 7.4 of the Bylaws.
+      requiredCount = Math.floor(effectiveVoters.size / 2) + 1;
     }
 
     if (effectiveVoters.size === 0 && !unanimousMode &&
