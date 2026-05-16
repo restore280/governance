@@ -1,19 +1,27 @@
 // .github/enforceApproval.js
 //
-// restore280 Institute — Board Consent Enforcement
+// restore280 Institute: Board Consent Enforcement
 //
 // Implements the unanimous written consent requirement of Article VII of the
-// restore280 Bylaws. All active directors must approve a PR before it may
-// merge. Non-approval by the deadline is handled manually by the ED per
-// Section 7.2: close the PR and record the failed action under Section 7.6.
+// restore280 Bylaws. All active directors must consent before a PR may merge.
 //
-// Recusal: if a director declares a conflict of interest, add a line to the
-// PR body in the format "Recusal: @handle". That director is removed from
-// the effective voter list for that PR only.
+// Two consent methods are accepted:
 //
-// Status: after each review event, this script posts or updates a comment
-// on the PR showing the current consent state, satisfying the Section 7.6
-// recordkeeping requirement.
+//   1. GitHub review approval: open the PR, click "Review changes", select
+//      "Approve", submit. Available to all voters who are not the PR author.
+//
+//   2. Comment command: post a comment containing "/consent" anywhere in the
+//      body. Available to all voters including the PR author. Post "/dissent"
+//      to withdraw or oppose. The most recent command per voter wins.
+//
+// Both methods produce an equivalent legal record. The PR author should use
+// "/consent" since GitHub does not permit authors to approve their own PRs.
+//
+// Recusal: add a line "Recusal: @handle" to the PR body to remove a voter
+// from the required list for that PR due to a conflict of interest.
+//
+// The script posts a status comment on the PR showing each voter's current
+// state and instructions for approving, satisfying Section 7.6 recordkeeping.
 
 const { Octokit } = require("@octokit/rest");
 const core = require("@actions/core");
@@ -22,13 +30,11 @@ const path = require("path");
 const yaml = require("js-yaml");
 
 function loadVoterConfig(cwd) {
-  const candidates = ["voters.yml", "voters.yaml"];
-  for (const name of candidates) {
+  for (const name of ["voters.yml", "voters.yaml"]) {
     const p = path.join(cwd, name);
     if (fs.existsSync(p)) {
       try {
-        const cfg = yaml.load(fs.readFileSync(p, "utf8")) || {};
-        return cfg;
+        return yaml.load(fs.readFileSync(p, "utf8")) || {};
       } catch (e) {
         core.warning(`Could not parse ${name}: ${e.message}`);
       }
@@ -38,10 +44,10 @@ function loadVoterConfig(cwd) {
 }
 
 // Parse recusal declarations from PR body.
-// Matches lines of the form: "Recusal: @handle" or "Recusal: handle"
+// Matches: "Recusal: @handle" or "Recused: handle"
 function parseRecusals(body) {
-  if (!body) return new Set();
   const recused = new Set();
+  if (!body) return recused;
   for (const line of body.split(/\r?\n/)) {
     const match = line.match(/^recus(?:al|ed)\s*:\s*@?(\S+)/i);
     if (match) recused.add(match[1].toLowerCase());
@@ -49,27 +55,91 @@ function parseRecusals(body) {
   return recused;
 }
 
-// Build the status comment body showing each director's current consent state.
-function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCount, unanimousMode) {
+// Fetch /consent and /dissent commands from PR comments.
+// Returns a Map of lowercase login -> { state, ts, method: "comment" }
+// The most recent command per voter wins.
+async function fetchCommentConsents(octokit, owner, repo, pull_number, effectiveVoters) {
+  const consentByUser = new Map();
+  let page = 1;
+  while (true) {
+    const { data: comments } = await octokit.issues.listComments({
+      owner, repo, issue_number: pull_number, per_page: 100, page
+    });
+    for (const comment of comments) {
+      const login = (comment.user && comment.user.login || "").toLowerCase();
+      if (!effectiveVoters.has(login)) continue;
+      if (comment.user.type === "Bot") continue;
+      const body = comment.body || "";
+      const ts = new Date(comment.created_at || 0).getTime();
+      const hasConsent = /(?:^|\s)\/consent(?:\s|$)/im.test(body);
+      const hasDissent = /(?:^|\s)\/dissent(?:\s|$)/im.test(body);
+      if (!hasConsent && !hasDissent) continue;
+      const prev = consentByUser.get(login);
+      if (prev && ts < prev.ts) continue;
+      let state;
+      if (hasConsent && hasDissent) {
+        const ci = body.toLowerCase().lastIndexOf("/consent");
+        const di = body.toLowerCase().lastIndexOf("/dissent");
+        state = ci > di ? "APPROVED" : "DISSENTED";
+      } else {
+        state = hasConsent ? "APPROVED" : "DISSENTED";
+      }
+      consentByUser.set(login, { state, ts, method: "comment" });
+    }
+    if (comments.length < 100) break;
+    page++;
+  }
+  return consentByUser;
+}
+
+// Merge review approvals and comment consents per voter.
+// The more recent signal wins when both exist for the same voter.
+function mergeConsents(reviewMap, commentMap) {
+  const merged = new Map();
+  const allVoters = new Set([...reviewMap.keys(), ...commentMap.keys()]);
+  for (const v of allVoters) {
+    const review = reviewMap.get(v);
+    const comment = commentMap.get(v);
+    if (review && comment) {
+      merged.set(v, comment.ts >= review.ts ? comment : { ...review, method: "review" });
+    } else if (review) {
+      merged.set(v, { ...review, method: "review" });
+    } else {
+      merged.set(v, comment);
+    }
+  }
+  return merged;
+}
+
+function buildStatusComment(effectiveVoters, mergedConsents, recusedLC, requiredCount, unanimousMode, prAuthorLC) {
   const rows = [...effectiveVoters].map(v => {
-    const entry = latestByUser.get(v);
-    if (!entry) return `| @${v} | ⏳ Pending |`;
-    if (entry.state === "APPROVED") return `| @${v} | ✅ Approved |`;
-    return `| @${v} | ❌ Changes requested / Dismissed |`;
+    const entry = mergedConsents.get(v);
+    const isAuthor = v === prAuthorLC;
+    const howTo = isAuthor
+      ? "Comment `/consent` (GitHub blocks PR author self-review)"
+      : "Approve via GitHub review, or comment `/consent`";
+    if (!entry) return `| @${v} | ⏳ Pending | ${howTo} |`;
+    if (entry.state === "APPROVED") {
+      const via = entry.method === "comment" ? "/consent comment" : "GitHub review";
+      return `| @${v} | ✅ Approved via ${via} | |`;
+    }
+    return `| @${v} | ❌ Dissented | Comment \`/consent\` to change |`;
   });
 
   const approvedCount = [...effectiveVoters].filter(v => {
-    const e = latestByUser.get(v);
+    const e = mergedConsents.get(v);
     return e && e.state === "APPROVED";
   }).length;
 
   const lines = [
     "## Board Consent Status",
     "",
-    `**Consent model:** ${unanimousMode ? "Unanimous — all directors must approve (Article VII.1)" : `${requiredCount} approval(s) required`}`,
+    `**Consent model:** ${unanimousMode
+      ? "Unanimous: all directors must consent (Article VII.1)"
+      : `${requiredCount} consent(s) required`}`,
     "",
-    "| Director | Status |",
-    "|----------|--------|",
+    "| Director | Status | Action |",
+    "|----------|--------|--------|",
     ...rows,
   ];
 
@@ -79,13 +149,17 @@ function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCo
 
   lines.push(
     "",
-    `**Progress:** ${approvedCount} of ${requiredCount} required approval(s) received.`,
+    `**Progress:** ${approvedCount} of ${requiredCount} required consent(s) received.`,
     "",
     unanimousMode && approvedCount < requiredCount
-      ? `⛔ Consent not yet complete. All directors must approve before this action may take effect.`
+      ? "⛔ Consent not yet complete. All directors must consent before this action may take effect."
       : approvedCount >= requiredCount
-      ? `✅ Consent requirement met. This action may proceed.`
-      : `⛔ Consent not yet complete.`,
+      ? "✅ Consent requirement met. This action may proceed."
+      : "⛔ Consent not yet complete.",
+    "",
+    "**To consent:** Approve via GitHub review, or post a comment containing `/consent`.",
+    "**To dissent:** Post a comment containing `/dissent`.",
+    "**To recuse:** Add `Recusal: @yourhandle` to the PR description.",
     "",
     "*Updated automatically by the restore280 governance workflow.*"
   );
@@ -97,30 +171,44 @@ function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCo
   try {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
-
+    const eventName = process.env.GITHUB_EVENT_NAME;
     const payload = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
-    const pr = payload.pull_request;
-    if (!pr) {
-      core.setFailed("This workflow must run on a pull_request event.");
-      return;
+
+    // Handle pull_request, pull_request_review, and issue_comment events
+    let pull_number, prAuthorLC, prBody;
+
+    if (eventName === "issue_comment") {
+      const issue = payload.issue;
+      if (!issue || !issue.pull_request) {
+        console.log("Comment is not on a pull request; skipping.");
+        return;
+      }
+      pull_number = issue.number;
+      prAuthorLC = (issue.user && issue.user.login || "").toLowerCase();
+      const { data: prData } = await octokit.pulls.get({ owner, repo, pull_number });
+      prBody = prData.body || "";
+    } else {
+      const pr = payload.pull_request;
+      if (!pr) {
+        core.setFailed("This workflow must run on a pull_request or issue_comment event.");
+        return;
+      }
+      pull_number = pr.number;
+      prAuthorLC = (pr.user && pr.user.login || "").toLowerCase();
+      prBody = pr.body || "";
     }
 
-    const pull_number = pr.number;
-    const prAuthor = (pr.user && pr.user.login) ? pr.user.login.toLowerCase() : "";
-    const prBody = pr.body || "";
-
-    // Load config
+    // Load voter config from PR branch
     const cfg = loadVoterConfig(process.cwd());
 
-    // Build base voter list
+    // Build voter list
     let voters = Array.isArray(cfg.voters) ? cfg.voters : [];
     const votersCSV = (process.env.VOTERS_CSV || "").trim();
     if (voters.length === 0 && votersCSV) {
       voters = votersCSV.split(",").map(s => s.trim()).filter(Boolean);
     }
     if (voters.length === 0) {
-      let collaborators = [];
-      let page = 1;
+      let collaborators = [], page = 1;
       while (true) {
         const { data } = await octokit.repos.listCollaborators({ owner, repo, per_page: 100, page });
         collaborators = collaborators.concat(data);
@@ -134,29 +222,23 @@ function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCo
     }
 
     const votersLC = new Set(voters.map(v => v.toLowerCase()));
-
-    // Parse recusals from PR body
     const recusedLC = parseRecusals(prBody);
 
-    // Behavior flags
     const allowSelf = cfg.allow_self_approve === true ||
       /^true$/i.test(process.env.ALLOW_SELF_APPROVE || "false");
-    const excludeAuthor = (typeof cfg.exclude_author === "boolean") ? cfg.exclude_author : !allowSelf;
+    const excludeAuthor = typeof cfg.exclude_author === "boolean" ? cfg.exclude_author : !allowSelf;
 
-    // Effective voters: apply author exclusion and recusals
     const effectiveVoters = new Set(
       [...votersLC].filter(v => {
-        if (excludeAuthor && v === prAuthor) return false;
+        if (excludeAuthor && v === prAuthorLC) return false;
         if (recusedLC.has(v)) return false;
         return true;
       })
     );
 
-    // Determine consent mode
     const unanimousMode = cfg.unanimous === true ||
       /^true$/i.test(process.env.UNANIMOUS || "false");
 
-    // Required count
     let requiredCount;
     if (unanimousMode) {
       requiredCount = effectiveVoters.size;
@@ -166,16 +248,14 @@ function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCo
       requiredCount = Math.max(1, Math.ceil(effectiveVoters.size / 2));
     }
 
-    // Skip enforcement if no effective voters and no explicit requirement
     if (effectiveVoters.size === 0 && !unanimousMode &&
         process.env.REQUIRED_APPROVALS == null && cfg.required_approvals == null) {
       console.log("No eligible voters after filters; skipping enforcement.");
       return;
     }
 
-    // Fetch all reviews
-    let reviews = [];
-    let page = 1;
+    // Fetch review approvals
+    let reviews = [], page = 1;
     while (true) {
       const { data } = await octokit.pulls.listReviews({ owner, repo, pull_number, per_page: 100, page });
       reviews = reviews.concat(data);
@@ -183,26 +263,30 @@ function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCo
       page++;
     }
 
-    // Latest review state per effective voter
-    const latestByUser = new Map();
+    const reviewMap = new Map();
     for (const r of reviews) {
-      const login = r.user && r.user.login ? r.user.login.toLowerCase() : "";
+      const login = (r.user && r.user.login || "").toLowerCase();
       if (!effectiveVoters.has(login)) continue;
       const ts = new Date(r.submitted_at || r.submittedAt || 0).getTime();
-      const prev = latestByUser.get(login);
+      const prev = reviewMap.get(login);
       if (!prev || ts >= prev.ts) {
-        latestByUser.set(login, { state: r.state, ts });
+        reviewMap.set(login, { state: r.state, ts });
       }
     }
 
-    // Tally
+    // Fetch comment consents
+    const commentMap = await fetchCommentConsents(octokit, owner, repo, pull_number, effectiveVoters);
+
+    // Merge both sources
+    const mergedConsents = mergeConsents(reviewMap, commentMap);
+
     const approvedUsers = [...effectiveVoters].filter(v => {
-      const e = latestByUser.get(v);
+      const e = mergedConsents.get(v);
       return e && e.state === "APPROVED";
     });
-    const pendingUsers = [...effectiveVoters].filter(v => !latestByUser.has(v));
+    const pendingUsers = [...effectiveVoters].filter(v => !mergedConsents.has(v));
     const rejectedUsers = [...effectiveVoters].filter(v => {
-      const e = latestByUser.get(v);
+      const e = mergedConsents.get(v);
       return e && e.state !== "APPROVED";
     });
 
@@ -211,19 +295,20 @@ function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCo
     console.log(`Required: ${requiredCount}`);
     console.log(`Approved: ${approvedUsers.join(", ") || "none"}`);
     console.log(`Pending: ${pendingUsers.join(", ") || "none"}`);
-    console.log(`Rejected/dismissed: ${rejectedUsers.join(", ") || "none"}`);
+    console.log(`Dissented/dismissed: ${rejectedUsers.join(", ") || "none"}`);
     if (recusedLC.size > 0) console.log(`Recused: ${[...recusedLC].join(", ")}`);
 
     // Post or update status comment
     try {
-      const { data: comments } = await octokit.issues.listComments({
+      const { data: allComments } = await octokit.issues.listComments({
         owner, repo, issue_number: pull_number
       });
-      const botComment = comments.find(c =>
-        c.user && c.user.type === "Bot" && c.body && c.body.includes("## Board Consent Status")
+      const botComment = allComments.find(c =>
+        c.user && c.user.type === "Bot" &&
+        c.body && c.body.includes("## Board Consent Status")
       );
       const commentBody = buildStatusComment(
-        effectiveVoters, latestByUser, recusedLC, requiredCount, unanimousMode
+        effectiveVoters, mergedConsents, recusedLC, requiredCount, unanimousMode, prAuthorLC
       );
       if (botComment) {
         await octokit.issues.updateComment({
@@ -244,8 +329,8 @@ function buildStatusComment(effectiveVoters, latestByUser, recusedLC, requiredCo
       const waiting = [...pendingUsers, ...rejectedUsers];
       core.setFailed(
         unanimousMode
-          ? `Unanimous consent required. ${approved}/${effectiveVoters.size} directors have approved. Waiting on: ${waiting.join(", ")}.`
-          : `${requiredCount} approval(s) required; ${approved} received.`
+          ? `Unanimous consent required. ${approved}/${effectiveVoters.size} have consented. Waiting on: ${waiting.join(", ")}.`
+          : `${requiredCount} consent(s) required; ${approved} received.`
       );
     } else {
       console.log("Consent requirement met. Action may proceed.");

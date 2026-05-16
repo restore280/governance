@@ -5,10 +5,13 @@ on:
     types: [opened, synchronize, reopened, edited, review_requested, review_request_removed]
   pull_request_review:
     types: [submitted, edited, dismissed]
+  issue_comment:
+    types: [created, edited, deleted]
 
 permissions:
   contents: read
-  pull-requests: write  # write required to post status comments
+  pull-requests: write
+  issues: write
 
 jobs:
   consent-check:
@@ -34,7 +37,6 @@ jobs:
       - name: Enforce unanimous board consent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # unanimous: true is set in voters.yml; this env var is a fallback override
           UNANIMOUS: "true"
         working-directory: .github
         run: node enforceApproval.js
