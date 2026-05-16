@@ -55,7 +55,6 @@ jobs:
       - name: Enforce unanimous board consent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          UNANIMOUS: "true"
           # For comment events, pass the PR number explicitly since the
           # issue_comment payload does not contain a pull_request object.
           OVERRIDE_PR_NUMBER: ${{ github.event_name == 'issue_comment' && github.event.issue.number || '' }}
