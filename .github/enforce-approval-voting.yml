@@ -12,62 +12,38 @@ permissions:
   contents: read
   pull-requests: write
   issues: write
-  actions: write
+  checks: write
 
 jobs:
   consent-check:
     runs-on: ubuntu-latest
 
+    # For issue_comment events, only run if the comment is on a pull request
+    # and contains a consent command.
+    if: |
+      github.event_name != 'issue_comment' ||
+      (
+        github.event.issue.pull_request != null &&
+        (
+          contains(github.event.comment.body, '/consent') ||
+          contains(github.event.comment.body, '/dissent')
+        )
+      )
+
     steps:
-      - name: Handle comment event by re-running PR-context workflow
-        if: github.event_name == 'issue_comment'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Only act if the comment is on a PR and contains a consent command
-          IS_PR="${{ github.event.issue.pull_request != null }}"
-          BODY="${{ github.event.comment.body }}"
-
-          if [ "$IS_PR" != "true" ]; then
-            echo "Not a PR comment; skipping."
-            exit 0
-          fi
-
-          if ! echo "$BODY" | grep -qiE '(^|\s)/(consent|dissent)(\s|$)'; then
-            echo "No consent command found; skipping."
-            exit 0
-          fi
-
-          PR_NUMBER=${{ github.event.issue.number }}
-          REPO=${{ github.repository }}
-
-          # Get the PR head SHA
-          HEAD_SHA=$(gh api repos/$REPO/pulls/$PR_NUMBER --jq '.head.sha')
-          echo "PR #$PR_NUMBER head SHA: $HEAD_SHA"
-
-          # Find the most recent consent-check workflow run for this SHA
-          RUN_ID=$(gh api "repos/$REPO/actions/runs?head_sha=$HEAD_SHA" \
-            --jq '[.workflow_runs[] | select(.name == "Enforce Board Consent (restore280 Institute)")] | first | .id // empty')
-
-          if [ -n "$RUN_ID" ] && [ "$RUN_ID" != "null" ]; then
-            echo "Re-running workflow run $RUN_ID"
-            gh api repos/$REPO/actions/runs/$RUN_ID/rerun -X POST
-          else
-            echo "No existing run found for SHA $HEAD_SHA"
-          fi
-
       - name: Checkout repository
-        if: github.event_name != 'issue_comment'
         uses: actions/checkout@v4
+        with:
+          # For comment events, check out the PR branch so we read the correct
+          # voters.yml and enforceApproval.js from that PR, not from main.
+          ref: ${{ github.event_name == 'issue_comment' && format('refs/pull/{0}/head', github.event.issue.number) || '' }}
 
       - name: Set up Node.js
-        if: github.event_name != 'issue_comment'
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Install dependencies
-        if: github.event_name != 'issue_comment'
         working-directory: .github
         run: |
           if [ -f package-lock.json ]; then
@@ -77,9 +53,11 @@ jobs:
           fi
 
       - name: Enforce unanimous board consent
-        if: github.event_name != 'issue_comment'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UNANIMOUS: "true"
+          # For comment events, pass the PR number explicitly since the
+          # issue_comment payload does not contain a pull_request object.
+          OVERRIDE_PR_NUMBER: ${{ github.event_name == 'issue_comment' && github.event.issue.number || '' }}
         working-directory: .github
         run: node enforceApproval.js

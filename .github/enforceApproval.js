@@ -15,15 +15,13 @@
 //      to withdraw or oppose. If both appear in one comment, dissent wins.
 //      The most recent command per voter across all comments wins.
 //
-// When a /consent or /dissent comment is posted, the workflow re-runs the
-// most recent PR-context run for that PR's head SHA, which updates the
-// status check correctly.
+// The script explicitly posts a "consent-check" check run to the PR's head
+// SHA via the GitHub Checks API, regardless of what event triggered the
+// workflow. This ensures the PR status check always reflects the current
+// consent state, including when triggered by an issue_comment event.
 //
 // Recusal: add a line "Recusal: @handle" to the PR body to remove a voter
 // from the required list for that PR due to a conflict of interest.
-//
-// The script posts a status comment showing each voter's current state and
-// instructions, satisfying the Section 7.6 recordkeeping requirement.
 
 const { Octokit } = require("@octokit/rest");
 const core = require("@actions/core");
@@ -60,7 +58,7 @@ function parseRecusals(body) {
 // Fetch /consent and /dissent commands from PR comments.
 // Returns a Map of lowercase login -> { state, ts, method: "comment" }
 // If both commands appear in one comment, dissent wins.
-// The most recent comment per voter wins across multiple comments.
+// The most recent command per voter across all comments wins.
 async function fetchCommentConsents(octokit, owner, repo, pull_number, effectiveVoters) {
   const consentByUser = new Map();
   let page = 1;
@@ -164,23 +162,70 @@ function buildStatusComment(effectiveVoters, mergedConsents, recusedLC, required
   return lines.join("\n");
 }
 
+// Post or update an explicit "consent-check" check run on the PR's head SHA.
+// This is what the branch protection ruleset evaluates, and posting it
+// explicitly ensures it updates correctly regardless of trigger event.
+async function postCheckRun(octokit, owner, repo, headSha, conclusion, title, summary) {
+  try {
+    const { data: existing } = await octokit.checks.listForRef({
+      owner, repo, ref: headSha, check_name: "consent-check", per_page: 10
+    });
+    const run = existing.check_runs[0];
+    if (run) {
+      await octokit.checks.update({
+        owner, repo,
+        check_run_id: run.id,
+        status: "completed",
+        conclusion,
+        output: { title, summary }
+      });
+    } else {
+      await octokit.checks.create({
+        owner, repo,
+        name: "consent-check",
+        head_sha: headSha,
+        status: "completed",
+        conclusion,
+        output: { title, summary }
+      });
+    }
+  } catch (err) {
+    core.warning(`Could not post check run: ${err.message}`);
+  }
+}
+
 (async () => {
   try {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
     const payload = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
 
-    const pr = payload.pull_request;
-    if (!pr) {
-      core.setFailed("This script must run on a pull_request or pull_request_review event.");
-      return;
+    // Resolve PR number and metadata.
+    // For issue_comment events, OVERRIDE_PR_NUMBER is set by the workflow
+    // since the comment payload does not contain a pull_request object.
+    let pull_number, prAuthorLC, prBody, headSha;
+
+    const overridePR = process.env.OVERRIDE_PR_NUMBER;
+    if (overridePR && overridePR.trim()) {
+      pull_number = parseInt(overridePR.trim(), 10);
+      const { data: prData } = await octokit.pulls.get({ owner, repo, pull_number });
+      prAuthorLC = (prData.user && prData.user.login || "").toLowerCase();
+      prBody = prData.body || "";
+      headSha = prData.head.sha;
+    } else {
+      const pr = payload.pull_request;
+      if (!pr) {
+        core.setFailed("No pull request context found. This workflow must run on a pull_request, pull_request_review, or issue_comment event.");
+        return;
+      }
+      pull_number = pr.number;
+      prAuthorLC = (pr.user && pr.user.login || "").toLowerCase();
+      prBody = pr.body || "";
+      headSha = pr.head.sha;
     }
 
-    const pull_number = pr.number;
-    const prAuthorLC = (pr.user && pr.user.login || "").toLowerCase();
-    const prBody = pr.body || "";
-
-    // Load voter config
+    // Load voter config from the checked-out branch (always the PR branch,
+    // since the workflow checks out refs/pull/{n}/head for comment events).
     const cfg = loadVoterConfig(process.cwd());
 
     // Build voter list
@@ -280,7 +325,12 @@ function buildStatusComment(effectiveVoters, mergedConsents, recusedLC, required
     console.log(`Dissented/dismissed: ${rejectedUsers.join(", ") || "none"}`);
     if (recusedLC.size > 0) console.log(`Recused: ${[...recusedLC].join(", ")}`);
 
-    // Post or update status comment
+    // Determine outcome
+    const approved = approvedUsers.length;
+    const waiting = [...pendingUsers, ...rejectedUsers];
+    const passed = approved >= requiredCount;
+
+    // Post status comment on the PR
     try {
       const { data: allComments } = await octokit.issues.listComments({
         owner, repo, issue_number: pull_number
@@ -305,10 +355,19 @@ function buildStatusComment(effectiveVoters, mergedConsents, recusedLC, required
       core.warning(`Could not post status comment: ${commentErr.message}`);
     }
 
-    // Final enforcement
-    const approved = approvedUsers.length;
-    if (approved < requiredCount) {
-      const waiting = [...pendingUsers, ...rejectedUsers];
+    // Post explicit check run to PR head SHA so the status check updates
+    // correctly for all event types, including issue_comment.
+    await postCheckRun(
+      octokit, owner, repo, headSha,
+      passed ? "success" : "failure",
+      passed ? "Consent requirement met" : `Waiting on: ${waiting.join(", ")}`,
+      passed
+        ? `${approved}/${requiredCount} required consent(s) received. Action may proceed.`
+        : `${approved}/${requiredCount} required consent(s) received. Unanimous consent required.`
+    );
+
+    // Set job outcome
+    if (!passed) {
       core.setFailed(
         unanimousMode
           ? `Unanimous consent required. ${approved}/${effectiveVoters.size} have consented. Waiting on: ${waiting.join(", ")}.`
