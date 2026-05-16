@@ -12,16 +12,18 @@
 //
 //   2. Comment command: post a comment containing "/consent" anywhere in the
 //      body. Available to all voters including the PR author. Post "/dissent"
-//      to withdraw or oppose. The most recent command per voter wins.
+//      to withdraw or oppose. If both appear in one comment, dissent wins.
+//      The most recent command per voter across all comments wins.
 //
-// Both methods produce an equivalent legal record. The PR author should use
-// "/consent" since GitHub does not permit authors to approve their own PRs.
+// When a /consent or /dissent comment is posted, the workflow re-runs the
+// most recent PR-context run for that PR's head SHA, which updates the
+// status check correctly.
 //
 // Recusal: add a line "Recusal: @handle" to the PR body to remove a voter
 // from the required list for that PR due to a conflict of interest.
 //
-// The script posts a status comment on the PR showing each voter's current
-// state and instructions for approving, satisfying Section 7.6 recordkeeping.
+// The script posts a status comment showing each voter's current state and
+// instructions, satisfying the Section 7.6 recordkeeping requirement.
 
 const { Octokit } = require("@octokit/rest");
 const core = require("@actions/core");
@@ -57,13 +59,10 @@ function parseRecusals(body) {
 
 // Fetch /consent and /dissent commands from PR comments.
 // Returns a Map of lowercase login -> { state, ts, method: "comment" }
-//
-// Dissent wins: if a voter has ANY /dissent signal across any of their
-// comments, their state is DISSENTED regardless of /consent signals.
-// Deleted comments are absent from the API response, so deleting a /dissent
-// comment removes that signal and may flip the voter to APPROVED.
+// If both commands appear in one comment, dissent wins.
+// The most recent comment per voter wins across multiple comments.
 async function fetchCommentConsents(octokit, owner, repo, pull_number, effectiveVoters) {
-  const signalsByUser = new Map(); // login -> { hasConsent, hasDissent, latestTs }
+  const consentByUser = new Map();
   let page = 1;
   while (true) {
     const { data: comments } = await octokit.issues.listComments({
@@ -78,30 +77,19 @@ async function fetchCommentConsents(octokit, owner, repo, pull_number, effective
       const hasConsent = /(?:^|\s)\/consent(?:\s|$)/im.test(body);
       const hasDissent = /(?:^|\s)\/dissent(?:\s|$)/im.test(body);
       if (!hasConsent && !hasDissent) continue;
-      const prev = signalsByUser.get(login) || { hasConsent: false, hasDissent: false, latestTs: 0 };
-      signalsByUser.set(login, {
-        hasConsent: prev.hasConsent || hasConsent,
-        hasDissent: prev.hasDissent || hasDissent,
-        latestTs: Math.max(prev.latestTs, ts)
-      });
+      const prev = consentByUser.get(login);
+      if (prev && ts < prev.ts) continue;
+      // Dissent wins if both appear in the same comment
+      const state = hasDissent ? "DISSENTED" : "APPROVED";
+      consentByUser.set(login, { state, ts, method: "comment" });
     }
     if (comments.length < 100) break;
     page++;
   }
-  // Dissent wins: any dissent signal across any comment overrides all consents
-  const result = new Map();
-  for (const [login, signals] of signalsByUser) {
-    result.set(login, {
-      state: signals.hasDissent ? "DISSENTED" : "APPROVED",
-      ts: signals.latestTs,
-      method: "comment"
-    });
-  }
-  return result;
+  return consentByUser;
 }
 
-// Merge review approvals and comment consents per voter.
-// The more recent signal wins when both exist for the same voter.
+// Merge review approvals and comment consents. Most recent signal wins.
 function mergeConsents(reviewMap, commentMap) {
   const merged = new Map();
   const allVoters = new Set([...reviewMap.keys(), ...commentMap.keys()]);
@@ -180,34 +168,19 @@ function buildStatusComment(effectiveVoters, mergedConsents, recusedLC, required
   try {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
-    const eventName = process.env.GITHUB_EVENT_NAME;
     const payload = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
 
-    // Handle pull_request, pull_request_review, and issue_comment events
-    let pull_number, prAuthorLC, prBody;
-
-    if (eventName === "issue_comment") {
-      const issue = payload.issue;
-      if (!issue || !issue.pull_request) {
-        console.log("Comment is not on a pull request; skipping.");
-        return;
-      }
-      pull_number = issue.number;
-      prAuthorLC = (issue.user && issue.user.login || "").toLowerCase();
-      const { data: prData } = await octokit.pulls.get({ owner, repo, pull_number });
-      prBody = prData.body || "";
-    } else {
-      const pr = payload.pull_request;
-      if (!pr) {
-        core.setFailed("This workflow must run on a pull_request or issue_comment event.");
-        return;
-      }
-      pull_number = pr.number;
-      prAuthorLC = (pr.user && pr.user.login || "").toLowerCase();
-      prBody = pr.body || "";
+    const pr = payload.pull_request;
+    if (!pr) {
+      core.setFailed("This script must run on a pull_request or pull_request_review event.");
+      return;
     }
 
-    // Load voter config from PR branch
+    const pull_number = pr.number;
+    const prAuthorLC = (pr.user && pr.user.login || "").toLowerCase();
+    const prBody = pr.body || "";
+
+    // Load voter config
     const cfg = loadVoterConfig(process.cwd());
 
     // Build voter list
@@ -286,7 +259,7 @@ function buildStatusComment(effectiveVoters, mergedConsents, recusedLC, required
     // Fetch comment consents
     const commentMap = await fetchCommentConsents(octokit, owner, repo, pull_number, effectiveVoters);
 
-    // Merge both sources
+    // Merge both consent sources
     const mergedConsents = mergeConsents(reviewMap, commentMap);
 
     const approvedUsers = [...effectiveVoters].filter(v => {
