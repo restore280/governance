@@ -1,0 +1,57 @@
+name: Retrigger Consent Check on Comment
+
+on:
+  issue_comment:
+    types: [created, edited, deleted]
+
+permissions:
+  actions: write
+  pull-requests: read
+
+jobs:
+  retrigger:
+    runs-on: ubuntu-latest
+    # Only act on comments attached to pull requests
+    if: github.event.issue.pull_request != null
+    steps:
+      - name: Check for consent command or deletion
+        id: check
+        env:
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          EVENT_ACTION: ${{ github.event.action }}
+        run: |
+          # Always retrigger on deletions (deleted comment may have been a
+          # /consent or /dissent; we can't inspect deleted content)
+          if [ "$EVENT_ACTION" = "deleted" ]; then
+            echo "trigger=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          # For created/edited, only retrigger if the comment contains a command
+          if echo "$COMMENT_BODY" | grep -qiE '(^|[[:space:]])/consent([[:space:]]|$)|(^|[[:space:]])/dissent([[:space:]]|$)'; then
+            echo "trigger=true" >> $GITHUB_OUTPUT
+          else
+            echo "trigger=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Re-run most recent consent-check for this PR
+        if: steps.check.outputs.trigger == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER=${{ github.event.issue.number }}
+          REPO=${{ github.repository }}
+
+          # Get the PR's current HEAD SHA
+          HEAD_SHA=$(gh api repos/$REPO/pulls/$PR_NUMBER --jq '.head.sha')
+          echo "PR #$PR_NUMBER HEAD SHA: $HEAD_SHA"
+
+          # Find the most recent consent-check run for this SHA
+          RUN_ID=$(gh api "repos/$REPO/actions/runs?head_sha=$HEAD_SHA&event=pull_request" \
+            --jq '[.workflow_runs[] | select(.name == "Enforce Board Consent (restore280 Institute)")] | sort_by(.created_at) | last | .id // empty')
+
+          if [ -n "$RUN_ID" ]; then
+            echo "Re-running consent-check run $RUN_ID"
+            gh api repos/$REPO/actions/runs/$RUN_ID/rerun -X POST
+          else
+            echo "No existing consent-check run found for SHA $HEAD_SHA. A new commit to the PR branch will trigger one."
+          fi

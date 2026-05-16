@@ -5,8 +5,6 @@ on:
     types: [opened, synchronize, reopened, edited, review_requested, review_request_removed]
   pull_request_review:
     types: [submitted, edited, dismissed]
-  issue_comment:
-    types: [created, edited, deleted]
 
 permissions:
   contents: read
