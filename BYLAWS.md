@@ -31,7 +31,7 @@ The name of the corporation is **restore280 Institute** (the "Corporation").
 
 ### 1.2 Purpose
 
-The Corporation is organized exclusively for charitable, scientific, and educational purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code, including research, public education, nonpartisan advocacy, and capital facilitation directed toward restoring the full range of conditions human dignity requires. The Corporation addresses interconnected institutional and market failures that degrade atmospheric stability, housing affordability, governance accountability, or other systems upon which dignified human life depends. Atmospheric restoration is the primary but not exclusive domain of activity.
+The Corporation is organized exclusively for charitable, scientific, and educational purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code, including research, public education, nonpartisan advocacy, and capital facilitation directed toward restoring the full range of conditions human dignity requires. The Corporation addresses interconnected institutional and market failures that simultaneously degrade atmospheric stability, housing affordability, governance accountability, and other systems upon which dignified human life depends. Atmospheric restoration is the primary but not exclusive domain of activity.
 
 No part of the net earnings of the Corporation shall inure to the benefit of, or be distributable to, any director, officer, employee, or other private person. The Corporation shall not carry on activities not permitted by a corporation exempt under Section 501(c)(3) of the Internal Revenue Code.
 
@@ -99,7 +99,7 @@ Any director may resign at any time by delivering written notice to the Board Ch
 
 ### 3.8 Removal
 
-Any director may be removed, with or without cause, by two-thirds (2/3) of the then-serving directors pursuant to Article VII, provided written notice of the removal action has been given to all directors at least ten (10) days before the consent deadline or synchronous meeting. A director may not vote or consent on their own removal.
+Any director may be removed, with or without cause, by a majority of the then-serving directors pursuant to Article VII, provided written notice of the removal action has been given to all directors at least ten (10) days before the consent deadline or synchronous meeting. A director may not vote or consent on their own removal.
 
 ### 3.9 Compensation
 
@@ -155,7 +155,7 @@ Officers are appointed by the Board pursuant to Article VII and serve until thei
 
 ### 5.1 Authority to Establish
 
-The Board may establish standing or ad hoc committees by resolution. Each committee shall act within the scope of authority delegated by the Board. No committee may: amend these Bylaws; elect or remove directors or the Executive Director; approve any merger, dissolution, or material asset disposition; or take any action requiring a two-thirds Board vote under these Bylaws. Each committee shall include at least one director and may include non-director members with relevant expertise who participate fully but hold no Board vote.
+The Board may establish standing or ad hoc committees by resolution. Each committee shall act within the scope of authority delegated by the Board. No committee may: amend these Bylaws; elect or remove directors or the Executive Director; approve any merger, dissolution, or material asset disposition; or take any action reserved to the full Board under these Bylaws. Each committee shall include at least one director and may include non-director members with relevant expertise who participate fully but hold no Board vote.
 
 ---
 
@@ -179,31 +179,19 @@ Advisory Board members have no governance authority, no fiduciary duties to the 
 
 ### 7.1 Default Method: Written Consent
 
-The Board shall act primarily by written consent without a meeting. Any action required or permitted to be taken by the Board may be taken by unanimous written consent of all then-serving directors, delivered by electronic mail, electronic signature, or other electronic transmission. Written consent shall be filed with the corporate records in the same form in which it was received.
+The Board shall act primarily by written consent without a meeting. Any action required or permitted to be taken by the Board may be taken by written consent of a majority of then-serving directors, delivered by electronic mail, electronic signature, or other electronic transmission. A director who does not respond within the specified window is counted as not consenting for purposes of calculating whether majority has been achieved. Written consent shall be filed with the corporate records in the same form in which it was received.
 
 ### 7.2 Response Window
 
-The Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is fourteen (14) calendar days. For urgent matters, the Executive Director may specify a shorter window of not less than forty-eight (48) hours, stating the reason for urgency. A director who does not respond by the deadline has not consented; the action fails to pass and the Executive Director shall notify all directors of that outcome.
+The Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is fourteen (14) calendar days. For urgent matters, the Executive Director may specify a shorter window of not less than forty-eight (48) hours, stating the reason for urgency. A director who does not respond by the deadline has not consented. The action passes if a majority of all then-serving directors have consented by the deadline; otherwise it fails and the Executive Director shall notify all directors of that outcome.
 
 ### 7.3 Synchronous Meetings
 
 Any director or the Executive Director may request a synchronous meeting (by telephone or video conference) for any agenda item in lieu of or in addition to written consent. Such a request shall be honored. Synchronous meetings require notice of at least forty-eight (48) hours to all directors, specifying the agenda. At a synchronous meeting, a majority of then-serving directors constitutes a quorum, and actions require the vote thresholds specified in Section 7.4. Directors may not vote by proxy.
 
-### 7.4 Vote Thresholds
+### 7.4 Vote Threshold
 
-Routine actions require unanimous consent under Section 7.1, or majority vote at a synchronous meeting under Section 7.3.
-
-The following actions require unanimous written consent or, at a synchronous meeting, affirmative vote of two-thirds (2/3) of all then-serving directors:
-
-(a) removal of a director;
-
-(b) amendment of these Bylaws;
-
-(c) authorization of any merger, consolidation, or dissolution;
-
-(d) approval of any transaction in which a director or officer has a material financial interest, after compliance with the conflict of interest policy;
-
-(e) adoption or material amendment of any Board-adopted companion policy referenced in Article X.
+All Board actions, whether taken by written consent under Section 7.1 or by vote at a synchronous meeting under Section 7.3, require the affirmative consent or vote of a majority of then-serving directors. Majority means more than half of all then-serving directors, calculated without regard to vacancies or non-responses. This threshold applies to all actions without exception, including bylaw amendments, director removal, dissolution, companion policy adoption, and all other matters.
 
 ### 7.5 Annual Governance Review
 
@@ -295,7 +283,7 @@ The Board shall adopt, and shall maintain in current form, the following policy 
 
 ### 10.3 Policy Adoption and Amendment
 
-Companion policies shall be adopted and amended pursuant to Article VII, subject to the two-thirds threshold in Section 7.4(e). New policies and material amendments shall be distributed to all directors at least fourteen (14) days before the consent deadline or synchronous meeting. The Board shall review all companion policies at least every two years.
+Companion policies shall be adopted and amended pursuant to Article VII. New policies and material amendments shall be distributed to all directors at least fourteen (14) days before the consent deadline or synchronous meeting. The Board shall review all companion policies at least every two years.
 
 ### 10.4 Policy Compliance
 
@@ -349,7 +337,7 @@ Directors shall have the right to inspect and copy corporate records at any reas
 
 ### 13.1 Procedure
 
-These Bylaws may be amended pursuant to Article VII, subject to the two-thirds threshold in Section 7.4(b), provided the proposed amendment has been distributed to all directors in writing at least fourteen (14) days before the consent deadline or synchronous meeting.
+These Bylaws may be amended pursuant to Article VII, provided the proposed amendment has been distributed to all directors in writing at least fourteen (14) days before the consent deadline or synchronous meeting.
 
 ### 13.2 Limits
 
@@ -361,7 +349,7 @@ No amendment may: (a) cause the Corporation to fail the organizational or operat
 
 ### 14.1 Authorization
 
-The Corporation may be dissolved pursuant to Article VII, subject to the two-thirds threshold in Section 7.4(c), and subject to Delaware law.
+The Corporation may be dissolved pursuant to Article VII and subject to Delaware law.
 
 ### 14.2 Distribution of Assets
 
