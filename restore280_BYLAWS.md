@@ -371,21 +371,3 @@ Upon dissolution, after satisfying all lawful debts and liabilities, remaining a
 
 The Executive Director, under Board oversight, shall manage the winding-up of affairs, including satisfying liabilities, closing accounts, and completing required government filings.
 
----
-
-## Certification of Adoption
-
-These Bylaws were duly adopted by unanimous written consent of the initial Board of Directors of restore280 Institute on:
-
-**Date:** ___________________________
-
-**Board Chair:** ___________________________  
-Signature: ___________________________
-
-**Director:** ___________________________  
-Signature: ___________________________
-
-**Director:** ___________________________  
-Signature: ___________________________
-
-
