@@ -7,7 +7,6 @@
 
 voters:
   - ENLinden              # Enoch Lindeman: LLC Member and restore280 ED
-  - EMLinden22              # Emalyn Marian Lindeman: LLC Member
 
 unanimous: true
 allow_self_approve: true
