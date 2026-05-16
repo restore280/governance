@@ -74,12 +74,6 @@ When a director joins or leaves the Board, `voters.yml` must be updated to refle
 
 ---
 
-### Workflow Note: mirror-bylaws.yml
-
-The repository contains a legacy `mirror-bylaws.yml` workflow that was used in the prior LLC context to auto-mirror `BYLAWS.md` to `README.md`. This workflow is **disabled for restore280**. All changes to governance documents must go through the consent process above. The workflow file is retained for reference but should not be re-enabled without a Board consent action explicitly authorizing it.
-
----
-
 ### Records
 
 The `records/` directory contains signed copies of:
