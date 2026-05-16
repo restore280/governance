@@ -2,7 +2,7 @@
 
 This Intellectual Property Transfer and Charitable Contribution Agreement (this "Agreement") is entered into as of June 23, 2026, by and between:
 
-**Transferors:** BY THE LINDEMANS LLC, an Arizona limited liability company ("LLC"), acting by and through its members Enoch Lindeman and Emalyn Marian Lindeman; and
+**Transferors:** BY THE LINDEMANS LLC, an Arizona limited liability company ("LLC"), acting by and through its members Enoch Richard Lindeman and Emalyn Marian Lindeman; and
 
 **Transferee:** restore280 Institute, a Delaware nonprofit corporation ("restore280").
 
@@ -100,13 +100,13 @@ This Agreement is governed by the laws of the State of Delaware, without regard 
 
 This Agreement is executed by the parties identified below upon their approval of the pull request introducing this document into the repository, as described in Section 7.
 
-**Note on pending legal name changes.** The members of the LLC have petitions for legal name changes pending in Oneida County Supreme Court, New York (case numbers EFCA2026-001741 and EFCA2026-001742). Upon entry of those orders, Enoch Lindeman's legal name will become Enik Nadir Linden and Emalyn Marian Lindeman's legal name will become Emalyn Marian Linden. This Agreement is signed under the parties' current legal names and remains fully effective and binding through and after that transition. No further instrument is required to confirm continuity of this Agreement following the name changes.
+**Note on pending legal name changes.** The members of the LLC have petitions for legal name changes pending in Oneida County Supreme Court, New York (case numbers EFCA2026-001741 and EFCA2026-001742). Upon entry of those orders, Enoch Richard Lindeman's legal name will become Enik Nadir Linden and Emalyn Marian Lindeman's legal name will become Emalyn Marian Linden. This Agreement is signed under the parties' current legal names and remains fully effective and binding through and after that transition. No further instrument is required to confirm continuity of this Agreement following the name changes.
 
 ---
 
 **BY THE LINDEMANS LLC, an Arizona limited liability company:**
 
-Enoch Lindeman, Member; GitHub: @ENLinden
+Enoch Richard Lindeman, Member; GitHub: @ENLinden
 
 Emalyn Marian Lindeman, Member; GitHub: @EMLinden22
 
@@ -114,4 +114,4 @@ Emalyn Marian Lindeman, Member; GitHub: @EMLinden22
 
 **restore280 Institute:**
 
-Enoch Lindeman, Executive Director; GitHub: @ENLinden
+Enoch Richard Lindeman, Executive Director; GitHub: @ENLinden
