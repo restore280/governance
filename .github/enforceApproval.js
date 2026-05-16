@@ -57,9 +57,13 @@ function parseRecusals(body) {
 
 // Fetch /consent and /dissent commands from PR comments.
 // Returns a Map of lowercase login -> { state, ts, method: "comment" }
-// The most recent command per voter wins.
+//
+// Dissent wins: if a voter has ANY /dissent signal across any of their
+// comments, their state is DISSENTED regardless of /consent signals.
+// Deleted comments are absent from the API response, so deleting a /dissent
+// comment removes that signal and may flip the voter to APPROVED.
 async function fetchCommentConsents(octokit, owner, repo, pull_number, effectiveVoters) {
-  const consentByUser = new Map();
+  const signalsByUser = new Map(); // login -> { hasConsent, hasDissent, latestTs }
   let page = 1;
   while (true) {
     const { data: comments } = await octokit.issues.listComments({
@@ -74,22 +78,26 @@ async function fetchCommentConsents(octokit, owner, repo, pull_number, effective
       const hasConsent = /(?:^|\s)\/consent(?:\s|$)/im.test(body);
       const hasDissent = /(?:^|\s)\/dissent(?:\s|$)/im.test(body);
       if (!hasConsent && !hasDissent) continue;
-      const prev = consentByUser.get(login);
-      if (prev && ts < prev.ts) continue;
-      let state;
-      if (hasConsent && hasDissent) {
-        const ci = body.toLowerCase().lastIndexOf("/consent");
-        const di = body.toLowerCase().lastIndexOf("/dissent");
-        state = ci > di ? "APPROVED" : "DISSENTED";
-      } else {
-        state = hasConsent ? "APPROVED" : "DISSENTED";
-      }
-      consentByUser.set(login, { state, ts, method: "comment" });
+      const prev = signalsByUser.get(login) || { hasConsent: false, hasDissent: false, latestTs: 0 };
+      signalsByUser.set(login, {
+        hasConsent: prev.hasConsent || hasConsent,
+        hasDissent: prev.hasDissent || hasDissent,
+        latestTs: Math.max(prev.latestTs, ts)
+      });
     }
     if (comments.length < 100) break;
     page++;
   }
-  return consentByUser;
+  // Dissent wins: any dissent signal across any comment overrides all consents
+  const result = new Map();
+  for (const [login, signals] of signalsByUser) {
+    result.set(login, {
+      state: signals.hasDissent ? "DISSENTED" : "APPROVED",
+      ts: signals.latestTs,
+      method: "comment"
+    });
+  }
+  return result;
 }
 
 // Merge review approvals and comment consents per voter.
@@ -158,7 +166,8 @@ function buildStatusComment(effectiveVoters, mergedConsents, recusedLC, required
       : "⛔ Consent not yet complete.",
     "",
     "**To consent:** Approve via GitHub review, or post a comment containing `/consent`.",
-    "**To dissent:** Post a comment containing `/dissent`.",
+    "**To dissent:** Post a comment containing `/dissent`. If a comment contains both `/consent` and `/dissent`, dissent takes precedence.",
+    "**To reverse a dissent:** Delete or edit the dissent comment to remove `/dissent`, or post a new comment containing only `/consent`.",
     "**To recuse:** Add `Recusal: @yourhandle` to the PR description.",
     "",
     "*Updated automatically by the restore280 governance workflow.*"
