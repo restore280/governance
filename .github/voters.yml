@@ -1,13 +1,14 @@
-# BY THE LINDEMANS LLC -> restore280 Institute IP Transfer
-# Temporary voter configuration for PR 1 (IP Transfer) only.
-# Both LLC members must consent before the transfer executes.
-# Enoch Lindeman (PR author) consents via /consent comment.
-# Emalyn Marian Lindeman consents via GitHub review approval.
-# This file is replaced in PR 2a with the restore280 interim config.
+# restore280 Institute — Board voter configuration
+# All PRs require majority consent per Section 7.4 of the Bylaws.
+# Majority is calculated automatically as floor(n/2)+1 of effective voters,
+# adjusted for any recusals declared in the PR description.
+#
+# This file reflects the interim period before the full founding board is
+# seated. Update via PR approved by all then-current voters when board
+# composition changes.
 
 voters:
-  - ENLinden              # Enoch Lindeman: LLC Member and restore280 ED
+  - ENLinden              # Enik Nadir Linden: Executive Director, Class III
 
-unanimous: true
 allow_self_approve: true
 exclude_author: false
