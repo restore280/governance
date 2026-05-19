@@ -70,7 +70,7 @@ Any director or the Executive Director may request a synchronous meeting for any
 
 ### Updating the Voter List
 
-When a director joins or leaves the Board, `voters.yml` must be updated to reflect the current Board composition. This update is itself a Board action and must go through the PR consent process. The new director's GitHub handle must be added to `voters.yml` by a PR approved by all then-current voters (including the incoming director if their handle is being added).
+When a director joins or leaves the Board, `voters.yml` must be updated to reflect the current Board composition. This update is itself a Board action and must go through the PR consent process alongside all documentation changes relating to a change in directorship. The new director's GitHub handle must be added to `voters.yml` by a PR approved by all then-current voters.
 
 ---
 
