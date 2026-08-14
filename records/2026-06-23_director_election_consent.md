@@ -10,8 +10,6 @@ The undersigned, being the sole initial director of restore280 Institute, a Dela
 
 **Electronic Signature Mechanism.** The undersigned's approval of the pull request introducing this document into the governance repository at `https://github.com/restore280/governance` constitutes a valid electronic signature, with the same legal effect as a handwritten signature. The timestamp and username recorded by GitHub for that approval constitute the date and identity of the signature.
 
-**Note on pending legal name change.** The initial director, Enik Nadir Linden, has a petition for a legal name change pending in Oneida County Supreme Court, New York (case number EFCA2026-001741). As of the effective date of this consent, that petition may or may not have been granted; this director's legal name may at that time still be Enoch Richard Lindeman, or may have become Enik Nadir Linden upon entry of the court's order. This consent is executed under that director's legal name as of the date of execution and remains fully effective and binding regardless of the status of that petition at the time of execution or thereafter.
-
 ---
 
 ## Recitals
