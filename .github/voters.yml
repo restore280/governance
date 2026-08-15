@@ -2,13 +2,11 @@
 # All PRs require majority consent per Section 7.4 of the Bylaws.
 # Majority is calculated automatically as floor(n/2)+1 of effective voters,
 # adjusted for any recusals declared in the PR description.
-#
-# This file reflects the interim period before the full founding board is
-# seated. Update via PR approved by all then-current voters when board
-# composition changes.
 
 voters:
   - ENLinden              # Enik Nadir Linden: Executive Director, Class III
+  - bridgerfarnsworth     # Bridger Ryan Farnsworth: Board Chair, Class II
+  - AuroraEndante         # Rachel B. Pickerel: Class I
 
 allow_self_approve: true
 exclude_author: false
