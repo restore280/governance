@@ -6,11 +6,9 @@
 
 ## Preamble
 
-The undersigned, constituting all of the then-serving directors of restore280 Institute, a Delaware nonprofit corporation (the "Corporation"), acting pursuant to Article VII of the Bylaws and Section 141(f) of the Delaware General Corporation Law, hereby consent in writing to the adoption of the following resolutions without a meeting. This consent has the same force and effect as a unanimous vote taken at a duly convened meeting of the Board of Directors.
+The undersigned majority of the then-serving directors of restore280 Institute, a Delaware nonprofit corporation (the "Corporation"), acting pursuant to Article VII of the Bylaws and Section 141(f) of the Delaware General Corporation Law, hereby consent in writing to the adoption of the following resolutions without a meeting. This consent has the same force and effect as a unanimous vote taken at a duly convened meeting of the Board of Directors.
 
 **Electronic Signature Mechanism.** Pursuant to Section 7.1 of the Bylaws and consistent with the mechanism established in the Corporation's IP Transfer Agreement dated June 23, 2026, each director's approval of the pull request introducing this document into the governance repository at `https://github.com/restore280/governance` constitutes a valid electronic signature by that director, with the same legal effect as a handwritten signature. The timestamp and username recorded by GitHub for each approval constitute the date and identity of the signature. This consent is fully executed when all then-serving directors identified in the signature block below have approved the pull request.
-
-**Note on pending legal name change.** One director, Enik Nadir Linden, has a petition for a legal name change pending in Oneida County Supreme Court, New York (case number EFCA2026-001741). As of the effective date of this consent, that petition may or may not have been granted; this director's legal name may at that time still be Enoch Richard Lindeman, or may have become Enik Nadir Linden upon entry of the court's order. This consent is executed under that director's legal name as of the date of execution and remains fully effective and binding regardless of the status of that petition at the time of execution or thereafter.
 
 ---
 
@@ -126,7 +124,7 @@ The Executive Director is hereby authorized and directed to file IRS Form 5768 t
 
 ## Resolution 12: Authorization to File Form 1023-EZ
 
-Following receipt of the Employer Identification Number and subject to confirmation of eligibility by retained legal counsel, the Executive Director is hereby authorized and directed to file IRS Form 1023-EZ (Streamlined Application for Recognition of Exemption Under Section 501(c)(3)) on behalf of the Corporation.
+Following receipt of the Employer Identification Number, the Executive Director is hereby authorized and directed to file IRS Form 1023-EZ (Streamlined Application for Recognition of Exemption Under Section 501(c)(3)) on behalf of the Corporation.
 
 ---
 
@@ -195,7 +193,7 @@ The Independent Directors confirm that this determination was made without the E
 
 ## Resolution 18: Adoption of Bylaws Amendments
 
-Pursuant to Article XIII of the Bylaws, the Board hereby adopts the following amendments to the Bylaws as ratified in Resolution 1, effective upon the date this consent is fully executed, provided at least fourteen (14) days have elapsed between distribution of this proposed amendment to all directors and that date:
+Pursuant to Article XIII of the Bylaws, the Board hereby adopts the following amendments to the Bylaws as ratified in Resolution 1, effective retroactively to the date of incorporation, June 23, 2026:
 
 (a) new Section 1.5, Mission and Governing Principles;
 
@@ -226,14 +224,11 @@ Each director identified below approves this written consent by approving the pu
 ---
 
 **Enik Nadir Linden**, Executive Director and Class III Director  
-GitHub: @ENLinden
 
 ---
 
 **Bridger Ryan Farnsworth**, Board Chair and Class II Director  
-GitHub: @bridgerfarnsworth
 
 ---
 
 **Rachel B. Pickerel**, Class I Director  
-GitHub: @AuroraEndante
