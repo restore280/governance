@@ -273,6 +273,8 @@ The Board shall commission an independent financial review from a qualified exte
 
 All compensation paid to the Executive Director and any other officers or key employees shall be approved in advance by the Board's Independent Directors acting without the Executive Director present, based on documented comparability data. The decision and its basis shall be recorded in the consent or meeting record. The Corporation shall disclose all compensation as required on Form 990.
 
+An officer or key employee may decline, in writing, all or part of any compensation or other benefit that would otherwise require review under this Section. The declination is binding for the period it states and may not later be reversed to claim compensation for that period. Where a declination is made, the Independent Directors' review requirement under this Section is satisfied by their written acknowledgment of the declination; the comparability-data and documented-basis requirements of this Section apply only to compensation or a benefit that is actually provided. A decision to provide compensation or a benefit for a future period requires a fresh review under this Section.
+
 ---
 
 ## Article IX: 501(c)(3) Compliance
