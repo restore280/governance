@@ -92,7 +92,7 @@ Published research materials and their source records are maintained in the Corp
 
 ### 5.4 Critical Credentials and Access
 
-The Corporation maintains an inventory of accounts, systems, and access credentials material to its operations. That inventory, and the credentials themselves, are held in a password manager, not in this document or in the governance repository. The Executive Director is the primary owner of that password manager, and the Board Chair holds designated emergency access to it. A human designated by the Executive Director shall keep the inventory current and shall confirm at each annual governance review that the Board Chair's emergency access remains functional.
+The Corporation maintains an inventory of accounts, systems, and access credentials material to its operations. That inventory, and the credentials themselves, are held in a password manager, not in this document or in the governance repository. The Executive Director is the primary owner of that password manager, and the Board Chair holds designated emergency access to it. A human designated by the Executive Director shall keep the inventory current and shall confirm at each annual governance review that the Board Chair's emergency access remains functional. This inventory also records, for each communication platform in use, the administrative arrangement required by the Communication Platform Administration Policy.
 
 ---
 
