@@ -135,7 +135,7 @@ The Board shall elect a Chair from among its Independent Directors pursuant to A
 
 ### 3.11 Document Authentication
 
-A human designated by the Executive Director maintains the official records of the Corporation as specified in Article XII and Section 7.6, and gives notice of Board actions as required by these Bylaws.
+A party designated by the Executive Director maintains the official records of the Corporation as specified in Article XII and Section 7.6, and gives notice of Board actions as required by these Bylaws. As used in this Article and elsewhere in these Bylaws, "a party" refers to any designee, human or automated, tasked only with producing documentation of a decision already made; where these Bylaws require the exercise of judgment or discretion, they specify that a human must perform the task.
 
 Formal corporate documents, including executed contracts, government filings, board resolutions, and certifications, shall be authenticated by the signatures of at least half of the then-serving directors, including the Executive Director. Authentication signatures shall be obtained within ten (10) business days of a request by the Executive Director, and may be provided electronically. This requirement scales with board size: at three directors, two signatures are required; at four or five directors, three signatures are required; and so on.
 
@@ -171,7 +171,7 @@ The Executive Director is the chief executive officer of the Corporation, respon
 
 (c) preparing and presenting to the Board an annual budget, operating plan, and regular performance reports;
 
-(d) ensuring the official records of the Corporation are maintained and Board action items and notices are circulated as required by these Bylaws, whether personally or through a human the Executive Director designates;
+(d) ensuring the official records of the Corporation are maintained and Board action items and notices are circulated as required by these Bylaws, whether personally or through a party the Executive Director designates;
 
 (e) ensuring compliance with applicable law and all Board-adopted policies, and promptly reporting to the Board any material legal, financial, operational, or reputational risks;
 
@@ -221,7 +221,7 @@ The Board shall act primarily by written consent without a meeting. Any action r
 
 ### 7.2 Response Window
 
-A human designated by the Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is fourteen (14) calendar days. For urgent matters, a shorter window of not less than forty-eight (48) hours may be specified, stating the reason for urgency. A director who does not respond by the deadline has not consented. The action passes if a majority of all then-serving directors have consented by the deadline; otherwise it fails and a human designated by the Executive Director shall notify all directors of that outcome.
+A human designated by the Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is fourteen (14) calendar days. For urgent matters, a shorter window of not less than forty-eight (48) hours may be specified, stating the reason for urgency. A director who does not respond by the deadline has not consented. The action passes if a majority of all then-serving directors have consented by the deadline; otherwise it fails and a party designated by the Executive Director shall notify all directors of that outcome.
 
 ### 7.3 Synchronous Meetings
 
@@ -239,7 +239,7 @@ The Board shall complete an annual governance review by written consent or synch
 
 ### 7.6 Records
 
-A human designated by the Executive Director shall maintain a written record of all Board actions, whether taken by written consent or at a synchronous meeting, including the date, the matter acted upon, the vote or consent outcome, and the names of all directors who consented, voted, abstained, or did not respond.
+A party designated by the Executive Director shall maintain a written record of all Board actions, whether taken by written consent or at a synchronous meeting, including the date, the matter acted upon, the vote or consent outcome, and the names of all directors who consented, voted, abstained, or did not respond.
 
 ---
 
@@ -321,7 +321,7 @@ Before undertaking any material new program, campaign, research initiative, part
 
 (j) under what circumstances the initiative should be revised, suspended, or terminated.
 
-The completed review shall be provided to the Board before the initiative is undertaken. The annual governance review under Section 7.5 shall include a review of whether the Corporation's major activities remain aligned with its mission and the governing principles in Section 1.5.
+The completed review shall be provided to the Board before the initiative is undertaken. The annual governance review under Section 7.5 shall include a review of whether the Corporation's major activities remain aligned with its mission and the governing principles in Section 1.5. Where an initiative is also under consideration for selection and resourcing under the Strategic Prioritization and Resource Allocation Policy, the review required by this Section serves as the analytical basis for that policy's impact scoring, and a duplicate review is not required.
 
 ### 9.7 Organizational Independence
 
@@ -386,6 +386,8 @@ The Board shall adopt, and shall maintain in current form, the following policy 
 **(e) Capital Deployment and Partnership Policy.** Governing the identification, evaluation, approval, and documentation of capital facilitation activities and organizational partnerships, including outcome documentation standards.
 
 **(f) External Funding Acceptance Policy.** Governing the acceptance and rejection of grants and donations, including minimum standards for donor restrictions that preserve the Corporation's editorial and research independence.
+
+**(g) Strategic Prioritization and Resource Allocation Policy.** Governing how the Corporation identifies, prioritizes, and resources the domains and projects it works on, across its full allocable resource pool without distinction by resource type.
 
 ### 10.3 Policy Adoption and Amendment
 
