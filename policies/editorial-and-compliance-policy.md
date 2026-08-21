@@ -8,6 +8,8 @@
 
 This policy governs the editorial standards, lobbying expenditure classification and tracking procedures, and content compliance requirements for all content produced and published by restore280 Institute (the "Corporation"). It applies to all video content, written research, interactive tools, social media, and any other public-facing communication produced by or on behalf of the Corporation.
 
+Whether a given content topic is selected for production at all, and how much of the Corporation's production capacity it receives, is governed by the Strategic Prioritization and Resource Allocation Policy. This policy has no role in that selection decision. It governs only how content already selected under that policy is produced, reviewed, and published.
+
 ---
 
 ## 2. Nonpartisan Editorial Standard

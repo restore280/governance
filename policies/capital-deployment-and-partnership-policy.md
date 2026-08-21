@@ -8,6 +8,8 @@
 
 This policy governs restore280 Institute's (the "Corporation") capital facilitation activities and organizational partnerships. The Corporation's capital deployment function involves identifying climate solution opportunities where capital is the binding constraint, facilitating third-party capital toward those opportunities, and deploying the Corporation's own capital in furtherance of its exempt purposes. All capital deployment and partnership activities must further the Corporation's charitable purposes under Section 501(c)(3) of the Internal Revenue Code and must not result in impermissible private benefit or private inurement.
 
+Whether a given capital opportunity is selected for resourcing at all, and how much of the Corporation's resources it receives, is governed by the Strategic Prioritization and Resource Allocation Policy. This policy has no role in that selection decision. It governs only how a capital opportunity already selected under that policy is subsequently evaluated, approved, and managed.
+
 ---
 
 ## 2. Exempt Purpose Alignment
