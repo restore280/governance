@@ -393,6 +393,8 @@ The Board shall adopt, and shall maintain in current form, the following policy 
 
 **(h) Communication Platform Administration Policy.** Governing the administration of communication platforms used by directors and employees, to ensure administrative access does not undermine any requirement that a deliberation, review, or vote occur without a particular director present, or that an interested director recuse.
 
+**(i) Human Labor and Artificial Intelligence Use Policy.** Governing the Corporation's use of artificial intelligence and automated systems across all Corporation functions, establishing a documented preference for human labor where affordable and where human performance would measurably improve the outcome.
+
 ### 10.3 Policy Adoption and Amendment
 
 Companion policies shall be adopted and amended pursuant to Article VII. New policies and material amendments shall be distributed to all directors at least fourteen (14) days before the consent deadline or synchronous meeting. The Board shall review all companion policies at least every two years.
