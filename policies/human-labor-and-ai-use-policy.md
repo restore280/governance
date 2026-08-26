@@ -20,13 +20,13 @@ The Corporation's work shall be performed by qualified humans rather than by an 
 
 **Affordable.** A Function is Affordable to perform with human labor unless doing so would displace a higher-priority Option already selected under the Strategic Prioritization and Resource Allocation Policy, would exceed the Corporation's currently available Resource Pool, or would otherwise substantially increase the opportunity cost of the funds or other resources needed to meet the Corporation's goals, relative to performing the Function with an Automated System.
 
-**Supervised Tool Use.** Use of an Automated System as an assistive tool, where a qualified human directs the work, reviews its output, and retains final decision-making authority over anything the Corporation ultimately relies upon, adopts, or publishes.
+**Supplementary Tool Use.** Use of an Automated System solely as an assistive tool, where a qualified human substantially performs and directs the work, reviews the System’s output, and retains final decision-making authority over any output.
 
 ---
 
 ## 3. The Preference Test
 
-Before a Function is assigned to an Automated System, a human designated by the Executive Director shall determine in writing whether the Function is Affordable to perform with human labor. If it is Affordable, the Function shall be assigned to human labor. If it is not, the Function may be assigned to an Automated System. Genuine Supervised Tool Use does not, by itself, constitute assigning a Function to an Automated System, since a human continues to perform and remains responsible for the Function.
+Before a Function is assigned to an Automated System, a human designated by the Executive Director shall determine whether the Function is Affordable to perform with human labor. If it is Affordable, the Function shall be assigned to human labor. If it is not, the Function may be assigned to an Automated System. Genuine Supplementary Tool Use does not, by itself, constitute assigning a Function to an Automated System, since a human continues to perform and remains responsible for the Function.
 
 This determination shall identify the Function and the basis for the Affordability conclusion, referencing the Corporation's current Resource Pool and any competing Options.
 
