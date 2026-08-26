@@ -6,7 +6,7 @@
 
 ## 1. Purpose and Scope
 
-This policy governs how restore280 Institute identifies, prioritizes, and resources the domains and projects it works on. It applies to the Corporation's total combined pool of available human labor hours and capital, without distinction by resource type. This policy evaluates and votes on all Options, regardless of whether they are primarily capital-intensive, labor-intensive, or both, together and against the same combined Resource Pool.
+This policy governs how restore280 Institute identifies, prioritizes, and resources the domains and projects it works on. It applies to the Corporation's total combined pool of available human labor hours and capital, without distinction by resource type. This policy evaluates all Options, regardless of whether they are primarily capital-intensive, labor-intensive, or both, together and against the same combined Resource Pool.
 
 This policy decides *what* the Corporation works on and *how much* of its resources, human labor hours, capital, or both, go to it. It does not govern *how* a selected initiative is subsequently executed. Once a domain or project is selected under this policy, its execution is governed by the Corporation's other companion policies, principally the Capital Deployment and Partnership Policy for capital projects and the Editorial and Compliance Policy for content projects. Those policies have no role in the selection decision itself; their evaluation criteria apply only after this policy has already determined that a given capital or content initiative will be resourced.
 
@@ -50,7 +50,7 @@ This policy operates in two levels: Domains and Projects. Section 3 defines the 
 
 Domains are the Corporation's operating foundation and are selected infrequently. A Domain selection or reconsideration round is triggered only by a Board motion to conduct one; it does not occur on a fixed calendar. Domain selection, once concluded, remains in effect until the Board again motions to reconsider it.
 
-A Domain-level round determines both which Domains the Corporation will operate in and what share of the Corporation's Resource Pool each selected Domain receives, per the vote and allocation mechanism in Sections 8 through 10.
+A Domain-level round determines both which Domains the Corporation will operate in and what share of the Corporation's Resource Pool each selected Domain receives, per the selection and allocation mechanism in Sections 8 through 10.
 
 ### 3.2 Projects
 
@@ -70,7 +70,7 @@ Before a scoring round begins, a human designated by the Executive Director shal
 
 ### 5.1 Who Scores
 
-A human designated by the Executive Director shall score each Option's Importance and Urgency, using the quantitative methodology in this Section. This methodology is written by the Executive Director or a human designated by them, and, together with any material revision to it, requires Board approval under Section 13.
+A human designated by the Executive Director shall score each Option's Importance and Urgency, using the quantitative methodology in this Section. This methodology is written by the Executive Director or a human designated by them, and, together with any material revision to it, requires Board approval under Section 12.
 
 ### 5.2 Importance Scoring
 
@@ -119,65 +119,39 @@ The full ranked list orders Quadrant 1 first, then Quadrant 2, then Quadrant 3, 
 
 ---
 
-## 8. Target Allocation and Ballot Formation
+## 8. Selection
 
-A human designated by the Executive Director shall propose a Target Allocation for the round, based on the currently available Resource Pool, and present it to the Board alongside the full ranked list from Section 7.2 and each Option's Total Cost from Section 5.4. The Board shall approve or adjust the Target Allocation as part of the Advance Consent described in Section 9.1.
+A human designated by the Executive Director shall propose a Target Allocation for the round, based on the currently available Resource Pool, and present it to the Board alongside the full ranked list from Section 7.2 and each Option's Total Cost from Section 5.4. The Board shall approve or adjust the Target Allocation as part of its approval of the proposal under Section 9.
 
-The ballot is formed by taking Options from the ranked list in order, starting from the top, and adding each to the ballot in turn until the cumulative Total Cost of the Options already added first reaches or exceeds twice the Target Allocation. The Option at which that threshold is reached or crossed is included in full; the ballot is not cut mid-Option. This produces a ballot sized to the cost of the Options under consideration rather than to a fixed count.
+Options are selected directly from the ranked list established under Section 7.2, taken in order starting from the top, added to the selected set in turn, until the next Option in order would cause the cumulative Total Cost of the selected set to exceed the Target Allocation. That next Option is not selected, and selection stops; lower-ranked Options are not separately checked for a better fit. The effective amount committed for the round is the cumulative Total Cost of the selected set, which will typically be just under the Target Allocation rather than exactly equal to it. Any portion of the Target Allocation not consumed by the selected set carries forward to the Resource Pool available for the next round at the same Domain or Project level.
 
 ---
 
-## 9. Secret Ballot Procedure
+## 9. Board Approval
 
-### 9.1 Advance Consent
+A party designated by the Executive Director shall prepare a proposal identifying the Options selected under Section 8 and their resulting resource allocations under Section 10. The Board shall approve the proposal by ordinary written consent under Bylaws Article VII.
 
-Before the secret ballot is conducted, the Board shall approve, by ordinary written consent under Bylaws Article VII, an Advance Consent identifying: the finalized ballot formed under Section 8, the Target Allocation, the portion of the Resource Pool at stake, and the third-party platform to be used. A director's approval of the Advance Consent constitutes binding agreement to approve the Outcome Ratification described in Section 11, and a director may not withhold approval of the Outcome Ratification on the basis of disagreement with the secret ballot's result. A director may withhold approval only on the basis of a documented procedural irregularity in how the ballot was conducted.
-
-### 9.2 Ballot Administration
-
-The secret ballot shall be conducted using a third-party platform designated by the Executive Director, chosen for its ability to keep individual ballots confidential from the Board and from the Corporation. All directors participate. A human designated by the Executive Director administers the platform and reports only the aggregate tallied result to the Board; individual ballots are never disclosed.
-
-### 9.3 Counting Method
-
-The ballot is counted by Single Transferable Vote using a Droop quota, calculated as the whole number produced by dividing the total valid ballots by the number of Options expected to be selected, estimated as the Target Allocation divided by the average Total Cost of Options on the ballot, plus one, then adding one, disregarding any remainder. This estimate affects only the quota used to pace the count; it does not limit how many Options are ultimately selected, which is determined by Section 9.4.
-
-Counting proceeds as follows: first-preference votes are tallied for all Options on the ballot. Any Option meeting or exceeding the quota is placed next in the Preference Order. An elected Option's surplus votes above the quota are transferred to continuing Options at each ballot's next usable preference, at a transfer value proportional to the surplus. If no Option meets the quota, the lowest-ranked continuing Option is eliminated, placed next-to-last in the Preference Order behind only Options eliminated after it, and its votes are transferred to continuing Options at each ballot's next usable preference. This process repeats until every Option on the ballot has either been placed in the Preference Order by reaching quota or been eliminated, producing a complete ranking of every Option on the ballot from strongest to weakest preference.
-
-### 9.4 Budget-Fit Selection
-
-Options are selected from the Preference Order established in Section 9.3, taken in order starting from the strongest, adding each to the selected set in turn, until the next Option in order would cause the cumulative Total Cost of the selected set to exceed the Target Allocation. That next Option is not selected, and selection stops; the Board does not continue checking lower-ranked Options for a better fit. The effective amount committed for the round is the cumulative Total Cost of the selected set, which will typically be just under the Target Allocation rather than exactly equal to it. Any portion of the Target Allocation not consumed by the selected set carries forward to the Resource Pool available for the next round at the same Domain or Project level.
-
-### 9.5 Limitation at Current Board Size
-
-At a three-director Board, this counting method has limited statistical meaning: a Droop quota at this scale is typically two of three votes, and a single vote can produce a large swing in the Preference Order. This Section 9 shall be revisited as the Board grows beyond three directors.
+The Board's approval applies to the proposal as a whole. This policy does not provide for the Board approving some selected Options while rejecting others, or for the Board substituting a different selection for the one produced under Section 8. If the Board does not approve the proposal, no Option is selected for the round. The Executive Director or a director may propose a revised round, including a revised Target Allocation, revised scoring, or a revised Option list, to address the Board's concerns.
 
 ---
 
 ## 10. Resource Allocation
 
-Each Option selected under Section 9.4 receives resources equal to its own Total Cost, as estimated under Section 5.4, in the same mix of capital and human labor hours reflected in that estimate. Resources are not allocated proportionally across selected Options; each selected Option receives what it was documented to cost, which is the basis on which it was determined to fit within the Target Allocation. At the Domain level, this draws against the Corporation's total Resource Pool. At the Project level, this draws against a single Domain's own share of the Resource Pool, as previously determined by its Domain-level allocation.
+Each Option selected under Section 8 and approved under Section 9 receives resources equal to its own Total Cost, as estimated under Section 5.4, in the same mix of capital and human labor hours reflected in that estimate. Resources are not allocated proportionally across selected Options; each selected Option receives what it was documented to cost, which is the basis on which it was determined to fit within the Target Allocation. At the Domain level, this draws against the Corporation's total Resource Pool. At the Project level, this draws against a single Domain's own share of the Resource Pool, as previously determined by its Domain-level allocation.
 
 ---
 
-## 11. Outcome Ratification
-
-The Outcome Ratification exists solely to enter the secret ballot's result into the Corporation's auditable governance repository. It has no substantive effect independent of the Advance Consent under Section 9.1, which is the point at which the Board's binding decision was actually made. The Outcome Ratification does not itself decide, approve, or authorize anything; it documents an outcome the Board already committed, in advance and irrevocably, to accept.
-
-Following the secret ballot, a party designated by the Executive Director shall prepare the Outcome Ratification, identifying the elected Options and their resulting resource allocations under Section 10. The Board shall approve the Outcome Ratification by ordinary written consent. Consistent with Section 9.1, this approval creates the permanent record of a decision already made; it is not a fresh discretionary vote on the substance of the outcome, and no director's approval may be withheld on that basis.
-
----
-
-## 12. Relationship to Other Governance Documents
+## 11. Relationship to Other Governance Documents
 
 This policy governs selection and resource allocation only. It does not modify, and is not modified by, the evaluation or execution criteria in the Capital Deployment and Partnership Policy or the Editorial and Compliance Policy. Those policies continue to govern how a Project selected under this policy is subsequently executed: due diligence, partnership terms, and outcome documentation for capital Projects; sourcing, editorial review, and publication standards for content Projects.
 
-This policy remains subject to the Corporation's other governing documents to the extent they are applicable to it. Those other governing documents have no bearing on the operation of the process described in this policy, except where placing a given Option on the ballot, or approving it as a result of the vote, would itself constitute a violation of an ethical requirement under those other governing documents, including the independence, conflict of interest, and editorial integrity requirements found elsewhere in the Corporation's governance framework. A human designated by the Executive Director shall flag any Option that would require such a violation to execute during Option Identification under Section 4, and any Option so flagged shall be excluded from the ballot. If such a violation is identified only after the secret ballot has been conducted, the Board shall address it by ordinary Board action rather than by reopening the ballot.
+This policy remains subject to the Corporation's other governing documents to the extent they are applicable to it. Those other governing documents have no bearing on the operation of the process described in this policy, except where selecting an Option under Section 8, or approving it under Section 9, would itself constitute a violation of an ethical requirement under those other governing documents, including the independence, conflict of interest, and editorial integrity requirements found elsewhere in the Corporation's governance framework. A human designated by the Executive Director shall flag any Option that would require such a violation to execute during Option Identification under Section 4, and any Option so flagged shall be excluded from consideration under Section 8. If such a violation is identified only after Board approval under Section 9, the Board shall address it by ordinary Board action rather than by reopening the selection.
 
 Where a Domain or Project's consideration under this policy independently triggers the mission-alignment review requirement of Bylaws Section 9.6, that same review serves both purposes, as described in Section 5.2.
 
 ---
 
-## 13. Amendment
+## 12. Amendment
 
 This policy may be amended by majority Board action pursuant to Article VII of the Bylaws, consistent with Article X of the Bylaws.
 

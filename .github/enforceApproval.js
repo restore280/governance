@@ -30,6 +30,12 @@
 // recuse themselves at any time by commenting "/recuse" (reversible by that
 // same voter posting a later /consent or /dissent). Either method removes
 // the voter from the required list for that PR.
+//
+// New commits pushed to an open PR reset consent: existing review approvals
+// and change-requests are dismissed, and existing /consent and /dissent
+// comments are removed after their full content is reproduced in one
+// summary comment first. Recusal is unaffected and persists across new
+// commits. See resetConsentOnNewCommits.
 
 const { Octokit } = require("@octokit/rest");
 const core = require("@actions/core");
@@ -100,6 +106,93 @@ async function fetchCommentSignals(octokit, owner, repo, pull_number, registered
     page++;
   }
   return signalByUser;
+}
+
+// If this run was triggered by new commits being pushed to an already-open
+// PR, any consent given before those commits was given to a version of the
+// matter that no longer exists. Per Bylaws Section 7.1, such consent is
+// invalidated and must be reissued. This function dismisses existing review
+// approvals and change-requests via GitHub's native dismissal mechanism
+// (which preserves the review in history marked as dismissed, rather than
+// deleting it, since GitHub does not permit deleting a submitted review),
+// and removes existing /consent and /dissent comments after first posting
+// one consolidated comment reproducing their full original content, so nothing
+// is actually lost, only relocated out of the individual comments and into a
+// single record. Recusal (/recuse comments, and PR-body "Recusal:"
+// declarations, neither of which this function touches) remains in effect
+// independent of any revision to the matter, since a conflict of interest
+// does not depend on the specific text under consideration.
+async function resetConsentOnNewCommits(octokit, owner, repo, pull_number, registeredVoters) {
+  let reviews = [], rPage = 1;
+  while (true) {
+    const { data } = await octokit.pulls.listReviews({ owner, repo, pull_number, per_page: 100, page: rPage });
+    reviews = reviews.concat(data);
+    if (data.length < 100) break;
+    rPage++;
+  }
+  for (const r of reviews) {
+    const login = (r.user && r.user.login || "").toLowerCase();
+    if (!registeredVoters.has(login)) continue;
+    if (r.state !== "APPROVED" && r.state !== "CHANGES_REQUESTED") continue;
+    try {
+      await octokit.pulls.dismissReview({
+        owner, repo, pull_number, review_id: r.id,
+        message: "Dismissed automatically: new commits were pushed to this PR. Please review the updated content and reconsent."
+      });
+    } catch (err) {
+      core.warning(`Could not dismiss review ${r.id}: ${err.message}`);
+    }
+  }
+
+  let comments = [], cPage = 1;
+  while (true) {
+    const { data } = await octokit.issues.listComments({ owner, repo, issue_number: pull_number, per_page: 100, page: cPage });
+    comments = comments.concat(data);
+    if (data.length < 100) break;
+    cPage++;
+  }
+
+  const toRemove = [];
+  for (const c of comments) {
+    const login = (c.user && c.user.login || "").toLowerCase();
+    if (!registeredVoters.has(login)) continue;
+    if (c.user.type === "Bot") continue;
+    const body = c.body || "";
+    const hasRecuse = /(?:^|\s)\/recuse(?:\s|$)/im.test(body);
+    if (hasRecuse) continue;
+    const hasConsent = /(?:^|\s)\/consent(?:\s|$)/im.test(body);
+    const hasDissent = /(?:^|\s)\/dissent(?:\s|$)/im.test(body);
+    if (!hasConsent && !hasDissent) continue;
+    toRemove.push(c);
+  }
+
+  if (toRemove.length > 0) {
+    const summaryLines = [
+      "## Consent Reset: New Commits Pushed",
+      "",
+      "New commits were pushed to this PR. Per Bylaws Section 7.1, consent is given to a specific version of a matter; the consent and dissent signals below were given before this push and no longer apply. Each director listed must reissue consent against the current version. Original content is reproduced in full below and has been removed from its original comment to avoid confusion about which signals are currently active.",
+      ""
+    ];
+    for (const c of toRemove) {
+      const login = (c.user && c.user.login || "").toLowerCase();
+      summaryLines.push(`**@${login}** (originally posted ${c.created_at}):`, "", "> " + (c.body || "").split("\n").join("\n> "), "");
+    }
+    summaryLines.push("*Posted automatically by the restore280 governance workflow.*");
+
+    try {
+      await octokit.issues.createComment({ owner, repo, issue_number: pull_number, body: summaryLines.join("\n") });
+    } catch (err) {
+      core.warning(`Could not post consent reset summary: ${err.message}`);
+    }
+
+    for (const c of toRemove) {
+      try {
+        await octokit.issues.deleteComment({ owner, repo, comment_id: c.id });
+      } catch (err) {
+        core.warning(`Could not delete comment ${c.id}: ${err.message}`);
+      }
+    }
+  }
 }
 
 // Merge review approvals and comment consents. Most recent signal wins.
@@ -264,6 +357,13 @@ async function postCheckRun(octokit, owner, repo, headSha, conclusion, title, su
     }
 
     const votersLC = new Set(voters.map(v => v.toLowerCase()));
+
+    // If new commits were just pushed to this PR, prior consent no longer
+    // applies to the current content and must be reset before evaluating
+    // consent below, per Bylaws Section 7.1.
+    if (process.env.GITHUB_EVENT_NAME === "pull_request" && payload.action === "synchronize") {
+      await resetConsentOnNewCommits(octokit, owner, repo, pull_number, votersLC);
+    }
 
     // Recusal declared in the PR body is absolute: it applies regardless of
     // any comment activity and can only be reversed by editing the PR body.
