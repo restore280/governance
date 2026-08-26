@@ -19,6 +19,10 @@ The authoritative versions of all governing documents live here. The current doc
 | `policies/editorial-and-compliance-policy.md` | Editorial and Compliance Policy |
 | `policies/capital-deployment-and-partnership-policy.md` | Capital Deployment and Partnership Policy |
 | `policies/external-funding-acceptance-policy.md` | External Funding Acceptance Policy |
+| `policies/succession-and-continuity-plan.md` | Succession and Continuity Plan |
+| `policies/strategic-prioritization-and-resource-allocation-policy.md` | Strategic Prioritization and Resource Allocation Policy |
+| `policies/communication-platform-administration-policy.md` | Communication Platform Administration Policy |
+| `policies/human-labor-and-ai-use-policy.md` | Human Labor and Artificial Intelligence Use Policy |
 | `records/` | Signed written consents and Board action records |
 
 ---

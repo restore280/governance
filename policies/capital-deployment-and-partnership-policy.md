@@ -124,7 +124,7 @@ No partnership agreement shall be executed with any entity in which a director, 
 
 ### 6.1 Standard
 
-The Corporation shall document the outcomes of all capital deployment partnerships with sufficient rigor to support the Corporation's research and publication function. Outcome documentation is a core function of the Corporation's theory of change, not an administrative formality.
+The Corporation shall document the outcomes of all capital deployment partnerships with sufficient rigor to support the Corporation's research and publication function.
 
 ### 6.2 Required Records
 
@@ -144,7 +144,7 @@ For each capital deployment, the Corporation shall maintain:
 
 ### 6.3 Publication
 
-The Corporation shall publish outcome documentation in its research output, subject to any confidentiality terms agreed with the partner. Disappointing or negative results shall be published; selective publication of positive outcomes only is inconsistent with the Corporation's research credibility standards.
+The Corporation shall publish outcome documentation in its research output, subject to any confidentiality terms agreed with the partner. Disappointing or negative results shall be published; selective publication of positive outcomes only is not permitted.
 
 ---
 
