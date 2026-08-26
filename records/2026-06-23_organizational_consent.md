@@ -209,9 +209,19 @@ Pursuant to Article XIII of the Bylaws, the Board hereby adopts the following am
 
 (g) amendment of Section 14.2 to strengthen the dissolution asset distribution standard;
 
-(h) new Section 14.4, requiring written findings before any merger or fundamental restructuring, and the corresponding retitling of Article XIV; and
+(h) new Section 14.4, requiring written findings before any merger or fundamental restructuring, and the corresponding retitling of Article XIV;
 
-(i) amendment of various administrative provisions throughout the Bylaws to permit the Executive Director to delegate specified clerical and administrative duties to a designated member of the Corporation's team, without altering any duty involving signature authority, spending authority, or the Executive Director's personal accountability to the Board.
+(i) amendment of various administrative provisions throughout the Bylaws to permit the Executive Director to delegate specified clerical and administrative duties to a designated member of the Corporation's team, without altering any duty involving signature authority, spending authority, or the Executive Director's personal accountability to the Board;
+
+(j) amendment of Section 8.7 to permit an officer or key employee to decline compensation or another benefit in writing without triggering the comparability-data review otherwise required by that Section, subject to that review applying in full once compensation or a benefit is actually provided;
+
+(k) amendment of Section 7.2 to change the standard response window from fourteen to ninety-one calendar days, to state that there is no requirement as to when a matter may be circulated for written consent, and to provide that a pull request past its response deadline without the required majority closes automatically rather than requiring further action by any director or the Executive Director;
+
+(l) removal of the separate fourteen-day advance-notice requirement from Section 13.1, Section 10.3, and Section 7.5, leaving the response window in Section 7.2 as the only timing rule applicable to any Board action, including a bylaws amendment or companion policy amendment; and
+
+(m) amendment of Section 7.1 to provide that consent is given to the specific version of a matter as circulated at the time of consent, that a subsequent revision to the matter invalidates any consent already given, requiring that it be given again against the revised version, and that a recusal, once declared, remains in effect independent of any subsequent revision to the matter.
+
+The Board acknowledges that this Resolution's adoption of the amendments in this Resolution, including subsection (l)'s removal of the fourteen-day advance-notice requirement, is itself subject to that same fourteen-day advance-notice requirement as it existed prior to this Resolution's adoption, consistent with Article XIII.
 
 The full text of these amendments as adopted is reflected in the version of BYLAWS.md filed in the governance repository as part of the pull request introducing this consent. No amendment adopted by this Resolution violates the limits of Section 13.2.
 
@@ -231,19 +241,9 @@ The Board confirms that upon adoption of these three policies, all nine companio
 
 **19.2 Bylaws Amendments.** Pursuant to Article XIII of the Bylaws, the Board hereby adopts the following further amendments to the Bylaws as ratified in Resolution 1 and previously amended by Resolution 18, effective October 1, 2026:
 
-(a) new Section 10.2(g), (h), and (i), listing the three policies adopted under Resolution 19.1 as required companion policies;
+(a) new Section 10.2(g), (h), and (i), listing the three policies adopted under Resolution 19.1 as required companion policies; and
 
-(b) amendment of Section 8.7 to permit an officer or key employee to decline compensation or another benefit in writing without triggering the comparability-data review otherwise required by that Section, subject to that review applying in full once compensation or a benefit is actually provided;
-
-(c) amendment of Section 7.2 to change the standard response window from fourteen to ninety-one calendar days, to state that there is no requirement as to when a matter may be circulated for written consent, and to provide that a pull request past its response deadline without the required majority closes automatically rather than requiring further action by any director or the Executive Director;
-
-(d) removal of the separate fourteen-day advance-notice requirement from Section 13.1, Section 10.3, and Section 7.5, leaving the response window in Section 7.2 as the only timing rule applicable to any Board action, including a bylaws amendment or companion policy amendment; and
-
-(e) amendment of Sections 3.11, 4.2(d), and 7.6, and the outcome-notification clause of Section 7.2, to distinguish a "party," which may include an automated or non-human system and is permitted only to produce documentation of a decision already made, from a "human," required wherever these Bylaws call for the exercise of discretion or judgment, with that distinction defined at Section 3.11; and
-
-(f) amendment of Section 7.1 to provide that consent is given to the specific version of a matter as circulated at the time of consent, that a subsequent revision to the matter invalidates any consent already given, requiring that it be given again against the revised version, and that a recusal, once declared, remains in effect independent of any subsequent revision to the matter.
-
-The Board acknowledges that this Resolution's adoption of the amendments in subsection 19.2, including subsection (d)'s removal of the fourteen-day advance-notice requirement, is itself subject to that same fourteen-day advance-notice requirement as it existed prior to this Resolution's adoption, consistent with Article XIII.
+(b) amendment of Sections 3.11, 4.2(d), and 7.6, and the outcome-notification clause of Section 7.2, to distinguish a "party," which may include an automated or non-human system and is permitted only to produce documentation of a decision already made, from a "human," required wherever these Bylaws call for the exercise of discretion or judgment, with that distinction defined at Section 3.11.
 
 The full text of these amendments as adopted is reflected in the version of BYLAWS.md filed in the governance repository as part of the pull request introducing this Resolution. No amendment adopted by this Resolution violates the limits of Section 13.2.
 

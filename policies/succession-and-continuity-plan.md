@@ -60,11 +60,7 @@ If more than one director seat becomes vacant simultaneously, the remaining dire
 
 ### 4.1 Designated Emergency Contacts
 
-| Role | Primary | Backup |
-|---|---|---|
-| Banking / financial emergency | Executive Director/Treasurer | Board Chair |
-| Legal / compliance emergency | Executive Director | Board Chair |
-| Governance repository administration | Executive Director | Board Chair |
+The Executive Director is the primary point of contact for banking and financial emergencies, legal and compliance emergencies, and governance repository administration; the Board Chair is the backup for each.
 
 ### 4.2 Bank Account Emergency Access
 
@@ -86,11 +82,9 @@ The GitHub repository at `github.com/restore280/governance` is the authoritative
 
 A human designated by the Executive Director shall maintain a written operations reference covering, at minimum: the video production pipeline and its current state, the publishing calendar and its rationale, active partnership and funding relationships, and the status of pending regulatory filings. This reference shall be stored in a location accessible to the Board Chair, not solely on the Executive Director's personal devices or accounts. Until a dedicated location is established, the quarterly financial and compliance summary required by Bylaws Section 8.4 and Section 9.4 serves as the interim mechanism for keeping the Board Chair current on this information.
 
-### 5.3 Research Records
+### 5.3 Critical Credentials and Access
 
-Published research materials and their source records are maintained in the Corporation's designated research archive. Access to that archive is covered under Section 5.4.
-
-### 5.4 Critical Credentials and Access
+Published research materials and their source records are maintained in the Corporation's designated research archive.
 
 The Corporation maintains an inventory of accounts, systems, and access credentials material to its operations. That inventory, and the credentials themselves, are held in a password manager, not in this document or in the governance repository. The Executive Director is the primary owner of that password manager, and the Board Chair holds designated emergency access to it. A human designated by the Executive Director shall keep the inventory current and shall confirm at each annual governance review that the Board Chair's emergency access remains functional. This inventory also records, for each communication platform in use, the administrative arrangement required by the Communication Platform Administration Policy.
 
@@ -108,13 +102,13 @@ The Corporation's compliance calendar (EIN, Form 5768, Form 1023-EZ, annual Form
 
 ### 6.3 Technology
 
-Hosting, domain, and email infrastructure access is covered in Section 5.4. Personal production tooling used by the Executive Director in content creation is outside the scope of this plan.
+Hosting, domain, and email infrastructure access is covered in Section 5.3. Personal production tooling used by the Executive Director in content creation is outside the scope of this plan.
 
 ---
 
 ## 7. Review
 
-This plan shall be reviewed at each annual governance review under Bylaws Section 7.5, and promptly after any of the following: a change in who holds the Executive Director or Treasurer office, a change in Board composition, the opening of a new financial account, or the engagement of outside counsel or an accountant. Each review shall confirm that the credentials inventory described in Section 5.4 remains current and that the Board Chair's emergency access remains functional.
+This plan shall be reviewed at each annual governance review under Bylaws Section 7.5, and promptly after any of the following: a change in who holds the Executive Director or Treasurer office, a change in Board composition, the opening of a new financial account, or the engagement of outside counsel or an accountant. Each review shall confirm that the credentials inventory described in Section 5.3 remains current and that the Board Chair's emergency access remains functional.
 
 ---
 
