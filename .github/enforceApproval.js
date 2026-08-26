@@ -2,8 +2,9 @@
 //
 // restore280 Institute: Board Consent Enforcement
 //
-// Implements the unanimous written consent requirement of Article VII of the
-// restore280 Bylaws. All active directors must consent before a PR may merge.
+// Implements the board consent requirement of Article VII of the
+// restore280 Bylaws. A majority of then-serving directors, per Section 7.4,
+// must consent before a PR may merge.
 //
 // Two consent methods are accepted:
 //
@@ -365,7 +366,7 @@ async function postCheckRun(octokit, owner, repo, headSha, conclusion, title, su
       passed ? "Consent requirement met" : `Waiting on: ${waiting.join(", ")}`,
       passed
         ? `${approved}/${requiredCount} required consent(s) received. Action may proceed.`
-        : `${approved}/${requiredCount} required consent(s) received. Unanimous consent required.`
+        : `${approved}/${requiredCount} required consent(s) received.`
     );
 
     // Set job outcome
