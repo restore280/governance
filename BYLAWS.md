@@ -219,6 +219,8 @@ Advisory Board members have no governance authority, no fiduciary duties to the 
 
 The Board shall act primarily by written consent without a meeting. Any action required or permitted to be taken by the Board may be taken by written consent of a majority of then-serving directors, delivered by electronic mail, electronic signature, or other electronic transmission. A director who does not respond within the specified window is counted as not consenting for purposes of calculating whether majority has been achieved. Written consent shall be filed with the corporate records in the same form in which it was received.
 
+Consent is given to the specific version of a matter as circulated at the time of consent. A subsequent revision to the matter invalidates any consent already given, which must be given again against the revised version. Recusal, once declared, remains in effect independent of any subsequent revision to the matter.
+
 ### 7.2 Response Window
 
 A human designated by the Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is ninety-one (91) calendar days. For urgent matters, a shorter window of not less than forty-eight (48) hours may be specified, stating the reason for urgency. There is no requirement as to when a matter may be circulated for written consent; the response window runs from the date of circulation regardless of when that date falls. A director who does not respond by the deadline has not consented. If a majority of all then-serving directors have not consented by the deadline, the action fails, and the pull request implementing it closes automatically, without requiring further action by any director or the Executive Director.

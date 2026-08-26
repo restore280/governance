@@ -33,6 +33,8 @@ Article VII of the Bylaws establishes written consent as the default method for 
 
 **Merging a PR = the action taking effect.** A PR may only be merged after the consent requirement is met. Branch protection rules enforce this: the `consent-check` workflow must pass before merge is permitted.
 
+**New commits reset consent.** Consent is given to a specific version of a matter (Bylaws Section 7.1). If new commits are pushed to an open PR, any existing GitHub review approvals or change-requests are dismissed automatically, and any existing `/consent` or `/dissent` comments are removed, after their full content is first reproduced in one consolidated comment so nothing is lost. Every director must reissue consent against the new content. A prior `/recuse`, or a PR-body `Recusal:` declaration, is not affected by new commits and remains in effect, since a conflict of interest does not depend on the specific text under consideration.
+
 **Closing a PR without merging = action failed.** If the response deadline passes without majority consent, the PR closes automatically. The PR's comment history documents who consented and who did not, satisfying the Section 7.6 recordkeeping requirement.
 
 ---

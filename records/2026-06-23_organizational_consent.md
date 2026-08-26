@@ -239,7 +239,9 @@ The Board confirms that upon adoption of these three policies, all nine companio
 
 (d) removal of the separate fourteen-day advance-notice requirement from Section 13.1, Section 10.3, and Section 7.5, leaving the response window in Section 7.2 as the only timing rule applicable to any Board action, including a bylaws amendment or companion policy amendment; and
 
-(e) amendment of Sections 3.11, 4.2(d), and 7.6, and the outcome-notification clause of Section 7.2, to distinguish a "party," which may include an automated or non-human system and is permitted only to produce documentation of a decision already made, from a "human," required wherever these Bylaws call for the exercise of discretion or judgment, with that distinction defined at Section 3.11.
+(e) amendment of Sections 3.11, 4.2(d), and 7.6, and the outcome-notification clause of Section 7.2, to distinguish a "party," which may include an automated or non-human system and is permitted only to produce documentation of a decision already made, from a "human," required wherever these Bylaws call for the exercise of discretion or judgment, with that distinction defined at Section 3.11; and
+
+(f) amendment of Section 7.1 to provide that consent is given to the specific version of a matter as circulated at the time of consent, that a subsequent revision to the matter invalidates any consent already given, requiring that it be given again against the revised version, and that a recusal, once declared, remains in effect independent of any subsequent revision to the matter.
 
 The Board acknowledges that this Resolution's adoption of the amendments in subsection 19.2, including subsection (d)'s removal of the fourteen-day advance-notice requirement, is itself subject to that same fourteen-day advance-notice requirement as it existed prior to this Resolution's adoption, consistent with Article XIII.
 
