@@ -78,8 +78,8 @@ function parseRecusals(body) {
   return recused;
 }
 
-async function fetchCommentConsents(octokit, owner, repo, pull_number, effectiveVoters) {
-  const consentByUser = new Map();
+async function fetchCommentSignals(octokit, owner, repo, pull_number, registeredVoters) {
+  const signalByUser = new Map();
   let page = 1;
   while (true) {
     const { data: comments } = await octokit.issues.listComments({
@@ -87,22 +87,23 @@ async function fetchCommentConsents(octokit, owner, repo, pull_number, effective
     });
     for (const comment of comments) {
       const login = (comment.user && comment.user.login || "").toLowerCase();
-      if (!effectiveVoters.has(login)) continue;
+      if (!registeredVoters.has(login)) continue;
       if (comment.user.type === "Bot") continue;
       const body = comment.body || "";
       const ts = new Date(comment.created_at || 0).getTime();
       const hasConsent = /(?:^|\s)\/consent(?:\s|$)/im.test(body);
       const hasDissent = /(?:^|\s)\/dissent(?:\s|$)/im.test(body);
-      if (!hasConsent && !hasDissent) continue;
-      const prev = consentByUser.get(login);
+      const hasRecuse = /(?:^|\s)\/recuse(?:\s|$)/im.test(body);
+      if (!hasConsent && !hasDissent && !hasRecuse) continue;
+      const prev = signalByUser.get(login);
       if (prev && ts < prev.ts) continue;
-      const state = hasDissent ? "DISSENTED" : "APPROVED";
-      consentByUser.set(login, { state, ts, method: "comment" });
+      const state = hasRecuse ? "RECUSED" : hasDissent ? "DISSENTED" : "APPROVED";
+      signalByUser.set(login, { state, ts, method: "comment" });
     }
     if (comments.length < 100) break;
     page++;
   }
-  return consentByUser;
+  return signalByUser;
 }
 
 function mergeConsents(reviewMap, commentMap) {
@@ -128,7 +129,21 @@ async function evaluateConsent(octokit, owner, repo, pr, cfg) {
 
   const voters = Array.isArray(cfg.voters) ? cfg.voters : [];
   const votersLC = new Set(voters.map(v => v.toLowerCase()));
-  const recusedLC = parseRecusals(prBody);
+
+  // Recusal declared in the PR body is absolute and independent of comments.
+  const bodyRecusedLC = parseRecusals(prBody);
+
+  // Fetch comment signals from the full registered voter set so self-recusal
+  // via /recuse can be detected before the effective voter set is finalized.
+  const commentSignals = await fetchCommentSignals(octokit, owner, repo, pr.number, votersLC);
+
+  const selfRecusedLC = new Set(
+    [...commentSignals.entries()]
+      .filter(([, sig]) => sig.state === "RECUSED")
+      .map(([v]) => v)
+  );
+
+  const recusedLC = new Set([...bodyRecusedLC, ...selfRecusedLC]);
 
   const allowSelf = cfg.allow_self_approve === true;
   const excludeAuthor = typeof cfg.exclude_author === "boolean" ? cfg.exclude_author : !allowSelf;
@@ -161,7 +176,9 @@ async function evaluateConsent(octokit, owner, repo, pr, cfg) {
     if (!prev || ts >= prev.ts) reviewMap.set(login, { state: r.state, ts });
   }
 
-  const commentMap = await fetchCommentConsents(octokit, owner, repo, pr.number, effectiveVoters);
+  const commentMap = new Map(
+    [...commentSignals.entries()].filter(([v, sig]) => effectiveVoters.has(v) && sig.state !== "RECUSED")
+  );
   const mergedConsents = mergeConsents(reviewMap, commentMap);
 
   const approved = [...effectiveVoters].filter(v => {

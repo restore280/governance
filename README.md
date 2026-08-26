@@ -57,13 +57,19 @@ A director who does not respond by the deadline has not consented. If a majority
 
 ### Recusal
 
-If a director has a conflict of interest requiring recusal under the Conflict of Interest Policy, the PR author adds a line to the PR description:
+There are two ways to recuse a director from a PR:
+
+**Body-declared recusal.** If a director has a conflict of interest requiring recusal under the Conflict of Interest Policy, the PR author adds a line to the PR description:
 
 ```
 Recusal: @github-handle
 ```
 
-The workflow removes that director from the required voter list for that PR only. The recusal declaration must appear in the PR body (not in comments) and must be present when the PR is opened or added before any approvals are counted.
+This declaration must appear in the PR body (not in comments). It is absolute: once present, it can only be reversed by editing the PR body to remove it, not by that director commenting.
+
+**Self-recusal.** A director may recuse themselves at any point by posting a comment containing `/recuse`. This follows the same most-recent-comment-wins rule as `/consent` and `/dissent`: a later `/consent` or `/dissent` from that same director reverses the self-recusal, and a later `/recuse` reverses a prior consent or dissent. If a single comment contains more than one command, `/recuse` takes precedence, then `/dissent`, then `/consent`.
+
+Either method removes the director from the required voter list for that PR only.
 
 ---
 
