@@ -321,7 +321,7 @@ Before undertaking any material new program, campaign, research initiative, part
 
 (h) what foreseeable harms, tradeoffs, conflicts, or unintended consequences exist;
 
-(i) what assumptions underlying the initiative could prove wrong and how they will be mitigated; and
+(i) what assumptions underlying the initiative could prove wrong, which could jeopardize its success, and how they will be mitigated; and
 
 (j) under what circumstances the initiative should be revised, suspended, or terminated.
 
