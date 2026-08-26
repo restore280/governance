@@ -164,7 +164,7 @@ The Executive Director shall include in the quarterly financial summary provided
 
 ## 8. Amendment
 
-This policy may be amended by majority Board action pursuant to Article VII of the Bylaws, with at least fourteen (14) days' prior notice to all directors.
+This policy may be amended by majority Board action pursuant to Article VII of the Bylaws.
 
 ---
 

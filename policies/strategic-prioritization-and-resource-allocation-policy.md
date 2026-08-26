@@ -179,7 +179,7 @@ Where a Domain or Project's consideration under this policy independently trigge
 
 ## 13. Amendment
 
-This policy may be amended by majority Board action pursuant to Article VII of the Bylaws, with at least fourteen (14) days' prior notice to all directors, consistent with Article X of the Bylaws.
+This policy may be amended by majority Board action pursuant to Article VII of the Bylaws, consistent with Article X of the Bylaws.
 
 ---
 

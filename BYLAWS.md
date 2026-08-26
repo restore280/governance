@@ -235,7 +235,7 @@ All Board actions, whether taken by written consent under Section 7.1 or by vote
 
 ### 7.5 Annual Governance Review
 
-The Board shall complete an annual governance review by written consent or synchronous meeting no later than ninety (90) days after the close of each fiscal year. The annual governance review shall include: approval of the prior year financial summary presented by the Executive Director; confirmation of each director's independence status under Section 3.3, conducted among the Independent Directors without the Executive Director present; review of the Form 990 before filing per Section 8.5; a review of whether the Corporation's major activities remain aligned with its mission and governing principles under Section 1.5, per Section 9.6; review of the succession and continuity plan under Section 9.8; and any director elections required by expiring terms. A human designated by the Executive Director shall circulate materials for the annual governance review at least fourteen (14) days before the response deadline.
+The Board shall complete an annual governance review by written consent or synchronous meeting no later than ninety (90) days after the close of each fiscal year. The annual governance review shall include: approval of the prior year financial summary presented by the Executive Director; confirmation of each director's independence status under Section 3.3, conducted among the Independent Directors without the Executive Director present; review of the Form 990 before filing per Section 8.5; a review of whether the Corporation's major activities remain aligned with its mission and governing principles under Section 1.5, per Section 9.6; review of the succession and continuity plan under Section 9.8; and any director elections required by expiring terms. A human designated by the Executive Director shall circulate materials for the annual governance review.
 
 ### 7.6 Records
 
@@ -397,7 +397,7 @@ The Board shall adopt, and shall maintain in current form, the following policy 
 
 ### 10.3 Policy Adoption and Amendment
 
-Companion policies shall be adopted and amended pursuant to Article VII. New policies and material amendments shall be distributed to all directors at least fourteen (14) days before the consent deadline or synchronous meeting. The Board shall review all companion policies at least every two years.
+Companion policies shall be adopted and amended pursuant to Article VII. The Board shall review all companion policies at least every two years.
 
 ### 10.4 Policy Compliance
 
@@ -451,7 +451,7 @@ Directors shall have the right to inspect and copy corporate records at any reas
 
 ### 13.1 Procedure
 
-These Bylaws may be amended pursuant to Article VII, provided the proposed amendment has been distributed to all directors in writing at least fourteen (14) days before the consent deadline or synchronous meeting.
+These Bylaws may be amended pursuant to Article VII.
 
 ### 13.2 Limits
 

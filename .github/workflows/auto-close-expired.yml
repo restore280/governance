@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '0 12 * * *'
   workflow_dispatch: {}
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: read
@@ -13,6 +15,12 @@ permissions:
 jobs:
   auto-close-expired:
     runs-on: ubuntu-latest
+
+    # For issue_comment events, only run if the comment is on a pull request.
+    # Scheduled and manually dispatched runs always proceed.
+    if: |
+      github.event_name != 'issue_comment' ||
+      github.event.issue.pull_request != null
 
     steps:
       - name: Checkout repository
@@ -35,5 +43,8 @@ jobs:
       - name: Close pull requests past their response deadline
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # For issue_comment events, check only the commented-on PR rather
+          # than rescanning every open PR.
+          TARGET_PR_NUMBER: ${{ github.event_name == 'issue_comment' && github.event.issue.number || '' }}
         working-directory: .github
         run: node autoCloseExpired.js
