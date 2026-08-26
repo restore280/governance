@@ -217,6 +217,36 @@ The full text of these amendments as adopted is reflected in the version of BYLA
 
 ---
 
+## Resolution 19: Adoption of Additional Companion Policies and Bylaws Amendments
+
+This Resolution adopts a further round of companion policies and bylaws amendments filed in the governance repository as part of this pull request, subsequent to and independent of Resolutions 8 and 18.
+
+**19.1 New Companion Policies.** The following companion policies are hereby adopted as Board policies of the Corporation, effective October 1, 2026, consistent with the effective date stated in each policy:
+
+- Strategic Prioritization and Resource Allocation Policy
+- Communication Platform Administration Policy
+- Human Labor and Artificial Intelligence Use Policy
+
+The Board confirms that upon adoption of these three policies, all nine companion policies required by Section 10.2 of the Bylaws, as amended by this Resolution, are in effect.
+
+**19.2 Bylaws Amendments.** Pursuant to Article XIII of the Bylaws, the Board hereby adopts the following further amendments to the Bylaws as ratified in Resolution 1 and previously amended by Resolution 18, effective October 1, 2026:
+
+(a) new Section 10.2(g), (h), and (i), listing the three policies adopted under Resolution 19.1 as required companion policies;
+
+(b) amendment of Section 8.7 to permit an officer or key employee to decline compensation or another benefit in writing without triggering the comparability-data review otherwise required by that Section, subject to that review applying in full once compensation or a benefit is actually provided;
+
+(c) amendment of Section 7.2 to change the standard response window from fourteen to ninety-one calendar days, to state that there is no requirement as to when a matter may be circulated for written consent, and to provide that a pull request past its response deadline without the required majority closes automatically rather than requiring further action by any director or the Executive Director;
+
+(d) removal of the separate fourteen-day advance-notice requirement from Section 13.1, Section 10.3, and Section 7.5, leaving the response window in Section 7.2 as the only timing rule applicable to any Board action, including a bylaws amendment or companion policy amendment; and
+
+(e) amendment of Sections 3.11, 4.2(d), and 7.6, and the outcome-notification clause of Section 7.2, to distinguish a "party," which may include an automated or non-human system and is permitted only to produce documentation of a decision already made, from a "human," required wherever these Bylaws call for the exercise of discretion or judgment, with that distinction defined at Section 3.11.
+
+The Board acknowledges that this Resolution's adoption of the amendments in subsection 19.2, including subsection (d)'s removal of the fourteen-day advance-notice requirement, is itself subject to that same fourteen-day advance-notice requirement as it existed prior to this Resolution's adoption, consistent with Article XIII.
+
+The full text of these amendments as adopted is reflected in the version of BYLAWS.md filed in the governance repository as part of the pull request introducing this Resolution. No amendment adopted by this Resolution violates the limits of Section 13.2.
+
+---
+
 ## Signature Block
 
 Each director identified below approves this written consent by approving the pull request introducing this document into the governance repository, as described in the Preamble.
