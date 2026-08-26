@@ -72,7 +72,7 @@ Before a scoring round begins, a human designated by the Executive Director shal
 
 ### 5.1 Who Scores
 
-A human designated by the Executive Director shall score each Option's Importance and Urgency, using the quantitative methodology in this Section. This methodology is written by the Executive Director or a human designated by them, and, together with any material revision to it, requires Board approval under Section 12.
+A human designated by the Executive Director shall score each Option's Importance and Urgency, using the quantitative methodology in this Section.
 
 ### 5.2 Importance Scoring
 
