@@ -130,7 +130,7 @@ The Corporation shall disclose all funding sources as required by the Internal R
 
 ## 8. Amendment
 
-This policy may be amended by majority Board action pursuant to Article VII of the Bylaws, with at least fourteen (14) days' prior notice to all directors.
+This policy may be amended by majority Board action pursuant to Article VII of the Bylaws.
 
 ---
 

@@ -172,11 +172,55 @@ async function evaluateConsent(octokit, owner, repo, pr, cfg) {
   return { approved, requiredCount, passed: approved >= requiredCount };
 }
 
+async function checkAndCloseIfExpired(octokit, owner, repo, pr, cfg) {
+  const deadline = computeDeadline(pr);
+  const now = new Date();
+  if (now < deadline) return false;
+
+  const { approved, requiredCount, passed } = await evaluateConsent(octokit, owner, repo, pr, cfg);
+  if (passed) return false;
+
+  await octokit.issues.createComment({
+    owner, repo, issue_number: pr.number,
+    body: [
+      "## Response Deadline Expired",
+      "",
+      `This pull request's response deadline (${deadline.toISOString().slice(0, 10)}) has passed `
+        + `with ${approved}/${requiredCount} required consent(s) received. Per Bylaws Section 7.2, `
+        + "the action has failed and this pull request is closing automatically.",
+      "",
+      "A new pull request may be opened to recirculate this matter for consent at any time; "
+        + "there is no requirement as to when a matter may be recirculated.",
+      "",
+      "*Closed automatically by the restore280 governance workflow.*"
+    ].join("\n")
+  });
+
+  await octokit.pulls.update({ owner, repo, pull_number: pr.number, state: "closed" });
+  console.log(`Closed PR #${pr.number}: response deadline expired without required consent.`);
+  return true;
+}
+
 (async () => {
   try {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
     const cfg = loadVoterConfig(process.cwd());
+
+    // TARGET_PR_NUMBER is set by the workflow for issue_comment-triggered
+    // runs, so a new comment checks only the PR it was posted on rather
+    // than rescanning every open PR. Unset (scheduled runs) scans all open
+    // PRs, which remains the backstop for PRs that receive no further
+    // comment activity after their deadline passes.
+    const targetPR = (process.env.TARGET_PR_NUMBER || "").trim();
+
+    if (targetPR) {
+      const { data: pr } = await octokit.pulls.get({ owner, repo, pull_number: parseInt(targetPR, 10) });
+      if (pr.state === "open") {
+        await checkAndCloseIfExpired(octokit, owner, repo, pr, cfg);
+      }
+      return;
+    }
 
     let openPRs = [], page = 1;
     while (true) {
@@ -186,33 +230,8 @@ async function evaluateConsent(octokit, owner, repo, pr, cfg) {
       page++;
     }
 
-    const now = new Date();
-
     for (const pr of openPRs) {
-      const deadline = computeDeadline(pr);
-      if (now < deadline) continue;
-
-      const { approved, requiredCount, passed } = await evaluateConsent(octokit, owner, repo, pr, cfg);
-      if (passed) continue;
-
-      await octokit.issues.createComment({
-        owner, repo, issue_number: pr.number,
-        body: [
-          "## Response Deadline Expired",
-          "",
-          `This pull request's response deadline (${deadline.toISOString().slice(0, 10)}) has passed `
-            + `with ${approved}/${requiredCount} required consent(s) received. Per Bylaws Section 7.2, `
-            + "the action has failed and this pull request is closing automatically.",
-          "",
-          "A new pull request may be opened to recirculate this matter for consent at any time; "
-            + "there is no requirement as to when a matter may be recirculated.",
-          "",
-          "*Closed automatically by the restore280 governance workflow.*"
-        ].join("\n")
-      });
-
-      await octokit.pulls.update({ owner, repo, pull_number: pr.number, state: "closed" });
-      console.log(`Closed PR #${pr.number}: response deadline expired without required consent.`);
+      await checkAndCloseIfExpired(octokit, owner, repo, pr, cfg);
     }
   } catch (error) {
     core.setFailed(`Error running automatic deadline closure: ${error.message}`);
