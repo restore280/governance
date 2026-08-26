@@ -13,9 +13,9 @@ The authoritative versions of all governing documents live here. The current doc
 | File | Description |
 |------|-------------|
 | `BYLAWS.md` | Bylaws of restore280 Institute |
-| `policies/conflict-of-interest.md` | Conflict of Interest Policy |
-| `policies/document-retention.md` | Document Retention and Destruction Policy |
-| `policies/whistleblower.md` | Whistleblower Protection Policy |
+| `policies/conflict-of-interest-policy.md` | Conflict of Interest Policy |
+| `policies/document-retention-policy.md` | Document Retention and Destruction Policy |
+| `policies/whistleblower-policy.md` | Whistleblower Protection Policy |
 | `policies/editorial-and-compliance-policy.md` | Editorial and Compliance Policy |
 | `policies/capital-deployment-and-partnership-policy.md` | Capital Deployment and Partnership Policy |
 | `policies/external-funding-acceptance-policy.md` | External Funding Acceptance Policy |
