@@ -40,7 +40,9 @@ This policy operates in two levels: Domains and Projects. Section 3 defines the 
 
 **Target Allocation.** A fixed Total Cost figure, set by the Board and not derived from any formula, representing the actual resources the Board has determined are available to commit in a given round.
 
-**Human versus Party.** Where this policy or the Bylaws require an act of discretion, evaluation, or judgment, they specify that a human must perform it. Where they require only the production of documentation reporting a decision already made, whether by a vote, a scoring result, or another discretionary act that has already concluded, they specify that a party, which may include a human or an automated or non-human system, may perform it. This distinction exists so that discretionary governance decisions remain the exclusive province of human judgment, while purely clerical documentation of decisions already made may be produced efficiently, including by automated means, without expanding who exercises actual discretion on the Corporation's behalf.
+**Human.** A natural person who performs any act of discretion, evaluation, judgment, or other substantive governance decision required by this policy or the Bylaws. Such acts may not be delegated to an Automated System or other non-human actor.
+
+**Party.** A human, Automated System, or other human or non-human actor that may perform purely clerical or documentary acts, including producing records of decisions already made by vote, scoring result, or other completed discretionary process, provided that doing so does not confer or exercise discretion on the Corporation’s behalf.
 
 ---
 
