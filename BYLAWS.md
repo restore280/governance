@@ -321,7 +321,7 @@ Before undertaking any material new program, campaign, research initiative, part
 
 (h) what foreseeable harms, tradeoffs, conflicts, or unintended consequences exist;
 
-(i) what assumptions underlying the initiative could prove wrong, which could jeopardize its success, and how they will be mitigated; and
+(i) what assumptions underlying the initiative could prove wrong and how they will be mitigated; and
 
 (j) under what circumstances the initiative should be revised, suspended, or terminated.
 
@@ -373,7 +373,7 @@ The plan shall be reviewed at each annual governance review under Section 7.5 an
 
 ### 10.1 Policy Documents
 
-The Corporation's operational standards, editorial guidelines, and specific compliance procedures shall be maintained as separate Board-adopted policy documents rather than as provisions of these Bylaws. This structure permits policies to be updated as operations evolve without requiring bylaw amendments, while maintaining Board-level accountability for each policy.
+The Corporation's operational standards, editorial guidelines, and specific compliance procedures shall be maintained as separate Board-adopted policy documents rather than as provisions of these Bylaws.
 
 ### 10.2 Required Policies
 
