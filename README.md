@@ -33,7 +33,7 @@ Article VII of the Bylaws establishes written consent as the default method for 
 
 **Merging a PR = the action taking effect.** A PR may only be merged after the consent requirement is met. Branch protection rules enforce this: the `consent-check` workflow must pass before merge is permitted.
 
-**Closing a PR without merging = action failed.** If the response deadline passes without majority consent, the Executive Director closes the PR. The PR's comment history documents who consented and who did not, satisfying the Section 7.6 recordkeeping requirement.
+**Closing a PR without merging = action failed.** If the response deadline passes without majority consent, the PR closes automatically. The PR's comment history documents who consented and who did not, satisfying the Section 7.6 recordkeeping requirement.
 
 ---
 
@@ -47,11 +47,11 @@ The workflow reads the voter list from `.github/voters.yml` and posts a running 
 
 ### Response Deadlines
 
-The PR description specifies the response deadline. Standard deadline is 14 calendar days from the date the PR is opened. Urgent matters may specify a shorter window of not less than 48 hours, with the reason stated in the PR description.
+The PR description specifies the response deadline. Standard deadline is 91 calendar days from the date the PR is opened. Urgent matters may specify a shorter window of not less than 48 hours, with the reason stated in the PR description. There is no requirement as to when a PR must be opened for any given matter; the response window simply runs from whenever it is opened.
 
-A director who does not respond by the deadline has not consented. The action fails and the PR is closed by the Executive Director with a comment noting the outcome. This is the manual implementation of the Section 7.2 requirement that non-response by deadline = action failed.
+A director who does not respond by the deadline has not consented. If a majority of all then-serving directors have not consented by the deadline, the action fails and the PR closes automatically, without requiring action by the Executive Director or any director. A scheduled workflow, independent of any activity on the PR, checks daily for pull requests past their response deadline without the required consent and closes them, posting a comment noting the outcome. This satisfies the Section 7.2 requirement that non-response by deadline = action failed without depending on a person remembering to close the PR.
 
-**Bylaw amendments cannot use the shortened urgent deadline.** Article XIII requires that a proposed bylaw amendment be distributed to all directors at least fourteen (14) days before the consent deadline. A PR amending `BYLAWS.md` must therefore use the standard 14-day deadline; the 48-hour urgent option is not available for these PRs regardless of stated urgency.
+**Bylaw amendments cannot use the shortened urgent deadline.** Article XIII requires that a proposed bylaw amendment be distributed to all directors at least fourteen (14) days before the consent deadline. A PR amending `BYLAWS.md` must therefore use the standard 91-day deadline; the 48-hour urgent option is not available for these PRs regardless of stated urgency.
 
 ---
 

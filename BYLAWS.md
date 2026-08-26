@@ -221,7 +221,7 @@ The Board shall act primarily by written consent without a meeting. Any action r
 
 ### 7.2 Response Window
 
-A human designated by the Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is fourteen (14) calendar days. For urgent matters, a shorter window of not less than forty-eight (48) hours may be specified, stating the reason for urgency. A director who does not respond by the deadline has not consented. The action passes if a majority of all then-serving directors have consented by the deadline; otherwise it fails and a party designated by the Executive Director shall notify all directors of that outcome.
+A human designated by the Executive Director shall specify a response deadline when circulating any matter for written consent. The standard response window is ninety-one (91) calendar days. For urgent matters, a shorter window of not less than forty-eight (48) hours may be specified, stating the reason for urgency. There is no requirement as to when a matter may be circulated for written consent; the response window runs from the date of circulation regardless of when that date falls. A director who does not respond by the deadline has not consented. If a majority of all then-serving directors have not consented by the deadline, the action fails, and the pull request implementing it closes automatically, without requiring further action by any director or the Executive Director.
 
 ### 7.3 Synchronous Meetings
 

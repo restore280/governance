@@ -52,7 +52,7 @@ jobs:
             npm install --no-audit --no-fund
           fi
 
-      - name: Enforce unanimous board consent
+      - name: Enforce board consent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # For comment events, pass the PR number explicitly since the
