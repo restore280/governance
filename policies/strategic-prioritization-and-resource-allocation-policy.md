@@ -139,7 +139,7 @@ The Board's approval applies to the proposal as a whole. This policy does not pr
 
 ## 10. Resource Allocation
 
-Each Option selected under Section 8 and approved under Section 9 receives resources equal to its own Total Cost, as estimated under Section 5.4, in the same mix of capital and human labor hours reflected in that estimate. Resources are not allocated proportionally across selected Options; each selected Option receives what it was documented to cost, which is the basis on which it was determined to fit within the Target Allocation. At the Domain level, this draws against the Corporation's total Resource Pool. At the Project level, this draws against a single Domain's own share of the Resource Pool, as previously determined by its Domain-level allocation.
+Each Option selected under Section 8 and approved under Section 9 receives resources equal to its own Total Cost, as estimated under Section 5.4, in the same mix of capital and human labor hours reflected in that estimate. At the Domain level, this draws against the Corporation's total Resource Pool. At the Project level, this draws against a single Domain's own share of the Resource Pool, as previously determined by its Domain-level allocation.
 
 ---
 
