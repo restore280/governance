@@ -18,7 +18,7 @@ The Corporation's work shall be performed by qualified humans rather than by an 
 
 **Function.** Any recurring task, role, or body of work performed on the Corporation's behalf, whether performed by a director, employee, contractor, or Automated System.
 
-**Affordable.** A Function is Affordable to perform with human labor unless doing so would displace a higher-priority Option already selected under the Strategic Prioritization and Resource Allocation Policy, would exceed the Corporation's currently available Resource Pool, or would otherwise substantially increase the opportunity cost of the funds or other resources needed to meet the Corporation's goals, relative to performing the Function with an Automated System.
+**Affordable.** A Function is Affordable to perform with human labor unless doing so would displace a higher-priority Option already selected under the Strategic Prioritization and Resource Allocation Policy, would exceed the Corporation's currently available capital or human labor hours, or would otherwise substantially increase the opportunity cost of the funds, labor hours, or other resources needed to meet the Corporation's goals, relative to performing the Function with an Automated System.
 
 **Supplementary Tool Use.** Use of an Automated System solely as an assistive tool, where a qualified human substantially performs and directs the work, reviews the System’s output, and retains final decision-making authority over any output.
 
@@ -28,13 +28,13 @@ The Corporation's work shall be performed by qualified humans rather than by an 
 
 Before a Function is assigned to an Automated System, a human designated by the Executive Director shall determine whether the Function is Affordable to perform with human labor. If it is Affordable, the Function shall be assigned to human labor. If it is not, the Function may be assigned to an Automated System. Genuine Supplementary Tool Use does not, by itself, constitute assigning a Function to an Automated System, since a human continues to perform and remains responsible for the Function.
 
-This determination shall identify the Function and the basis for the Affordability conclusion, referencing the Corporation's current Resource Pool and any competing Options.
+This determination shall identify the Function and the basis for the Affordability conclusion, referencing the Corporation's currently available capital and human labor hours, as applicable, and any competing Options.
 
 ---
 
 ## 4. Reassessment Triggers
 
-A Function currently assigned to an Automated System under Section 3 shall be reassessed: (a) at each annual governance review under Bylaws Section 7.5; and (b) whenever a material increase in the Corporation's Resource Pool, as reported under the Strategic Prioritization and Resource Allocation Policy, would change the Affordability conclusion previously reached for that Function.
+A Function currently assigned to an Automated System under Section 3 shall be reassessed: (a) at each annual governance review under Bylaws Section 7.5; and (b) whenever a material increase in the Corporation's available capital or human labor hours, as reflected under the Strategic Prioritization and Resource Allocation Policy, would change the Affordability conclusion previously reached for that Function.
 
 ---
 

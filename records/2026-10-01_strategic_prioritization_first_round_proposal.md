@@ -243,4 +243,4 @@ Each director identified below approves this written consent by approving the pu
 
 ---
 
-*Prepared by a party designated by the Executive Director, pursuant to Section 8 of the Strategic Prioritization and Resource Allocation Policy and Bylaws Section 9.6. All discretionary Option identification, scoring, Limiting Factor classification, and Money Pool/Time Pool determinations reflected herein were made by Enik Nadir Linden, Executive Director, consistent with the Human/Party distinction in Section 2 of the Policy and Section 3.11 of the Bylaws.*
+*Prepared by a party designated by the Executive Director, pursuant to Section 8 of the Strategic Prioritization and Resource Allocation Policy and Bylaws Section 9.6. All discretionary Option identification, scoring, Limiting Factor classification, and Money Pool/Time Pool determinations reflected herein were made by Enik Nadir Linden, Executive Director, consistent with the Human/Party distinction in Section 2 of the Policy and Section 10.1 of the Bylaws.*
