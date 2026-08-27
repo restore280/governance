@@ -241,9 +241,15 @@ The Board confirms that upon adoption of these three policies, all nine companio
 
 **19.2 Bylaws Amendments.** Pursuant to Article XIII of the Bylaws, the Board hereby adopts the following further amendments to the Bylaws as ratified in Resolution 1 and previously amended by Resolution 18, effective October 1, 2026:
 
-(a) new Section 10.2(g), (h), and (i), listing the three policies adopted under Resolution 19.1 as required companion policies; and
+(a) amendment of Section 10.1 to import the meanings of Human and Party from the Strategic Prioritization and Resource Allocation Policy and Automated System from the Human Labor and Artificial Intelligence Use Policy;
 
-(b) amendment of Sections 3.11, 4.2(d), and 7.6, and the outcome-notification clause of Section 7.2, to distinguish a "party," which may include an automated or non-human system and is permitted only to produce documentation of a decision already made, from a "human," required wherever these Bylaws call for the exercise of discretion or judgment, with that distinction defined at Section 3.11.
+(b) amendment of Section 10.2 to state the subjects governed by each required companion policy and require each companion policy to comply with these Bylaws;
+
+(c) new Section 10.5, providing that, except where the Bylaws explicitly require a Human to perform a task, whether that task may be performed by an Automated System is governed by the Human Labor and Artificial Intelligence Use Policy;
+
+(d) amendment of Sections 3.11, 4.2(d), 7.2, 7.3, 7.5, 7.6, 9.4, 9.6, 9.7, 10.5, and 14.3 to apply Human and Party consistently as defined terms, including classification of the Section 9.6 mission-alignment review as a Party function; and
+
+(e) amendment of Section 9.6 to permit a single review to satisfy both that Section and an applicable companion-policy review requirement when it satisfies each applicable requirement.
 
 The full text of these amendments as adopted is reflected in the version of BYLAWS.md filed in the governance repository as part of the pull request introducing this Resolution. No amendment adopted by this Resolution violates the limits of Section 13.2.
 
