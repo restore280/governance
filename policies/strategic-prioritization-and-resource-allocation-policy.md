@@ -70,7 +70,7 @@ Each Domain's Project-level round uses that Domain's own Money Allocation and Ti
 
 ## 4. Option Identification
 
-Before a scoring round begins, a human designated by the Executive Director shall compile the full list of Options under consideration, including any proposed by a director. The compiled list, and the identity of who proposed each Option, shall be circulated to the Board before scoring begins.
+Before a scoring round begins, a human designated by the Executive Director shall compile the full list of Options under consideration, including any proposed by a director. 
 
 ---
 
