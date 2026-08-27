@@ -135,7 +135,7 @@ The Board shall elect a Chair from among its Independent Directors pursuant to A
 
 ### 3.11 Document Authentication
 
-A party designated by the Executive Director maintains the official records of the Corporation as specified in Article XII and Section 7.6, and gives notice of Board actions as required by these Bylaws. As used in this Article and elsewhere in these Bylaws, "a party" refers to any designee, human or automated, tasked only with producing documentation of a decision already made; where these Bylaws require the exercise of judgment or discretion, they specify that a human must perform the task.
+A party designated by the Executive Director maintains the official records of the Corporation as specified in Article XII and Section 7.6, and gives notice of Board actions as required by these Bylaws.
 
 Formal corporate documents, including executed contracts, government filings, board resolutions, and certifications, shall be authenticated by the signatures of at least half of the then-serving directors, including the Executive Director. Authentication signatures shall be obtained within ten (10) business days of a request by the Executive Director, and may be provided electronically. This requirement scales with board size: at three directors, two signatures are required; at four or five directors, three signatures are required; and so on.
 
@@ -303,7 +303,7 @@ The Corporation shall not amend these Bylaws or its Certificate of Incorporation
 
 ### 9.6 Mission Integrity and Program Alignment Review
 
-Before undertaking any material new program, campaign, research initiative, partnership, capital initiative, or expansion into a new substantive domain, a human designated by the Executive Director shall complete a documented mission-alignment review addressing:
+Before undertaking any material new program, campaign, research initiative, partnership, capital initiative, or expansion into a new substantive domain, a party designated by the Executive Director shall complete a documented mission-alignment review addressing:
 
 (a) what condition affecting human dignity, autonomy, or wellbeing is being addressed;
 
@@ -404,6 +404,10 @@ Companion policies shall be adopted and amended pursuant to Article VII. The Boa
 ### 10.4 Policy Compliance
 
 The Executive Director is responsible for implementing all Board-adopted policies and for reporting material deviations to the Board promptly.
+
+### 10.5 Automated System Task Eligibility
+
+Except where a provision of these Bylaws explicitly requires that a human perform a task, whether that task may be performed by an Automated System is governed by the Human Labor and Artificial Intelligence Use Policy.
 
 ---
 
