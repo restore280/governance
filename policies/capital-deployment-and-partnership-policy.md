@@ -16,21 +16,19 @@ Whether a given capital opportunity is selected for resourcing at all, and how m
 
 ### 2.1 Requirement
 
-All capital deployment and partnership activity must further one or more of the Corporation's exempt purposes as stated in the Certificate of Incorporation and Section 1.2 of the Bylaws: atmospheric restoration research and education, housing affordability, democratic accountability, or other systems upon which dignified human life depends. Atmospheric restoration is the primary domain.
+All capital deployment and partnership activity must further one or more of the Corporation's exempt purposes as stated in Section 1.2 of the Bylaws or preserve or increase resources available to the Corporation to further those purposes.
 
 ### 2.2 Prohibited Activities
 
 Capital deployment and partnership activity shall not:
 
-(a) be conducted primarily for investment return rather than exempt purpose advancement;
+(a) result in net earnings inuring to the benefit of any director, officer, or other private person;
 
-(b) result in net earnings inuring to the benefit of any director, officer, or other private person;
+(b) provide more than incidental private benefit to any individual or entity;
 
-(c) provide more than incidental private benefit to any individual or entity;
+(c) involve any transaction with a disqualified person that constitutes an excess benefit transaction under Section 4958 of the Internal Revenue Code; or
 
-(d) involve any transaction with a disqualified person that constitutes an excess benefit transaction under Section 4958 of the Internal Revenue Code; or
-
-(e) jeopardize the Corporation's tax-exempt status.
+(d) jeopardize the Corporation's tax-exempt status.
 
 ---
 
