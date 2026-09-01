@@ -12,6 +12,8 @@ This policy decides *what* the Corporation works on and *how much* capital and l
 
 This policy operates in two levels: Domains and Projects. Section 3 defines the relationship between them.
 
+Corporation capital or Corporation labor hours may not be committed to any activity that has not been approved as a Project under this policy, except for functions the Bylaws require the Corporation to perform on a recurring or fixed schedule, independent of Project selection under this policy.
+
 ---
 
 ## 2. Definitions
@@ -22,7 +24,7 @@ This policy operates in two levels: Domains and Projects. Section 3 defines the 
 
 **Time Pool.** The Corporation's total available human labor hours for a given round.
 
-**Project.** A specific initiative, whether a content production, a capital deployment opportunity, a research initiative, or a partnership, undertaken within a selected Domain.
+**Project.** Any specific initiative that consumes Corporation capital or Corporation labor hours in furtherance of the mission, undertaken within a selected Domain.
 
 **Option.** A candidate Domain or candidate Project under consideration in a given round of this process. Any director or the Executive Director may propose an Option for consideration.
 
@@ -134,7 +136,7 @@ Each Option selected under Section 7 receives a Money Allocation and a Time Allo
 
 ## 10. Relationship to Other Governance Documents
 
-This policy governs selection and resource allocation only. It does not modify, and is not modified by, the evaluation or execution criteria in the Capital Deployment and Partnership Policy or the Editorial and Compliance Policy. Those policies continue to govern how a Project selected under this policy is subsequently executed: due diligence, partnership terms, and outcome documentation for capital Projects; sourcing, editorial review, and publication standards for content Projects.
+This policy governs selection and resource allocation only. It does not modify, and is not modified by, the evaluation, execution, or reporting standards set forth in the Corporation's other companion policies under Bylaws Section 10.2. Those policies continue to govern how a Project selected under this policy is subsequently executed, reported on, and overseen.
 
 This policy remains subject to the Corporation's other governing documents to the extent they are applicable to it. Those other governing documents have no bearing on the operation of the process described in this policy, except where selecting an Option under Section 7, or approving it under Section 8, would itself constitute a violation of an ethical requirement under those other governing documents, including the independence, conflict of interest, and editorial integrity requirements found elsewhere in the Corporation's governance framework. A human designated by the Executive Director shall flag any Option that would require such a violation to execute during Option Identification under Section 4, and any Option so flagged shall be excluded from consideration under Section 7. If such a violation is identified only after Board approval under Section 8, the Board shall address it by ordinary Board action rather than by reopening the selection.
 

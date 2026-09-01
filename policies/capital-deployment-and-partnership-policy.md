@@ -8,7 +8,7 @@
 
 This policy governs restore280 Institute's (the "Corporation") capital facilitation activities and organizational partnerships. The Corporation's capital deployment function involves identifying climate solution opportunities where capital is the binding constraint, facilitating third-party capital toward those opportunities, and deploying the Corporation's own capital in furtherance of its exempt purposes. All capital deployment and partnership activities must further the Corporation's charitable purposes under Section 501(c)(3) of the Internal Revenue Code and must not result in impermissible private benefit or private inurement.
 
-Whether a given capital opportunity is selected for resourcing at all, and how much of the Corporation's resources it receives, is governed by the Strategic Prioritization and Resource Allocation Policy. This policy has no role in that selection decision. It governs only how a capital opportunity already selected under that policy is subsequently evaluated, approved, and managed.
+Whether a given capital opportunity is selected for resourcing at all, and how much of the Corporation's resources it receives, is governed by the Strategic Prioritization and Resource Allocation Policy. This policy has no role in that selection decision. It governs only how a capital opportunity already selected under that policy is subsequently evaluated, approved, and managed for its capital- and partnership-specific requirements. It does not govern ongoing operational status reporting or Board oversight common to all Project types, which is addressed elsewhere in the Corporation's companion policies under Bylaws Section 10.2.
 
 ---
 
@@ -150,13 +150,11 @@ The Corporation shall publish outcome documentation in its research output, subj
 
 The Executive Director shall include in the quarterly financial summary provided to the Board under Section 8.4 of the Bylaws:
 
-(a) a summary of all active partnerships, their current status, and any material developments;
+(a) cumulative capital deployed in the current fiscal year by category;
 
-(b) cumulative capital deployed in the current fiscal year by category;
+(b) outcome updates for completed or substantially completed deployments; and
 
-(c) outcome updates for completed or substantially completed deployments; and
-
-(d) any conflict of interest issues identified during the quarter.
+(c) any conflict of interest issues identified during the quarter.
 
 ---
 
