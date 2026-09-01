@@ -80,7 +80,7 @@ The GitHub repository at `github.com/restore280/governance` is the authoritative
 
 ### 5.2 Institutional Knowledge
 
-A human designated by the Executive Director shall maintain a written operations reference covering, at minimum: the video production pipeline and its current state, the publishing calendar and its rationale, active partnership and funding relationships, and the status of pending regulatory filings. This reference shall be stored in a location accessible to the Board Chair, not solely on the Executive Director's personal devices or accounts. Until a dedicated location is established, the quarterly financial and compliance summary required by Bylaws Section 8.4 and Section 9.4 serves as the interim mechanism for keeping the Board Chair current on this information.
+A human designated by the Executive Director shall maintain a written operations reference covering, at minimum: the video production pipeline and its current state, the publishing calendar and its rationale, active partnership and funding relationships, and the status of pending regulatory filings. This reference shall be stored in a location accessible to the Board Chair, not solely on the Executive Director's personal devices or accounts. Until a dedicated location is established, the Corporation's quarterly reporting requirements under its companion policies serve as the interim mechanism for keeping the Board Chair current on this information.
 
 ### 5.3 Critical Credentials and Access
 

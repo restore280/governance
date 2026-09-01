@@ -396,6 +396,7 @@ The Board shall adopt, and shall maintain in current form, the following compani
 **(g) Strategic Prioritization and Resource Allocation Policy.** Governing strategic prioritization and allocation of organizational resources.
 **(h) Communication Platform Administration Policy.** Governing administration of the Corporation's communication platforms.
 **(i) Human Labor and Artificial Intelligence Use Policy.** Governing use of human labor, artificial intelligence, and automated systems.
+**(j) Project Operations and Reporting Policy.** Governing operational reporting, feedback, and Board oversight of Projects.
 
 The Corporation's conflict-of-interest framework shall meet the standards set forth in Appendix A of the IRS Form 1023 instructions, as updated. All directors and officers shall complete an annual conflict of interest disclosure.
 

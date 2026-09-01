@@ -21,6 +21,7 @@ The authoritative versions of all governing documents live here. The current doc
 | `policies/external-funding-acceptance-policy.md` | External Funding Acceptance Policy |
 | `policies/succession-and-continuity-plan.md` | Succession and Continuity Plan |
 | `policies/strategic-prioritization-and-resource-allocation-policy.md` | Strategic Prioritization and Resource Allocation Policy |
+| `policies/project-operations-and-reporting-policy.md` | Project Operations and Reporting Policy |
 | `policies/communication-platform-administration-policy.md` | Communication Platform Administration Policy |
 | `policies/human-labor-and-ai-use-policy.md` | Human Labor and Artificial Intelligence Use Policy |
 | `records/` | Signed written consents and Board action records |
