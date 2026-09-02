@@ -6,7 +6,7 @@
 
 ## 1. Purpose and Scope
 
-This policy governs the Corporation's use of Automated Systems across all Corporation functions and activities. It applies in addition to, not in place of, the specific standards in the Editorial and Compliance Policy Section 5.4 governing Automated System use in Published Content specifically; where that Section applies to a given activity, it controls over this policy on any point of conflict.
+This policy governs the Corporation's use of Automated Systems across all Corporation functions and activities. It applies in addition to, not in place of, the specific standards in the Editorial and Compliance Policy governing Automated System use in Published Content specifically; where that Section applies to a given activity, it controls over this policy on any point of conflict.
 
 The Corporation's work shall be performed by qualified humans rather than by an Automated System wherever doing so is Affordable.
 
