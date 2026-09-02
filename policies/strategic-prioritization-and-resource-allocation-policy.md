@@ -12,7 +12,7 @@ This policy decides *what* the Corporation works on and *how much* capital and l
 
 This policy operates in two levels: Domains and Projects. Section 3 defines the relationship between them.
 
-Corporation capital or Corporation labor hours may not be committed to any activity that has not been approved as a Project under this policy, except for functions the Bylaws require the Corporation to perform on a recurring or fixed schedule, independent of Project selection under this policy.
+Corporation capital or Corporation labor hours may not be committed to any activity that has not been approved as a Project under this policy, except for (a) functions the Bylaws require the Corporation to perform, or (b) any actions necessary to establish or maintain the Corporation's basic operational capacity, provided the action is specifically authorized by Board resolution.
 
 ---
 
