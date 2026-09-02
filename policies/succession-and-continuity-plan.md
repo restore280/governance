@@ -2,7 +2,7 @@
 
 *restore280 Institute — Maintained pursuant to Bylaws Section 9.8*
 
-*Adopted by the Board of Directors by Written Consent, effective June 23, 2026*
+*Adopted by the Board of Directors by Written Consent, effective October 1, 2026*
 
 *Reviewed at each annual governance review under Section 7.5, and promptly after any material change in leadership or organizational structure.*
 

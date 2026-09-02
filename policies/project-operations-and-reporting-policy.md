@@ -6,7 +6,7 @@
 
 ## 1. Purpose and Scope
 
-This policy governs operational reporting, deviation escalation, and Board oversight for all Projects. It applies uniformly to every Project regardless of type, size, or cost; this policy provides no exemption based on a Project's scale.
+This policy governs operational reporting, deviation escalation, and Board oversight for all Projects. It applies uniformly to every Project regardless of type, size, or cost.
 
 This policy governs reporting, escalation, and oversight only. It does not govern the evaluation, ethical, or execution-specific standards that apply to a Project by virtue of its type; those standards are set forth in the Corporation's other companion policies under Bylaws Section 10.2.
 
@@ -24,13 +24,15 @@ This policy governs reporting, escalation, and oversight only. It does not gover
 
 ## 3. Baseline Documentation at Approval
 
-The proposal presented to the Board for approval of a Project under the Strategic Prioritization and Resource Allocation Policy shall include, for each Option proposed for Project-level selection:
+The proposal presented to the Board for approval of a Project under the Strategic Prioritization and Resource Allocation Policy shall include, for each Option selected as a Project:
 
-(a) the purpose and scope of the Option;
+(a) the Project's purpose, stating the problem or need it addresses;
 
-(b) its current goals; and
+(b) the Project's scope, stated with enough specificity to identify what falls within it and what does not;
 
-(c) the timeframe for achieving those goals.
+(c) its goals, stated as specific, measurable outcomes, together with the metric by which achievement of each will be assessed; and
+
+(d) for a Project with a defined completion point, the date by which its goals are to be achieved; for a Project with no defined completion point, the interval at which progress toward its goals will be assessed.
 
 Where another companion policy already requires a Project to maintain records equivalent to the Baseline Record, that documentation satisfies this Section and need not be duplicated.
 
@@ -42,7 +44,7 @@ A human designated by the Executive Director shall prepare a written progress re
 
 For each active Project, the progress report shall include:
 
-(a) current status measured against the Baseline Record;
+(a) current status of each goal in the Baseline Record, measured against its stated metric;
 
 (b) any Material Deviation identified during the quarter and its resolution or current status; and
 

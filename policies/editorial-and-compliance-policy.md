@@ -1,6 +1,6 @@
 # EDITORIAL AND COMPLIANCE POLICY
 
-*restore280 Institute — Adopted by the Board of Directors by Written Consent, effective June 23, 2026*
+*restore280 Institute — Adopted by the Board of Directors by Written Consent, effective October 1, 2026*
 
 ---
 
@@ -234,4 +234,4 @@ This policy may be amended by majority Board action pursuant to Article VII of t
 
 ---
 
-*Adopted by the Board of Directors by Written Consent, effective June 23, 2026*
+*Adopted by the Board of Directors by Written Consent, effective October 1, 2026*
