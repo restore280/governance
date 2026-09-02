@@ -26,7 +26,7 @@ The Corporation's work shall be performed by qualified humans rather than by an 
 
 ## 3. The Preference Test
 
-Before a Function is assigned to an Automated System, a human designated by the Executive Director shall determine whether the Function is Affordable to perform with human labor. If it is Affordable, the Function shall be assigned to human labor. If it is not, the Function may be assigned to an Automated System. Genuine Supplementary Tool Use does not, by itself, constitute assigning a Function to an Automated System, since a human continues to perform and remains responsible for the Function.
+Before a Function is assigned to an Automated System, a Human designated by the Executive Director shall determine whether the Function is Affordable to perform with human labor. If it is Affordable, the Function shall be assigned to human labor. If it is not, the Function may be assigned to an Automated System. Genuine Supplementary Tool Use does not, by itself, constitute assigning a Function to an Automated System.
 
 This determination shall identify the Function and the basis for the Affordability conclusion, referencing the Corporation's currently available capital and human labor hours, as applicable, and any competing Options.
 

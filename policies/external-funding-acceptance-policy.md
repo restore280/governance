@@ -98,7 +98,7 @@ Contributions from the same source that individually fall below $10,000 but cumu
 
 ## 5. Conflicts of Interest
 
-Any funding acceptance decision in which a director, officer, or key employee has a material financial interest shall be subject to the conflict of interest procedures in the Corporation's Conflict of Interest Policy. The interested party shall recuse from the acceptance decision.
+Any funding acceptance decision in which a director, officer, or key employee has a material Financial Interest shall be subject to the conflict of interest procedures in the Corporation's Conflict of Interest Policy. The Interested Person shall recuse from the acceptance decision.
 
 ---
 

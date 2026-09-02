@@ -173,7 +173,7 @@ The Executive Director is the chief executive officer of the Corporation, respon
 
 (d) ensuring the official records of the Corporation are maintained and Board action items and notices are circulated as required by these Bylaws, whether personally or through a Party the Executive Director designates;
 
-(e) ensuring compliance with applicable law and all Board-adopted policies, and promptly reporting to the Board any material legal, financial, operational, or reputational risks;
+(e) ensuring compliance with applicable law and all Board-adopted policies, and reporting to the Board, within 15 days of notification, any material legal, financial, operational, or reputational risks;
 
 (f) managing relationships with funders, partners, and other stakeholders in furtherance of the mission.
 
@@ -349,7 +349,7 @@ The Corporation shall maintain independent judgment in its research, publication
 
 (i) programmatic decisions where the outside party has a material conflicting interest.
 
-Operational implementation of this principle is governed by the Editorial and Compliance Policy and the External Funding Acceptance Policy. A Human designated by the Executive Director shall disclose to the Board any funding concentration or other relationship that could reasonably threaten the independence required by this Section, and the Board shall review any such disclosure at the next regular opportunity.
+Operational implementation of this principle is governed by the Corporation's companion policies. A Human designated by the Executive Director shall disclose to the Board any funding concentration or other relationship that could reasonably threaten the independence required by this Section, and the Board shall review any such disclosure at the next regular opportunity.
 
 ### 9.8 Succession and Continuity Planning
 
@@ -365,7 +365,7 @@ The Board shall maintain a written succession and continuity plan addressing, at
 
 (e) continuity of essential financial, legal, compliance, and technology functions.
 
-The plan shall be reviewed at each annual governance review under Section 7.5 and promptly after any material change in leadership or organizational structure. The plan shall be designed so that the Corporation's identity and effectiveness do not depend on any individual founder, executive, director, donor, or institutional relationship.
+The plan shall be reviewed at each annual governance review under Section 7.5 and within 15 days of notification of any material change in leadership or organizational structure. The plan shall be designed so that the Corporation's identity and effectiveness do not depend on any individual founder, executive, director, donor, or institutional relationship.
 
 ---
 
@@ -406,7 +406,7 @@ Companion policies shall be adopted and amended pursuant to Article VII. The Boa
 
 ### 10.4 Policy Compliance
 
-The Executive Director is responsible for implementing all Board-adopted policies and for reporting material deviations to the Board promptly.
+The Executive Director is responsible for implementing all Board-adopted policies and for reporting material deviations to the Board within 15 days of notification.
 
 ### 10.5 Automated System Task Eligibility
 

@@ -40,7 +40,7 @@ Where another companion policy already requires a Project to maintain records eq
 
 ## 4. Quarterly Progress Reporting
 
-A human designated by the Executive Director shall prepare a written progress report covering all active Projects and present it to the Board concurrently with the quarterly financial summary required under Bylaws Section 8.4. The progress report is a standalone document. It is not part of the quarterly financial summary and is not subject to the Treasurer's accuracy review under Bylaws Section 8.4.
+A Human designated by the Executive Director shall prepare a written progress report covering all active Projects and present it to the Board concurrently with the quarterly financial summary required under Bylaws Section 8.4. The progress report is a standalone document. It is not part of the quarterly financial summary and is not subject to the Treasurer's accuracy review under Bylaws Section 8.4.
 
 For each active Project, the progress report shall include:
 

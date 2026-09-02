@@ -6,7 +6,7 @@
 
 ## 1. Purpose and Scope
 
-This policy governs how restore280 Institute identifies, prioritizes, and resources the domains and projects it works on. It applies to the Corporation's available capital and human labor hours, allocated as two separate pools under Sections 7 through 9.
+This policy governs how restore280 Institute identifies, prioritizes, and resources the Domains and Projects it works on. It applies to the Corporation's available capital and human labor hours, allocated as two separate pools under Sections 7 through 9.
 
 This policy decides *what* the Corporation works on and *how much* capital and labor hours go to it. Execution of a selected initiative is governed by the Corporation's other companion policies, whose evaluation criteria apply once this policy has determined that a given initiative will be resourced.
 
@@ -18,7 +18,7 @@ Corporation capital or Corporation labor hours may not be committed to any activ
 
 ## 2. Definitions
 
-**Domain.** A broad area of activity within the Corporation's mission that serves as an operating foundation for the projects selected within it.
+**Domain.** A broad area of activity within the Corporation's mission that serves as an operating foundation for the Projects selected within it.
 
 **Money Pool.** The Corporation's total available capital, expressed in dollars, for a given round.
 
@@ -72,7 +72,7 @@ Each Domain's Project-level round uses that Domain's own Money Allocation and Ti
 
 ## 4. Option Identification
 
-Before a scoring round begins, a human designated by the Executive Director shall compile the full list of Options under consideration, including any proposed by a director. 
+Before a scoring round begins, a Human designated by the Executive Director shall compile the full list of Options under consideration, including any proposed by a director. 
 
 ---
 
@@ -80,7 +80,7 @@ Before a scoring round begins, a human designated by the Executive Director shal
 
 ### 5.1 Who Scores
 
-A human designated by the Executive Director shall score each Option's Importance and Urgency, and classify its Limiting Factor, using the quantitative methodology in this Section.
+A Human designated by the Executive Director shall score each Option's Importance and Urgency, and classify its Limiting Factor, using the quantitative methodology in this Section.
 
 ### 5.2 Importance Scoring
 
@@ -88,11 +88,11 @@ The Importance score for each Option shall be derived from a mission-alignment r
 
 ### 5.3 Urgency Scoring
 
-The Urgency score for each Option shall be based on: (a) publicly available polling data bearing on the Option's subject matter, where it exists, cited consistent with the sourcing standard in the Editorial and Compliance Policy Section 5.1; and (b) a documented qualitative assessment of the Option's current presence in public discourse. Both components shall be documented in writing for each Option.
+The Urgency score for each Option shall be based on: (a) publicly available polling data bearing on the Option's subject matter, where it exists, cited consistent with the sourcing standard in the Editorial and Compliance Policy; and (b) a documented qualitative assessment of the Option's current presence in public discourse. Both components shall be documented in writing for each Option.
 
 ### 5.4 Limiting Factor Classification
 
-A human designated by the Executive Director shall classify each Option as Money-Limited or Time-Limited. An Option is Money-Limited if its capacity to use additional resources productively is constrained by capital rather than labor hours: it can absorb materially more or less capital in reasonable proportion to the amount provided, while its labor-hour requirement is comparatively fixed. An Option is Time-Limited if the reverse holds: it can absorb materially more or less labor in reasonable proportion to the amount provided, while its capital requirement is comparatively fixed. The scorer shall document the basis for each classification.
+A Human designated by the Executive Director shall classify each Option as Money-Limited or Time-Limited. An Option is Money-Limited if its capacity to use additional resources productively is constrained by capital rather than labor hours: it can absorb materially more or less capital in reasonable proportion to the amount provided, while its labor-hour requirement is comparatively fixed. An Option is Time-Limited if the reverse holds: it can absorb materially more or less labor in reasonable proportion to the amount provided, while its capital requirement is comparatively fixed. The scorer shall document the basis for each classification.
 
 ---
 
@@ -114,7 +114,7 @@ Each eligible Option's Weighted Score is calculated as its Importance Percentile
 
 ## 7. Selection
 
-A human designated by the Executive Director shall propose a Money Pool and a Time Pool for the round, based on the currently available capital and labor hours, and present them to the Board alongside the full list of Options, their Importance and Urgency scores, and their Limiting Factor classifications from Section 5. The Board shall approve or adjust the Money Pool and Time Pool as part of its approval of the proposal under Section 8.
+A Human designated by the Executive Director shall propose a Money Pool and a Time Pool for the round, based on the currently available capital and labor hours, and present them to the Board alongside the full list of Options, their Importance and Urgency scores, and their Limiting Factor classifications from Section 5. The Board shall approve or adjust the Money Pool and Time Pool as part of its approval of the proposal under Section 8.
 
 Every Option meeting the Eligibility Threshold under Section 6.2 is selected for resourcing in the round. Eligibility is the sole determinant of selection.
 
@@ -122,7 +122,7 @@ Every Option meeting the Eligibility Threshold under Section 6.2 is selected for
 
 ## 8. Board Approval
 
-A party designated by the Executive Director shall prepare a proposal identifying the Options selected under Section 7 and their resulting Money Allocation and Time Allocation under Section 9. The Board shall approve the proposal by ordinary written consent under Bylaws Article VII.
+A Party designated by the Executive Director shall prepare a proposal identifying the Options selected under Section 7 and their resulting Money Allocation and Time Allocation under Section 9. The Board shall approve the proposal by ordinary written consent under Bylaws Article VII.
 
 The Board's approval applies to the proposal as a whole. This policy does not provide for the Board approving some selected Options while rejecting others, or for the Board substituting a different selection for the one produced under Section 7. If the Board does not approve the proposal, no Option is selected for the round. The Executive Director or a director may propose a revised round, including a revised Money Pool or Time Pool, revised scoring, or a revised Option list, to address the Board's concerns.
 
@@ -138,7 +138,7 @@ Each Option selected under Section 7 receives a Money Allocation and a Time Allo
 
 This policy governs selection and resource allocation only. It does not modify, and is not modified by, the evaluation, execution, or reporting standards set forth in the Corporation's other companion policies under Bylaws Section 10.2. Those policies continue to govern how a Project selected under this policy is subsequently executed, reported on, and overseen.
 
-This policy remains subject to the Corporation's other governing documents to the extent they are applicable to it. Those other governing documents have no bearing on the operation of the process described in this policy, except where selecting an Option under Section 7, or approving it under Section 8, would itself constitute a violation of an ethical requirement under those other governing documents, including but not limited to the independence, conflict of interest, and editorial integrity requirements found elsewhere in the Corporation's governance framework. A human designated by the Executive Director shall flag any Option that would require such a violation to execute during Option Identification under Section 4, and any Option so flagged shall be excluded from consideration under Section 7. If such a violation is identified only after Board approval under Section 8, the Board shall address it by ordinary Board action rather than by reopening the selection.
+This policy remains subject to the Corporation's other governing documents to the extent they are applicable to it. Those other governing documents have no bearing on the operation of the process described in this policy, except where selecting an Option under Section 7, or approving it under Section 8, would itself constitute a violation of an ethical requirement under those other governing documents, including but not limited to the independence, conflict of interest, and editorial integrity requirements found elsewhere in the Corporation's governance framework. A Human designated by the Executive Director shall flag any Option that would require such a violation to execute during Option Identification under Section 4, and any Option so flagged shall be excluded from consideration under Section 7. If such a violation is identified only after Board approval under Section 8, the Board shall address it by ordinary Board action rather than by reopening the selection.
 
 Where a Domain or Project's consideration under this policy independently triggers the mission-alignment review requirement of Bylaws Section 9.6, that same review serves both purposes, as described in Section 5.2.
 

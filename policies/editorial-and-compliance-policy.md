@@ -174,7 +174,7 @@ The Corporation may, at its discretion, publish a research document or whitepape
 
 ### 5.3 Corrections
 
-The Corporation shall promptly correct material factual errors in published content. Corrections shall be documented in the content record and noted in the content itself where practicable.
+The Corporation shall correct material factual errors in published content within 15 days of notification. Corrections shall be documented in the content record and noted in the content itself where practicable.
 
 ### 5.4 AI and Machine Learning Use in Published Content
 

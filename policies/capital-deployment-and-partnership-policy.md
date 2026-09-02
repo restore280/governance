@@ -114,7 +114,7 @@ All capital deployment partnerships shall be governed by a written agreement tha
 
 ### 5.2 Conflicts of Interest
 
-No partnership agreement shall be executed with any entity in which a director, officer, or key employee has a material financial interest without: (i) full disclosure to the Board; (ii) the interested party's recusal from deliberation and approval; and (iii) a Board determination that the partnership is in the Corporation's best interest and on terms no less favorable than would be available from an unrelated party.
+No partnership agreement shall be executed with any entity in which a director, officer, or key employee has a material Financial Interest without: (i) full disclosure to the Board; (ii) the Interested Person's recusal from deliberation and approval; and (iii) a Board determination that the partnership is in the Corporation's best interest and on terms no less favorable than would be available from an unrelated party.
 
 ---
 

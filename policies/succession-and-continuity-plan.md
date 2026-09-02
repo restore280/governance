@@ -4,13 +4,13 @@
 
 *Adopted by the Board of Directors by Written Consent, effective October 1, 2026*
 
-*Reviewed at each annual governance review under Section 7.5, and promptly after any material change in leadership or organizational structure.*
+*Reviewed at each annual governance review under Section 7.5, and within 15 days of notification of any material change in leadership or organizational structure.*
 
 ---
 
 ## 1. Purpose
 
-This plan is maintained pursuant to Bylaws Section 9.8 so that the Corporation's identity and effectiveness do not depend on any individual founder, executive, director, donor, or institutional relationship. It shall be expanded as the Corporation's staff and Board grow beyond their current size.
+This plan is maintained pursuant to Bylaws Section 9.8. It shall be expanded as the Corporation's staff and Board grow beyond their current size.
 
 ---
 
@@ -80,13 +80,13 @@ The GitHub repository at `github.com/restore280/governance` is the authoritative
 
 ### 5.2 Institutional Knowledge
 
-A human designated by the Executive Director shall maintain a written operations reference covering, at minimum: the video production pipeline and its current state, the publishing calendar and its rationale, active partnership and funding relationships, and the status of pending regulatory filings. This reference shall be stored in a location accessible to the Board Chair, not solely on the Executive Director's personal devices or accounts. Until a dedicated location is established, the Corporation's quarterly reporting requirements under its companion policies serve as the interim mechanism for keeping the Board Chair current on this information.
+A Human designated by the Executive Director shall maintain a written operations reference covering, at minimum: the video production pipeline and its current state, the publishing calendar and its rationale, active partnership and funding relationships, and the status of pending regulatory filings. This reference shall be stored in a location accessible to the Board Chair, not solely on the Executive Director's personal devices or accounts. Until a dedicated location is established, the Corporation's quarterly reporting requirements under its companion policies serve as the interim mechanism for keeping the Board Chair current on this information.
 
 ### 5.3 Critical Credentials and Access
 
 Published research materials and their source records are maintained in the Corporation's designated research archive.
 
-The Corporation maintains an inventory of accounts, systems, and access credentials material to its operations. That inventory, and the credentials themselves, are held in a password manager, not in this document or in the governance repository. The Executive Director is the primary owner of that password manager, and the Board Chair holds designated emergency access to it. A human designated by the Executive Director shall keep the inventory current and shall confirm at each annual governance review that the Board Chair's emergency access remains functional. This inventory also records, for each communication platform in use, the administrative arrangement required by the Communication Platform Administration Policy.
+The Corporation maintains an inventory of accounts, systems, and access credentials material to its operations. That inventory, and the credentials themselves, are held in a password manager, not in this document or in the governance repository. The Executive Director is the primary owner of that password manager, and the Board Chair holds designated emergency access to it. A Human designated by the Executive Director shall keep the inventory current and shall confirm at each annual governance review that the Board Chair's emergency access remains functional. This inventory also records, for each communication platform in use, the administrative arrangement required by the Communication Platform Administration Policy.
 
 ---
 
@@ -108,7 +108,7 @@ Hosting, domain, and email infrastructure access is covered in Section 5.3. Pers
 
 ## 7. Review
 
-This plan shall be reviewed at each annual governance review under Bylaws Section 7.5, and promptly after any of the following: a change in who holds the Executive Director or Treasurer office, a change in Board composition, the opening of a new financial account, or the engagement of outside counsel or an accountant. Each review shall confirm that the credentials inventory described in Section 5.3 remains current and that the Board Chair's emergency access remains functional.
+This plan shall be reviewed at each annual governance review under Bylaws Section 7.5, and within 15 days of notification of any of the following: a change in who holds the Executive Director or Treasurer office, a change in Board composition, the opening of a new financial account, or the engagement of outside counsel or an accountant. Each review shall confirm that the credentials inventory described in Section 5.3 remains current and that the Board Chair's emergency access remains functional.
 
 ---
 

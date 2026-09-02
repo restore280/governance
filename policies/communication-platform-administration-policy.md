@@ -30,7 +30,7 @@ Where Section 3 precludes the Executive Director from holding administrative dut
 
 (a) The Board Chair shall hold those administrative duties, provided doing so does not itself create a conflict under Section 3 with respect to the Board Chair; or
 
-(b) if the Board Chair is also precluded under subsection (a), a human designated by the Executive Director shall hold those administrative duties, provided the designation does not create any further conflict under Section 3, and provided the designation is subsequently approved by the Board.
+(b) if the Board Chair is also precluded under subsection (a), a Human designated by the Executive Director shall hold those administrative duties, provided the designation does not create any further conflict under Section 3, and provided the designation is subsequently approved by the Board.
 
 ---
 
@@ -42,7 +42,7 @@ An administrative arrangement satisfies this policy only if the administrator do
 
 ## 6. Documentation and Review
 
-The administrative arrangement for each communication platform in current use, and the basis for that arrangement under this policy, shall be recorded in the credentials inventory maintained under the Succession and Continuity Plan, rather than in this policy or the governance repository. This arrangement shall be reviewed at each annual governance review under Bylaws Section 7.5, and promptly upon the adoption of any new communication platform or any change in who administers an existing one.
+The administrative arrangement for each communication platform in current use, and the basis for that arrangement under this policy, shall be recorded in the credentials inventory maintained under the Succession and Continuity Plan, rather than in this policy or the governance repository. This arrangement shall be reviewed at each annual governance review under Bylaws Section 7.5, and within 15 days of notification of the adoption of any new communication platform or any change in who administers an existing one.
 
 ---
 
