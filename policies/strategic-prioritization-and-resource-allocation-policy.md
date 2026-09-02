@@ -8,7 +8,7 @@
 
 This policy governs how restore280 Institute identifies, prioritizes, and resources the domains and projects it works on. It applies to the Corporation's available capital and human labor hours, allocated as two separate pools under Sections 7 through 9.
 
-This policy decides *what* the Corporation works on and *how much* capital and labor hours go to it. Execution of a selected initiative is governed by the Corporation's other companion policies, principally the Capital Deployment and Partnership Policy for capital projects and the Editorial and Compliance Policy for content projects, whose evaluation criteria apply once this policy has determined that a given capital or content initiative will be resourced.
+This policy decides *what* the Corporation works on and *how much* capital and labor hours go to it. Execution of a selected initiative is governed by the Corporation's other companion policies, whose evaluation criteria apply once this policy has determined that a given initiative will be resourced.
 
 This policy operates in two levels: Domains and Projects. Section 3 defines the relationship between them.
 
@@ -84,7 +84,7 @@ A human designated by the Executive Director shall score each Option's Importanc
 
 ### 5.2 Importance Scoring
 
-The Importance score for each Option shall be derived from a mission-alignment review consistent with Bylaws Section 9.6. Where an Option would independently trigger the Section 9.6 review requirement, that review serves as the analytical basis for its Importance score under this policy; a separate, duplicate review is not required. The scorer shall document, for each Option: the basis for the median-case impact estimate, the evidence supporting it, and the key assumptions or uncertainties involved, consistent with the sourcing standard in the Editorial and Compliance Policy Section 5.1 where the estimate relies on external data.
+The Importance score for each Option shall be derived from a mission-alignment review consistent with Bylaws Section 9.6. Where an Option would independently trigger the Section 9.6 review requirement, that review serves as the analytical basis for its Importance score under this policy; a separate, duplicate review is not required. The scorer shall document, for each Option: the basis for the median-case impact estimate, the evidence supporting it, and the key assumptions or uncertainties involved, consistent with the sourcing standard in the Editorial and Compliance Policy where the estimate relies on external data.
 
 ### 5.3 Urgency Scoring
 
@@ -138,7 +138,7 @@ Each Option selected under Section 7 receives a Money Allocation and a Time Allo
 
 This policy governs selection and resource allocation only. It does not modify, and is not modified by, the evaluation, execution, or reporting standards set forth in the Corporation's other companion policies under Bylaws Section 10.2. Those policies continue to govern how a Project selected under this policy is subsequently executed, reported on, and overseen.
 
-This policy remains subject to the Corporation's other governing documents to the extent they are applicable to it. Those other governing documents have no bearing on the operation of the process described in this policy, except where selecting an Option under Section 7, or approving it under Section 8, would itself constitute a violation of an ethical requirement under those other governing documents, including the independence, conflict of interest, and editorial integrity requirements found elsewhere in the Corporation's governance framework. A human designated by the Executive Director shall flag any Option that would require such a violation to execute during Option Identification under Section 4, and any Option so flagged shall be excluded from consideration under Section 7. If such a violation is identified only after Board approval under Section 8, the Board shall address it by ordinary Board action rather than by reopening the selection.
+This policy remains subject to the Corporation's other governing documents to the extent they are applicable to it. Those other governing documents have no bearing on the operation of the process described in this policy, except where selecting an Option under Section 7, or approving it under Section 8, would itself constitute a violation of an ethical requirement under those other governing documents, including but not limited to the independence, conflict of interest, and editorial integrity requirements found elsewhere in the Corporation's governance framework. A human designated by the Executive Director shall flag any Option that would require such a violation to execute during Option Identification under Section 4, and any Option so flagged shall be excluded from consideration under Section 7. If such a violation is identified only after Board approval under Section 8, the Board shall address it by ordinary Board action rather than by reopening the selection.
 
 Where a Domain or Project's consideration under this policy independently triggers the mission-alignment review requirement of Bylaws Section 9.6, that same review serves both purposes, as described in Section 5.2.
 
